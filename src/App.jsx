@@ -1,0 +1,33 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./Pages/Navbar";
+import Home from "./Pages/Home";
+import Footer from "./Pages/Footer";
+import About from "./Pages/About";
+import Award from "./Pages/Award";
+import Service from "./Pages/Service";
+import Video from "./Pages/Video";
+import Gallery from "./Pages/Gallery";
+import Contact from "./Pages/Contact";
+import ScrollToTop from "./Pages/ScrollToTop";
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+           <Route path="/about" element={<About />} />
+             <Route path="/award" element={<Award />} />
+             <Route path="/service" element={<Service />} />
+             <Route path="/video" element={<Video />} />
+               <Route path="/gallery" element={<Gallery />} />
+               <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+};
+
+export default App;
