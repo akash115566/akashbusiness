@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import "../Style/founder.css";
+import "../Style/Founder.css";
 
 const Founder = () => {
 
