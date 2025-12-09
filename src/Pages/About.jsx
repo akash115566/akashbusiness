@@ -221,7 +221,7 @@ The vast knowledge of these two is so great that by establishing many companies,
 
     <section className="sales-section">
       <div className="sales-left">
-        <img src="./mt1.webp" alt="Business" />
+        <img src="/about/g9.webp" alt="Business" />
       </div>
 
       <div className="sales-right">
@@ -274,7 +274,7 @@ The vast knowledge of these two is so great that by establishing many companies,
 
       {/* RIGHT IMAGE */}
       <div className="operation-right">
-        <img src="./mt1.webp" alt="Business" />
+        <img src="/about/m1.webp" alt="Business" />
       </div>
     </section>
 
@@ -287,15 +287,15 @@ The vast knowledge of these two is so great that by establishing many companies,
 
       <div className="case-grid">
         <div className="case-item">
-          <img src="./mt1.webp" alt="Case Study 1" />
+          <img src="/about/aw2.webp" alt="Case Study 1" />
         </div>
 
         <div className="case-item">
-          <img src="./mt1.webp" alt="Case Study 2" />
+          <img src="/about/aw3.webp" alt="Case Study 2" />
         </div>
 
         <div className="case-item">
-          <img src="./mt1.webp" alt="Case Study 3" />
+          <img src="/about/g8.webp" alt="Case Study 3" />
         </div>
         
       </div>
@@ -308,7 +308,7 @@ The vast knowledge of these two is so great that by establishing many companies,
        <section className="innovation-section">
       {/* LEFT IMAGE */}
       <div className="innovation-left">
-        <img src="./mt1.webp" alt="Innovation" />
+        <img src="/about/aw14.webp" alt="Innovation" />
       </div>
 
       {/* RIGHT CONTENT */}

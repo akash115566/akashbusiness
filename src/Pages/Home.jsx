@@ -75,10 +75,10 @@ const Count = ({ end, duration = 1500, label }) => {
 
 
   const images = [
-    "/mt1.webp",
-    "/mt1.webp",
-    "/mt1.webp",
-    "/mt1.webp",
+    "/slide/p5.webp",
+     "/slide/p6.webp",
+   "/slide/p7.webp",
+    "/slide/p8.webp",
   ];
 
 
@@ -214,7 +214,7 @@ const Home = () => {
     <section>
         <div className="why-fail-section">
       <div className="section-image">
-        <img src="/mt1.webp" alt="Entrepreneurship" />
+        <img src="/slide/p1.webp" alt="Entrepreneurship" />
       </div>
       <div className="section-content">
         <h2>Why Entrepreneurship Fail?</h2>
@@ -260,7 +260,7 @@ const Home = () => {
 
         {/* RIGHT IMAGE */}
         <div className="business-right">
-          <img src="/mt1.webp" alt="Business Strategy" />
+          <img src="/slide/p2.webp" alt="Business Strategy" />
         </div>
 
       </div>
@@ -270,7 +270,7 @@ const Home = () => {
 
         {/* LEFT IMAGE */}
         <div className="brand-left">
-          <img src="/mt1.webp" alt="Business Strategy" />
+          <img src="/slide/p3.webp" alt="Business Strategy" />
         </div>
 
         {/* RIGHT CONTENT */}
@@ -328,16 +328,16 @@ const Home = () => {
 
         {/* RIGHT IMAGE */}
         <div className="media-right">
-          <img src="/mt1.webp" alt="Media Strategy" className="media-image" />
+          <img src="slide/p4.webp" alt="Media Strategy" className="media-image" />
         </div>
 
       </div>
     </section>
-     <section className="gallery-section">
-      <h2 className="gallery-heading">Gallery</h2>
-      <div className="gallery-container">
+     <section className="gallery-section1">
+      <h2 className="gallery-heading1">Gallery</h2>
+      <div className="gallery-container1">
         {images.map((img, index) => (
-          <div key={index} className="gallery-item">
+          <div key={index} className="gallery-item1">
             <img src={img} alt={`Gallery ${index + 1}`} />
           </div>
         ))}
@@ -363,7 +363,7 @@ const Home = () => {
 
         {/* RIGHT IMAGE */}
         <div className="media-platform-right">
-          <img src="/mt1.webp" alt="Media Platforms" className="media-platform-image" />
+          <img src="/slide/p9.webp" alt="Media Platforms" className="media-platform-image" />
         </div>
 
       </div>
@@ -383,7 +383,7 @@ const Home = () => {
 
         {/* RIGHT IMAGE */}
         <div className="low-investment-right">
-          <img src="/mt1.webp" alt="Low Investment Strategy" className="low-investment-image" />
+          <img src="/slide/p10.webp" alt="Low Investment Strategy" className="low-investment-image" />
         </div>
 
       </div>

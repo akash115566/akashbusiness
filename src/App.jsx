@@ -9,6 +9,9 @@ import Service from "./Pages/Service";
 import Video from "./Pages/Video";
 import Gallery from "./Pages/Gallery";
 import Contact from "./Pages/Contact";
+import Founder from "./Pages/Founder";
+import Mission from "./Pages/Mission";
+import Whyus from "./Pages/Whyus";
 import ScrollToTop from "./Pages/ScrollToTop";
 
 const App = () => {
@@ -24,6 +27,9 @@ const App = () => {
              <Route path="/video" element={<Video />} />
                <Route path="/gallery" element={<Gallery />} />
                <Route path="/contact" element={<Contact />} />
+                 <Route path="/founder" element={<Founder />} />
+                 <Route path="/mission" element={<Mission />} />
+                 <Route path="/why-us" element={<Whyus />} />
       </Routes>
       <Footer />
     </BrowserRouter>
