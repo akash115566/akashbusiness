@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../style/award.css";
+import "../Style/award.css";
 
-const Awards = () => {
+const Award = () => {
   
 
   const awardsList = [
@@ -186,4 +186,4 @@ const Awards = () => {
   );
 };
 
-export default Awards;
+export default Award;
