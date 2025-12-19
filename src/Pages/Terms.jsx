@@ -1,7 +1,7 @@
 import React from "react";
 import "../Style/terms.css";
 
-const Privacy = () => {
+const Terms = () => {
     return (
         <>
             <section className="banner-section11">
@@ -97,4 +97,4 @@ const Privacy = () => {
     );
 };
 
-export default Privacy;
+export default Terms;
