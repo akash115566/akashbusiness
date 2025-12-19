@@ -98,3 +98,4 @@ const Terms = () => {
 };
 
 export default Terms;
+/* github update test */
