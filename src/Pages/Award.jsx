@@ -129,25 +129,6 @@ const Award = () => {
           ))}
         </div>
 
-        {/* 🔹 Bottom Shape Divider */}
-        {/* <div className="wave-divider1">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path
-              d="M0,0 C300,100 900,0 1200,80 L1200,120 L0,120 Z"
-              fill="#1229acff"
-            />
-            <path
-              d="M0,0 C400,120 800,0 1200,60 L1200,120 L0,120 Z"
-              fill="#0a3799ff"
-              opacity="0.7"
-            />
-            <path
-              d="M0,0 C500,80 700,0 1200,40 L1200,120 L0,120 Z"
-              fill="#e731e4ff"
-              opacity="0.5"
-            />
-          </svg>
-        </div> */}
       </section>
 
 
@@ -156,31 +137,8 @@ const Award = () => {
 
 
 
-      {/* 🔹 Hero Section */}
-      <section className="awards-hero fixed-bg-section" >
-        {/* <div className="overlay">
-          <div className="text-content-left">
-            <h1>🏆 BusinessCare Awards & Recognition</h1>
-            <p>
-              Celebrating BusinessCare’s journey of innovation, impact, and strategic excellence across multiple prestigious awards in India and globally.
-            </p>
-            <button className="cta-btn">Explore Awards</button>
-          </div>
-        </div> */}
 
-        
-
-        {/* 🔹 Wave Divider at Bottom */}
-        {/* <div className="wave-divider">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0 C300,100 900,0 1200,80 L1200,120 L0,120 Z" fill="#fdfaf6" />
-            <path d="M0,0 C400,120 800,0 1200,60 L1200,120 L0,120 Z" fill="#f9f4ef" opacity="0.7" />
-            <path d="M0,0 C500,80 700,0 1200,40 L1200,120 L0,120 Z" fill="#fdfaf6" opacity="0.5" />
-          </svg>
-        </div> */}
-      </section>
-
-      {/* 🔹 Awards List Section */}
+  
      
     </>
   );

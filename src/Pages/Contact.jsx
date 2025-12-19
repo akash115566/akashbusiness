@@ -31,124 +31,110 @@ const Contact = () => {
   return (
     <>
       {/* 🔹 Stylish Static Banner */}
-      <section className="contact-section-fixed-bg">
-        <div className="contact-overlay">
-          <div className="contact-text">
-            <h2>Let’s Connect with MSME Business Care</h2>
-            <p>
-              Have questions about growing your business or want to discuss your
-              next project? Our team is here to guide you with the right marketing
-              and business strategies.
-            </p>
-            {/* <p>
-              📞 Call us: <strong>+91 98765 43210</strong><br />
-              📧 Email: <strong>support@businesscare.in</strong>
-            </p> */}
-            <p>
-              Visit our office or fill out the contact form — we’ll get in touch
-              to boost your business growth journey!
-            </p>
-          
+    <section className="banner-section11">
+                <div className="banner-content11">
+                    <h1>Contact </h1>
+                    <p>Together we can create something all inspirational you need to build.</p>
+                </div>
+
+                {/* Wave Shape Divider */}
+                <div className="banner-wave11">
+                    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path
+                            d="M0,0 
+           C150,100 350,0 600,40 
+           C850,80 1050,120 1200,60 
+           L1200,120 
+           L0,120 Z"
+                        />
+                    </svg>
+                </div>
+            </section>
+
+
+
+
+    <section className="appointment-section">
+      <div className="appointment-container">
+
+        {/* Heading */}
+        <h2 className="appointment-title">FOR APPOINTMENT</h2>
+
+        <div className="appointment-grid">
+          {/* Left Image */}
+          <div className="appointment-image">
+            <img src="/con1.webp" alt="Appointment" />
           </div>
+
+          {/* Right Form */}
+       <form className="appointment-form">
+
+  <div className="form-group">
+    <label>Company Name</label>
+    <input type="text" placeholder="" />
+  </div>
+
+  <div className="form-group">
+    <label>Owner Name</label>
+    <input type="text" />
+  </div>
+
+  <div className="form-group">
+    <label>Mobile No.</label>
+    <input type="tel" />
+  </div>
+
+  <div className="form-group">
+    <label>Website</label>
+    <input type="url" />
+  </div>
+
+  <div className="form-group">
+    <label>Your Email</label>
+    <input type="email" />
+  </div>
+
+  <div className="form-group">
+    <label>Type of Business</label>
+    <input type="text" />
+  </div>
+
+  <div className="form-group">
+    <label>Product</label>
+    <input type="text" />
+  </div>
+
+  <div className="form-group">
+    <label>Monthly Budget</label>
+    <input type="text" />
+  </div>
+
+  <div className="form-group">
+    <label>Business Location</label>
+    <input type="text" />
+  </div>
+
+  <div className="form-group full">
+    <label>Select Meeting Type</label>
+    <select>
+      <option>On Call</option>
+      <option>Video Call</option>
+      <option>Office Meeting</option>
+    </select>
+  </div>
+
+  <button className="submit-btn">Submit</button>
+
+</form>
+
         </div>
-      </section>
 
-
-
-
-      <section className="contact-form-section">
-        <div className="contact-form-overlay">
-          <h2>Get in Touch with MSME Business Care</h2>
-          <p className="form-intro">
-            Fill out the details below and our experts will contact you to plan
-            your business growth journey.
-          </p>
-
-          <form className="contact-form">
-            <div className="form-grid">
-              <input type="text" placeholder="Company Name" required />
-              <input type="text" placeholder="Owner Name" required />
-              <input type="tel" placeholder="Mobile No." required />
-              <input type="text" placeholder="Website" />
-              <input type="email" placeholder="Your Email" required />
-              <input type="text" placeholder="Type of Business" />
-              <input type="text" placeholder="Product" />
-              <input type="text" placeholder="Monthly Budget" />
-              <input type="text" placeholder="Business Location" />
-
-              <select required>
-                <option value="">Select Meeting Type</option>
-                <option value="oncall">On Call</option>
-                <option value="inperson">In Person</option>
-                <option value="online">Online</option>
-              </select>
-            </div>
-
-            <button type="submit" className="submit-btn">
-              Submit
-            </button>
-          </form>
-        </div>
-      </section>
-
-
-
-
-
-      <section className="location-section">
-        <div className="location-content">
-          <h2>Our Office Location</h2>
-          <p>
-            <strong>Address:</strong><br />
-            A-167, Sector-63, Noida, Uttar Pradesh 201301
-          </p>
-          <p>
-            📞 <strong>+91 98765 43210</strong><br />
-            📧 <strong>support@businesscare.in</strong>
-          </p>
-          <p>
-            Visit our office for business consultations, marketing planning, and
-            growth discussions. We’re here to help you scale your business!
-          </p>
-        </div>
-
-        <div className="location-map">
-          <iframe
-            title="BusinessCare Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.9348178755373!2d77.3808420744061!3d28.626556184345202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce59ec6a8b57f%3A0x81b7822b1ed09a58!2sA-167%2C%20Sector%2063%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1697135000000!5m2!1sen!2sin"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </section>
-
-      {/* <div className="contact-container">
-      <h1 className="contact-title">Contact Us</h1>
-      <p className="contact-subtitle">
-        Have questions about our BusinessCare Platform? We’d love to hear from you!
-      </p>
-
-      <form className="contact-form">
-        <label>Your Name</label>
-        <input type="text" placeholder="Enter your name" required />
-
-        <label>Email</label>
-        <input type="email" placeholder="Enter your email" required />
-
-        <label>Message</label>
-        <textarea placeholder="Write your message" rows="5" required></textarea>
-
-        <button type="submit" className="contact-btn">Send Message</button>
-      </form>
-
-      <div className="contact-info">
-        <h2>Our Office</h2>
-        <p>Pooja Movie Creation,Noida, India</p>
-        <p>Email: Poojamoviecraetion@BusinessCare.com</p>
-        <p>Phone: +91 1234566789</p>
       </div>
-    </div> */}
+    </section>
+
+
+
+
 
 
     </>

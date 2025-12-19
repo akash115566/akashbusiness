@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+
 import "../Style/service.css";
 
 const Service = () => {
@@ -47,7 +48,7 @@ const Service = () => {
       {/* 🏆 Awards Section */}
       <section
         className="awards-hero fixed-bg-section"
-   
+
       >
         <div className="overlay">
           <div className="text-content">
@@ -60,125 +61,177 @@ const Service = () => {
               excellence has been recognized across multiple prestigious awards
               in India and globally.
             </p>
-          {/* <Link to="/Contact">  <button className="cta-btn2">Explore Awards</button></Link> */}
+            {/* <Link to="/Contact">  <button className="cta-btn2">Explore Awards</button></Link> */}
           </div>
         </div>
       </section>
 
-      {/* 🔹 Service Banner */}
-      
+      <section className="startup-section">
+        <div className="container">
 
-      {/* 🔹 Hero Section */}
-  
+          <h2 className="main-heading">
+            NEW START UP MARKETING STRATEGY
+          </h2>
 
-      {/* 🔹 Marketing Programs */}
-      <section
-        className="programs-section"
+          <div className="content-wrapper">
 
-      >
-        <h2>NEW START UP MARKETING STRATEGY</h2>
-        <div className="programs-container">
-          <div className="program-card zig-left" >
-            
-            <div className="program-content"  >
+            {/* Left Content */}
+            <div className="left-content">
               <h3>Programmes for Raising New Startups</h3>
+
               <p>
-            In relation to the development of any startup, it is very important to understand their business model and consumer angle.
+                In relation to the development of any startup, it is very important
+                to understand their business model and consumer angle.
               </p>
-              <Link to="tel:7042438293" className="cta-btn">
+
+              <button className="call-btn">
+                <img src="./" alt="Call" />
                 CALL NOW
-              </Link>
+              </button>
             </div>
 
-            <img
-              src="https://businesscare.org.in/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-04-at-15.28.24.png"
-              alt="New Startup Marketing Strategy"
-            />
-
-
-
-
-          </div>
- <h2>OLD BUSINESS GROWTH PROGRAMMES STRATEGY</h2>
-          <div className="program-card zig-right" >
-          
-            <div className="program-content"  >
-              <h3>How to Revive an Old Business</h3>
-              <p>
-              Raising the buzz of the product from door to door, Make everyone need, make everyone rote again and again. Stand out from your competitors and make a name for yourself again.
-              </p>
-              <Link to="tel:7042438293" className="cta-btn">
-                CALL NOW
-              </Link>
+            {/* Right Image */}
+            <div className="right-image">
+              <img src="./about/s1.webp" alt="Startup Strategy" />
             </div>
-
-             <img
-              src="https://businesscare.org.in/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-04-at-15.20.19-e1681987481804.png"
-              alt="Old Business Growth Strategy"
-            />
-
-
-
-
-          </div>
-     <h2>HOW TO TARGET YOUR AUDIENCE</h2>
-          <div className="program-card zig-left" >
-       
-           
-            <div className="program-content"  >
-              <h3>Find Your Real Buyer.</h3>
-              <p>
-               Grab real customers, end buyer's hassle, and
-start your sales
-For More Information
-Contact us: 7042438293
-              </p>
-             <Link to="tel:7042438293" className="cta-btn">
-                CALL NOW
-              </Link>
-            </div>
-
-             <img
-              src="https://businesscare.org.in/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-04-at-15.24.03.png"
-              alt="How to Target Your Audience"
-            />
-
-
-
-
-
-          </div>
-             <h2>HOW TO GROW YOUR SALES</h2>
-          <div className="program-card zig-right" >
-        
-            <div className="program-content"  >
-              <h3>Find your real buyer.</h3>
-              <p>
-             When the need of the customer arises,
-then your business will shine.
-For More Understanding
-Contact us: 7042438293
-              </p>
-              <Link to="tel:7042438293" className="cta-btn">
-                CALL NOW
-              </Link>
-            </div>
-
-            <img
-              src="https://businesscare.org.in/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-04-at-15.19.05.png"
-              alt="How to Grow Your Sales"
-            />
-
-
 
           </div>
         </div>
       </section>
 
-      {/* 🔹 Why Choose Us */}
-    
 
-   
+
+
+
+
+
+
+
+      <section className="startup-section" style={{background:"#e9aa21ff"}}>
+        <div className="container">
+
+          <h2 className="main-heading">
+           OLD BUSINESS GROWTH PROGRAMMES STRATEGY
+          </h2>
+
+          <div className="content-wrapper">
+
+            {/* Left Content */}
+            <div className="left-content">
+              <h3>How to Revive an Old Business</h3>
+
+              <p>
+                Raising the buzz of the product from door to door, Make everyone need, 
+                make everyone rote again and again. Stand out from your competitors
+                 and make a name for yourself again.
+              </p>
+
+              <button className="call-btn">
+                <img src="./" alt="Call" />
+                CALL NOW
+              </button>
+            </div>
+
+            {/* Right Image */}
+            <div className="right-image">
+              <img src="./about/s2.webp" alt="Startup Strategy" />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section className="startup-section" style={{background:"#50032aff"}}>
+        <div className="container">
+
+          <h2 className="main-heading">
+            HOW TO TARGET YOUR AUDIENCE
+          </h2>
+
+          <div className="content-wrapper">
+
+            {/* Left Content */}
+            <div className="left-content">
+              <h3>Find Your Real Buyer.</h3>
+
+              <p>
+                Grab real customers, end buyer's hassle, and
+                start your sales
+                For More Information
+                Contact us: 7042438293
+              </p>
+
+              <button className="call-btn">
+                <img src="./" alt="Call" />
+                CALL NOW
+              </button>
+            </div>
+
+            {/* Right Image */}
+            <div className="right-image">
+              <img src="./about/s3.webp" alt="Startup Strategy" />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <section className="startup-section" style={{background:"#e9aa21ff"}}>
+        <div className="container">
+
+          <h2 className="main-heading">
+            HOW TO GROW YOUR SALES
+          </h2>
+
+          <div className="content-wrapper">
+
+            {/* Left Content */}
+            <div className="left-content">
+              <h3>Find your real buyer.</h3>
+
+              <p>
+                When the need of the customer arises,
+                then your business will shine.
+                For More Understanding
+                Contact us: 7042438293
+              </p>
+
+              <button className="call-btn">
+                <img src="./" alt="Call" />
+                CALL NOW
+              </button>
+            </div>
+
+            {/* Right Image */}
+            <div className="right-image">
+              <img src="./about/s4.webp" alt="Startup Strategy" />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
     </>
   );
 };

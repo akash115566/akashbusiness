@@ -13,6 +13,8 @@ import Founder from "./Pages/Founder";
 import Mission from "./Pages/Mission";
 import Whyus from "./Pages/Whyus";
 import ScrollToTop from "./Pages/ScrollToTop";
+import Privacy from "./Pages/Privacy";
+import Terms from "./Pages/Terms";
 
 const App = () => {
   return (
@@ -30,6 +32,8 @@ const App = () => {
                  <Route path="/founder" element={<Founder />} />
                  <Route path="/mission" element={<Mission />} />
                  <Route path="/why-us" element={<Whyus />} />
+                 <Route path="/privacy" element={<Privacy />} />
+                 <Route path="/terms" element={<Terms />} />
       </Routes>
       <Footer />
     </BrowserRouter>

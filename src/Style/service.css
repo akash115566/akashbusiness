@@ -143,202 +143,97 @@ body, #root {
 
 
 
+.startup-section {
+  background-color: #50032aff; /* orange */
+  padding: -40px 0;   /* height kam */
 
-
-.programs-section {
-  /* padding: 80px 2%; */
-  background: #42035f;
-  border: 3px solid transparent;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-.programs-section h2{
-text-align: center;
-  color: white;
-  font-size: 35px;
 }
 
-/* Remove Fixed Height --- MAIN PROBLEM */
-.programs-container {
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  gap: 60px;
-  height: auto !important;
+  align-items: self-start;
+  justify-content: center;
 }
 
-/* Card */
-.program-card {
+.main-heading {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+.content-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;  /* TOP align */
   justify-content: space-between;
   gap: 40px;
-  background: #fff;
-  border-radius: 12px;
-  padding: 0px;
-  flex-wrap: wrap;   /* Important */
-  width: 100%;
-
-
 }
 
-/* Image */
-.program-card img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-}
-
-/* Text */
-.program-content {
+/* Left */
+.left-content {
   flex: 1;
-  padding: 10px;
-  width: 100%;
- line-height: 50px;
-}
-
-.program-content h3{
-  font-size: 3rem;
-  color: rgb(12, 12, 12);
-}
-.program-content p{
-  font-size: 1.2rem;
-  color: rgb(54, 54, 54);
-  margin: 20px 0;
-}
-.cta-btn{
-  text-decoration: none;
- align-self: center;
-}
-.cta-btn:hover{
-  color: white;
-}
-
-/* Zig zag */
-.zig-left { flex-direction: row; }
-.zig-right { flex-direction: row-reverse; }
-
-/* Tablet */
-@media (max-width: 768px) {
-  .program-card {
-    flex-direction: column !important;
-    text-align: center;
-    
-  }
-
-  .program-card img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-/* MOBILE — FINAL GUARANTEED FIX */
-@media (max-width: 480px) {
-
-  .program-card,
-  .zig-left,
-  .zig-right {
-    flex-direction: column !important;
-    width: 100%;
-   
-  }
-  .text-content left-align h2{
-    font-size: 5px;
-  }
-
-  .program-card img {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain;
-  }
-  .img-wrap {
-  width: 100%;
-  max-width: 400px;
-  border-bottom: 3px solid black;   /* ⭐ Only image ke niche */
-}
-.img-wrap img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-
-  .program-content {
-    width: 100% !important;
-    padding: 10px 0;
-  }
-}
-
-
-
-
-
-
-
-/* WHY SECTION */
-.why-section {
-     background: linear-gradient(135deg, #2563eb, #9333ea);
-   border: 3px  solid linear-gradient(135deg, #2563eb, #9333ea);
-   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  padding: 80px 5%;
-  text-align: center;
-
-}
-.why-section ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 30px;
-  width: 300px;
-  text-align: center;
-margin: auto;
-}
-.why-section li {
-  
-  margin: 10px 0;
-  font-size: 1.1rem;
-  color: white;
-  text-align: start;
-}
-
-/* CTA */
-.cta-section {
-    background: linear-gradient(135deg, #2563eb, #9333ea);
-   border: 3px  solid linear-gradient(135deg, #2563eb, #9333ea);
-   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   color: #fff;
-  text-align: center;
-  padding: 80px 20px;
-}
-.cta-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-.btn-primary:hover{
- color: white;
- background-color: orange;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .program-card {
+.left-content h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.left-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Call Button */
+.call-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.call-btn img {
+  width: 20px;
+}
+
+.call-btn:hover {
+  background: #fff;
+  color: #ff8c00;
+}
+
+/* Right Image */
+.right-image {
+    flex: 1;
+  display: flex;
+  align-items: flex-end;   /* 👈 image bottom me */
+}
+
+.right-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 992px) {
+  .content-wrapper {
     flex-direction: column;
+    text-align: center;
   }
-  .program-card img {
-    width: 100%;
-    height: 300px;
+
+  .call-btn {
+    justify-content: center;
   }
 }
-@media (max-width: 600px) {
-  .hero-section h1 {
-    font-size: 2rem;
-  }
-  .expertise-card {
-    padding: 20px;
-  }
-  .program-card img {
-    height: 250px;
-  }
-}
-
-
-

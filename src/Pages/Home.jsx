@@ -3,11 +3,20 @@ import Slider from "react-slick";
 import { FaArrowRight } from "react-icons/fa"; // react-icons का इस्तेमाल
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import {
+  FaRocket,
+  FaChartLine,
+  FaUsers,
+  FaShoppingCart,
+  FaBullhorn,
+  FaLayerGroup,
+} from "react-icons/fa";
+
 import "../Style/index.css"
 
 
 
-const Count = ({ end, duration = 1500, label }) => {
+const Count = ({ end, duration = 7500, label }) => {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -64,14 +73,15 @@ const Count = ({ end, duration = 1500, label }) => {
 
 
   //====================//
-  const logosData = [
-  { img: "/assets/logo1.png", text: "NEW STARTUPS MARKETING STRATEGY", button: "Learn More" },
-  { img: "/assets/logo2.png", text: "OLD BUSINESS GROWTH PROGRAME STRATEGY", button: "Learn More" },
-  { img: "/assets/logo3.png", text: "HOW TO FIND YOUR TARGET AUDIENCE", button: "Learn More" },
-  { img: "/assets/logo4.png", text: "HOW TO GROW YOUR SALES", button: "Learn More" },
-  { img: "/assets/logo5.png", text: "LOW INVESTMENT BIG BUZZ", button: "Learn More" },
-  { img: "/assets/logo6.png", text: "HOW TO CHOOSE RIGHT MEDIA PLATFORMS", button: "Learn More" },
+const logosData = [
+  { icon: FaRocket, text: "NEW STARTUPS MARKETING STRATEGY", button: "SEE MORE" },
+  { icon: FaChartLine, text: "OLD BUSINESS GROWTH PROGRAM STRATEGY", button: "SEE MORE" },
+  { icon: FaUsers, text: "HOW TO FIND YOUR TARGET AUDIENCE", button: "SEE MORE" },
+  { icon: FaShoppingCart, text: "HOW TO GROW YOUR SALES", button: "SEE MORE" },
+  { icon: FaBullhorn, text: "LOW INVESTMENT BIG BUZZ", button: "SEE MORE" },
+  { icon: FaLayerGroup, text: "HOW TO CHOOSE RIGHT MEDIA PLATFORMS", button: "SEE MORE" },
 ];
+
 
 
   const images = [
@@ -104,6 +114,51 @@ const Home = () => {
 
     return () => clearInterval(counter);
   }, []);
+
+
+  const mediaPoints = [
+    "Prime time TV channel placements",
+    "Targeted digital & social media ads",
+    "Strategic news & business media coverage",
+    "Brand visibility across multi-platforms",
+    "ROI-focused media planning",
+  ];
+
+  const duplicatedImages = [
+    "/slide/pur1.webp",
+      "/slide/pur2.webp",
+    "/slide/pur3.webp",
+      "/slide/pur4.webp",
+  ];
+
+    const carouselRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Auto-slide every 2 seconds
+   useEffect(() => {
+    const interval = setInterval(() => {
+      const nextIndex = (activeIndex + 1) % images.length;
+      setActiveIndex(nextIndex);
+      if (carouselRef.current) {
+        carouselRef.current.scrollTo({
+          left: nextIndex * carouselRef.current.offsetWidth,
+          behavior: "smooth",
+        });
+      }
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [activeIndex]);
+
+  // Manual button click
+  const handleClick = (index) => {
+    setActiveIndex(index);
+    carouselRef.current.scrollTo({
+      left: index * carouselRef.current.offsetWidth,
+      behavior: "smooth",
+    });
+  };
+
 
   return (
     <>
@@ -156,61 +211,87 @@ const Home = () => {
 
     </section>
 
+<section
+  className="purpose-section"
+ 
+>
+  <div className="purpose-container">
+    <div className="purpose-content">
+      <h1>
+        ज्यादातर बिजनेसमैन बिजनेस एक्सपेंशन के लिए{" "}
+        <span>पुरानी तकनीकों</span> का इस्तेमाल करते हैं
+      </h1>
 
-       <section className="expansion-section">
+      <p>
+        जिसके चलते बिजनेस <strong>लॉस</strong> में चले जाते हैं।
+        व्यापार की छोटी सी रणनीति की गलतियाँ आपको <strong>घाटे</strong> में ला सकती हैं।
+      </p>
 
-      {/* TOP TEXT */}
-      <div className="expansion-top-text">
-        ज्यादातर बिजनेसमैन बिजनेस एक्सपेंशन के लिए पुरानी तकनीकों का इस्तेमाल करते हैं। जिसके चलते बिजनेस लॉस में चले जाते हैं, व्यापार की एक छोटी सी रणनीति की गलतियाँ आपको घाटे में ला सकती है।
-      </div>
+      <p className="english-text">
+        Most business owners use outdated methods for business expansion, which can lead to losses.
+        Even small strategy mistakes can put your business in a loss.
+      </p>
 
-      {/* BOTTOM LEFT-RIGHT */}
-      <div className="expansion-bottom">
-
-        {/* LEFT CONTENT */}
-        <div className="expansion-left">
-          <h3>Come To Us And We Will Show You How To Take Your Company To New Heights</h3>
+      <div className="media-container">
+        {/* Left Content */}
+        <div className="media-left">
+          <h2>Media Placement Strategy</h2>
           <ul>
-            <li>Media placements strategy</li>
-            <li>Television media promotion & advertising</li>
-            <li>TV commercial placements on national tv channels as per the product</li>
-            <li>TV ad films development as per the product</li>
-            <li>Concrete innovative ideas for tv commercial ads</li>
-            <li>Radio ads planning & placements</li>
-            <li>IPL specials promotions for exclusive products</li>
-            <li>OTT platforms promotions</li>
-            <li>Airports promotions pan india</li>
-            <li>Metro promotions pan india</li>
-            <li>PVR cinemas pan india</li>
-            <li>In films tv serials promotions & integrations</li>
-          </ul>
-          <button className="btn-primary">Let's Work Together</button>
-        </div>
-
-        {/* RIGHT SLIDER */}
-        <div className="expansion-right">
-          <Slider {...sliderSettings}>
-            {sliderImages.map((img, index) => (
-              <div key={index}>
-                <img src={img} alt={`Slide ${index + 1}`} className="slider-img"/>
-              </div>
+            {mediaPoints.map((point, index) => (
+              <li key={index}>{point}</li>
             ))}
-          </Slider>
+          </ul>
         </div>
 
+        {/* Right Slider */}
+         <div>
+      <div className="carousel" ref={carouselRef}>
+        {images.map((img, i) => (
+          <div className="carousel-card" key={i}>
+            <img src={img} alt={`slide ${i}`} />
+          </div>
+        ))}
       </div>
-    </section>
-    <section>
-          <div className="logos-section">
-      {logosData.map((logo, index) => (
-        <div key={index} className="logo-card">
-          <img src={logo.img} alt={logo.text} className="logo-image" />
-          <p className="logo-text">{logo.text}</p>
-          <button className="logo-button">{logo.button}</button>
-        </div>
-      ))}
+
+      {/* Toggle Buttons */}
+      <div className="carousel-buttons">
+        {images.map((_, i) => (
+          <button
+            key={i}
+            className={i === activeIndex ? "active" : ""}
+            onClick={() => handleClick(i)}
+          ></button>
+        ))}
+      </div>
     </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+    <section  className="logos-wrapper">
+  <div className="logos-section">
+    {logosData.map((item, index) => {
+      const Icon = item.icon;
+
+      return (
+        <div className="logo-card" key={index}>
+          <Icon size={50} color="orange" />
+          <h3>{item.text}</h3>
+          <button>{item.button}</button>
+        </div>
+      );
+    })}
+  </div>
+</section>
+
     <section>
         <div className="why-fail-section">
       <div className="section-image">
@@ -221,7 +302,7 @@ const Home = () => {
         <p>
         Insufficient marketing, wrong platforms, a lacklustre business plan or even wrong legal structure can prevent your business from thriving. The reasons why many entrepreneurs fail early are endless, some being unique tothe business owner. So, don’t waste time meet us we will design a complete strategy to make you king in yourindustry, to grow your business sales, enhance your distribution network.
         </p>
-        <button>Get Appointment</button>
+        <button className='button1'>Get Appointment</button>
       </div>
     </div>
     </section>
@@ -246,16 +327,16 @@ const Home = () => {
 
           <div className="bullet-box">
             <ul>
-              <li>Business Growth Planning</li>
-              <li>Marketing & Media Strategy</li>
+              <li>Business Advisor Counsellor & Consultant.</li>
+              <li>Pan India More Than Thousand Business Owners  Taking His Advises For Business Enhacement</li>
             </ul>
             <ul>
-              <li>Brand Building Techniques</li>
-              <li>Customer Reach Expansion</li>
+              <li>Business Owners Rely On Ankur Bansal ‘s Strategies.</li>
+              <li>More Than Thousands of Busines Owners and team Implememting What Ankur ‘s Bansal Taught them.</li>
             </ul>
           </div>
 
-          <button className="business-btn">Book Consultation</button>
+          <button className="business-btn"> LET'S WORK TOGETHER</button>
         </div>
 
         {/* RIGHT IMAGE */}
@@ -296,7 +377,7 @@ const Home = () => {
             <li>Product sales growth strategy</li>
           </ul>
 
-          <button className="brand-btn">Link</button>
+          <button className="brand-btn">Get Appointment</button>
         </div>
 
       </div>
@@ -323,7 +404,7 @@ const Home = () => {
             will help you to make your business a big brand of the country by our unique techniques
             and ideas.
           </p>
-          <button className="media-btn">Learn More</button>
+          <button className="media-btn">Get Appointment</button>
         </div>
 
         {/* RIGHT IMAGE */}
@@ -358,7 +439,7 @@ const Home = () => {
             Will you tell them to be bigger just by seeing the competitors,  
             or by doing what’s right marketing planning, you will make your brand bigger than them.
           </p>
-          <button className="media-platform-btn">Call Now</button>
+          <button className="media-platform-btn">CALL NOW</button>
         </div>
 
         {/* RIGHT IMAGE */}
@@ -378,7 +459,7 @@ const Home = () => {
           <p className="low-investment-text">
             Can your business flourish without spending a lot of money? What is the best way by which money will be spent less, and your name will be covered in the top 10.
           </p>
-          <button className="low-investment-btn">Call Now</button>
+          <button className="low-investment-btn">CALL NOW</button>
         </div>
 
         {/* RIGHT IMAGE */}

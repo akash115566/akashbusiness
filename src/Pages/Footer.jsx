@@ -20,10 +20,13 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <ul>
               <li><Link to="/about">About</Link></li>
-              <li><Link to="/">Awards</Link></li>
-              <li><Link to="/">Mission & Vision</Link></li>
-              <li><Link to="/">Our Founders</Link></li>
-              <li><Link to="/">Why Business Care</Link></li>
+              <li><Link to="/award">Award</Link></li>
+              <li><Link to="/mission">Mission & Vision</Link></li>
+              <li><Link to="/founder">Our Founders</Link></li>
+              <li><Link to="/why-us">Why Business Care</Link></li>
+               <li><Link to="/privacy">Privacy & Policy</Link></li>
+                 <li><Link to="/terms">Terms and Conditions</Link></li>
+                       
             </ul>
           </div>
 
@@ -31,11 +34,13 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Services</h3>
             <ul>
-               <li><Link to="/">Blog</Link></li>
-              <li><Link to="/">SalesPage</Link></li>
-              <li><Link to="/">StrategyPage</Link></li>
-              <li><Link to="/">Privacy & Policy</Link></li>
-              <li><Link to="/">Terms and Conditions</Link></li>
+               <li><Link to="/service">Grow Your Sales</Link></li>
+              <li><Link to="/home">Low Investment Big Buzz</Link></li>
+              <li><Link to="/service">Find your Target Audience</Link></li>
+              <li><Link to="/service">Startups Marketing Strategy</Link></li>
+              <li><Link to="/service">Business Growth Programe Strategy</Link></li>
+              <li><Link to="/service">Choose Right Media Platforms</Link></li>
+      
             </ul>
           </div>
 
