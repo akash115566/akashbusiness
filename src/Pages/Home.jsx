@@ -125,10 +125,11 @@ const Home = () => {
   ];
 
   const duplicatedImages = [
-    "/slide/pur1.webp",
-      "/slide/pur2.webp",
-    "/slide/pur3.webp",
-      "/slide/pur4.webp",
+    "./slide/pur1.webp",
+      "./slide/pur2.webp",
+    "./slide/pur3.webp",
+      "./slide/pur4.webp",
+        "/slide/pur4.webp",
   ];
 
     const carouselRef = useRef(null);
@@ -244,26 +245,16 @@ const Home = () => {
         </div>
 
         {/* Right Slider */}
-         <div>
-      <div className="carousel" ref={carouselRef}>
-        {images.map((img, i) => (
-          <div className="carousel-card" key={i}>
-            <img src={img} alt={`slide ${i}`} />
-          </div>
-        ))}
+      <div className="media-right">
+  <div className="carousel" ref={carouselRef}>
+    {images.map((img, i) => (
+      <div className="carousel-card" key={i}>
+        <img src={img} alt={`slide ${i}`} />
       </div>
+    ))}
+  </div>
+</div>
 
-      {/* Toggle Buttons */}
-      <div className="carousel-buttons">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            className={i === activeIndex ? "active" : ""}
-            onClick={() => handleClick(i)}
-          ></button>
-        ))}
-      </div>
-    </div>
       </div>
     </div>
   </div>
@@ -283,7 +274,7 @@ const Home = () => {
 
       return (
         <div className="logo-card" key={index}>
-          <Icon size={50} color="orange" />
+          <Icon size={50} color="#EBB02D" />
           <h3>{item.text}</h3>
           <button>{item.button}</button>
         </div>
@@ -450,21 +441,21 @@ const Home = () => {
       </div>
     </section>
 
-      <section className="low-investment-section">
-      <div className="low-investment-container">
+      <section className="low-investment-section1">
+      <div className="low-investment-container1">
 
         {/* LEFT CONTENT */}
-        <div className="low-investment-left">
-          <h2 className="low-investment-heading">Low Investment, Big Buzz</h2>
-          <p className="low-investment-text">
+        <div className="low-investment-left1">
+          <h2 className="low-investment-heading1">Low Investment, Big Buzz</h2>
+          <p className="low-investment-text1">
             Can your business flourish without spending a lot of money? What is the best way by which money will be spent less, and your name will be covered in the top 10.
           </p>
-          <button className="low-investment-btn">CALL NOW</button>
+          <button className="low-investment-btn1">CALL NOW</button>
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="low-investment-right">
-          <img src="/slide/p10.webp" alt="Low Investment Strategy" className="low-investment-image" />
+        <div className="low-investment-right1">
+          <img src="/slide/p10.webp" alt="Low Investment Strategy" className="low-investment-image1" />
         </div>
 
       </div>

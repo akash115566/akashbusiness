@@ -57,7 +57,7 @@ const Founder = () => {
 
 
 
-            <section className="founder-section" style={{ background: "#430648ff" }} >
+            <section className="founder-section" style={{ background: "#51073B" }} >
                 {/* Background overlay */}
                 <div className="founder-bg-overlay">
                     <div className="founder-container">

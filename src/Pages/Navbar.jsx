@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "../Style/navbar.css";
 
 import {
   FaFacebookF,  FaTwitter,  FaLinkedinIn,  FaInstagram,  FaYoutube,  FaSearch,} from "react-icons/fa";
@@ -24,7 +25,8 @@ const Navbar = () => {
   return (
     <>
       {/* Top Info Bar */}
-    <div
+   <div
+  className="top-info-bar"
   style={{
     background: "#111",
     color: "#fff",
@@ -35,6 +37,7 @@ const Navbar = () => {
     fontSize: "14px",
   }}
 >
+
   {/* Left */}
   <div>
     A-111, Sec-63, Noida UP-201301 | +91 7042-438-293
@@ -105,7 +108,8 @@ const Navbar = () => {
   /></div>
 
           {/* Navbar Links */}
-          <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+         <div className="nav-links" style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+
             <Link to="/" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Home</Link>
             <div onMouseEnter={() => setIsAboutOpen(true)} onMouseLeave={() => setIsAboutOpen(false)} style={{ position: "relative" }}>
               <Link to="/about" style={{ ...linkStyle, display: "flex", alignItems: "center", color:"#111" }}>About ▾</Link>

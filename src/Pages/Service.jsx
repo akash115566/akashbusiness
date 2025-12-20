@@ -107,7 +107,7 @@ const Service = () => {
 
 
 
-      <section className="startup-section" style={{background:"#e9aa21ff"}}>
+      <section className="startup-section" style={{background:"#EBB02D"}}>
         <div className="container">
 
           <h2 className="main-heading">
@@ -153,7 +153,7 @@ const Service = () => {
 
 
 
-      <section className="startup-section" style={{background:"#50032aff"}}>
+      <section className="startup-section" style={{background:"#51073B"}}>
         <div className="container">
 
           <h2 className="main-heading">
@@ -195,7 +195,7 @@ const Service = () => {
 
 
 
-      <section className="startup-section" style={{background:"#e9aa21ff"}}>
+      <section className="startup-section" style={{background:"#EBB02D"}}>
         <div className="container">
 
           <h2 className="main-heading">
