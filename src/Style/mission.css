@@ -150,7 +150,7 @@
 .mission-box,
 .vision-box {
   width: 100%;
-    background-color: #fff;
+    background-color: #EBB02D;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -210,6 +210,18 @@
 
 /* Tablets */
 @media (max-width: 992px) {
+  .mission-box,
+  .vision-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .mission-image,
+  .vision-image {
+    align-items: center;
+  }
+
   .mission-text h2,
   .vision-text h2 {
     font-size: 2rem;
@@ -220,32 +232,46 @@
     font-size: 1rem;
   }
 
-  .mission-box,
-  .vision-box {
-    gap: 40px;
-  }
-
   .mission-image img,
   .vision-image img {
-    max-width: 320px;
+
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 20;
   }
 }
 
 /* Mobile up to 600px */
 @media (max-width: 600px) {
-  .mission-section {
-    padding: 60px 5%;
-  }
-
-  .mission-container {
-    gap: 60px;
-  }
-
   .mission-box,
   .vision-box {
-    flex-direction: column;
-    text-align: center;
     gap: 30px;
+  }
+
+  .mission-text,
+  .vision-text {
+    flex: unset;
+  }
+
+  .mission-image,
+  .vision-image {
+    flex: unset;
+    margin-top: 20px;
+  }
+
+  .mission-image img,
+  .vision-image img {
+  
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 10;
   }
 
   .mission-text h2,
@@ -257,47 +283,44 @@
   .vision-text p {
     font-size: 0.95rem;
   }
-
-  .mission-image img,
-  .vision-image img {
-    max-width: 280px;
-  }
 }
 
-/* Small Mobile up to 480px */
+
+/* 480px and below */
 @media (max-width: 480px) {
-  .mission-section {
-    padding: 50px 5%;
-  }
-
-  .mission-container {
-    gap: 40px;
-  }
-
-  .mission-box,
-  .vision-box {
-    gap: 25px;
-  }
-
-  .mission-text h2,
-  .vision-text h2 {
-    font-size: 1.6rem;
-  }
-
-  .mission-text p,
-  .vision-text p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
   .mission-image img,
   .vision-image img {
-    width: 90%;
-    max-width: 250px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
     border-radius: 15px;
-    object-fit: cover;
+    padding: 0;
   }
 }
 
+/* 360px and below */
+@media (max-width: 360px) {
+  .mission-image img,
+  .vision-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    padding: 0;
+  }
+}
 
-
+/* 320px and below */
+@media (max-width: 320px) {
+  .mission-image img,
+  .vision-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 0;
+  }
+}

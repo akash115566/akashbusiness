@@ -133,36 +133,42 @@
     max-width: 300px;
   }
 }
-
 @media (max-width: 600px) {
   .founder-section {
-    padding: 50px 5%;
+    /* padding: 50px 5%; */
   }
 
-  .founder-text h2 {
-    font-size: 2rem;
+  .founder-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    min-height: 600px; /* ensure container ka height hai */
+    display: flex;
   }
 
-  .founder-text h3 {
-    font-size: 1.2rem;
+  .founder-text {
+    flex: 1;
   }
 
-  .founder-text p {
-    font-size: 0.95rem;
+  .founder-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: flex-end;     /* bottom touch */
+    margin-top: auto;          /* push image to bottom */
   }
 
-  .founder-btn {
-    padding: 10px 22px;
-    font-size: 0.9rem;
+  .founder-image img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 15px;
   }
 }
 
 
 /* 📲 Extra Small (max-width: 480px) */
 @media (max-width: 480px) {
-  .founder-section {
-    padding: 40px 5%;
-  }
+ 
 
   .founder-container {
     gap: 25px;
@@ -183,8 +189,8 @@
   }
 
   .founder-image img {
-    width: 90%;
-    max-width: 240px;
+    width: 100%;
+    max-width: 250px;
     border-radius: 15px;
   }
 

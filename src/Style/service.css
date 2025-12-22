@@ -143,97 +143,150 @@ body, #root {
 
 
 
-.startup-section {
-  background-color: #51073B; /* orange */
-  padding: -40px 0;   /* height kam */
-
+.low-investment-section11 {
+  width: 100%;
+  background-color: #51073B;
+  /* padding removed so height follows image */
 }
 
-
-.container {
-  width: 90%;
+.low-investment-container11 {
   max-width: 1200px;
   margin: auto;
   display: flex;
-  align-items: self-start;
-  justify-content: center;
-}
-
-.main-heading {
-  text-align: center;
-  color: #fff;
-  font-size: 3rem;
-  margin-top: 40px;
-  font-weight: 700;
-}
-
-.content-wrapper {
-  display: flex;
-  align-items: flex-start;  /* TOP align */
   justify-content: space-between;
+  align-items: stretch; /* stretch columns same height */
   gap: 40px;
+  flex-wrap: wrap;
 }
-
-/* Left */
-.left-content {
-  flex: 1;
+.low-investment-container11 h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
   color: #fff;
+  margin: 30px 0 50px;
+  letter-spacing: 1px;
+  line-height: 1.3;
 }
 
-.left-content h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
+
+/* LEFT CONTENT */
+.low-investment-left11 {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start; /* vertical center */
+  padding: 20px 0;
 }
 
-.left-content p {
-  font-size: 16px;
-  line-height: 1.7;
+.low-investment-heading11 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+   /* border: 2px solid #fff; */
+  padding: 10px;
+}
+
+.low-investment-text11 {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
   margin-bottom: 25px;
 }
 
-/* Call Button */
-.call-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 25px;
-  background: transparent;
+.low-investment-btn11 {
+  font-size: 20px;
+  background-color: #51073B;
   color: #fff;
-  border: 2px solid #fff;
-  font-size: 16px;
+  border: 1px solid #fff;
+  padding: 15px 18px;
+  border-radius: 20px;
   cursor: pointer;
+  width: 200px;
+  margin: 0 auto;          /* 🔑 center */
+  display: block;          /* 🔑 required */
   transition: 0.3s ease;
 }
 
-.call-btn img {
-  width: 20px;
-}
 
-.call-btn:hover {
-  background: #fff;
-  color: #ff8c00;
-}
 
-/* Right Image */
-.right-image {
-    flex: 1;
+/* RIGHT IMAGE */
+.low-investment-right11 {
+  flex: 1;
+  min-width: 300px;
   display: flex;
-  align-items: flex-end;   /* 👈 image bottom me */
+  align-items: flex-end; /* bottom align image */
 }
 
-.right-image img {
+.low-investment-image11 {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-/* 📱 Responsive */
-@media (max-width: 992px) {
-  .content-wrapper {
+/* =================== RESPONSIVE =================== */
+@media (max-width: 768px) {
+  .low-investment-container11 {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
 
-  .call-btn {
-    justify-content: center;
+  .low-investment-left11 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .low-investment-right11 {
+    align-items: center;
   }
 }
+/* ===============================
+   FIX for <= 577px
+================================ */
+@media (max-width: 577px) {
+
+  .low-investment-section11 {
+    padding-bottom: 0;        /* 🔑 section bottom gap remove */
+  }
+
+  .low-investment-container11 {
+    padding-bottom: 0;        /* 🔑 container bottom gap remove */
+    margin-bottom: 0;
+  }
+
+  .low-investment-right11 {
+    display: flex;
+    align-items: flex-end;    /* 🔑 image bottom se chipki rahe */
+    height: 240px;            /* 🔑 fixed height (adjustable) */
+    padding: 0;               /* 🔑 no inner gap */
+  }
+
+  .low-investment-image11 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;                /* 🔑 image default margin remove */
+    display: block;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .low-investment-heading11 {
+    font-size: 22px;
+  }
+
+  .low-investment-text11 {
+    font-size: 14px;
+  }
+
+  .low-investment-btn11 {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+

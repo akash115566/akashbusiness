@@ -66,6 +66,9 @@ const Whyus = () => {
 
 
       <section className="game-changer-section9" >
+        <div className="image9">
+          <img src="/about/aw4.webp" alt="Business Coaching" />
+        </div>
         <div className="content9">
           <h2>Game Changer of Business</h2>
           <p>Are you a new startup? Are you facing problems improving your sales growth?</p>
@@ -83,31 +86,30 @@ const Whyus = () => {
           </ul>
           {/* <button>READ MORE</button> */}
         </div>
-        <div className="image9">
-          <img src="/about/aw4.webp" alt="Business Coaching" />
-        </div>
+        
       </section>
       
-       <section className="case-section9">
-      <div className="case-header9">
-     
-      </div>
+        <section className="case-section1">
+      {/* <div className="case-header">
+        <h2>Case Studies</h2>
+        <p>We explore some of the latest trends and strategies</p>
+      </div> */}
 
-      <div className="case-grid9">
-        <div className="case-item9">
+      <div className="case-grid1">
+        <div className="case-item1">
           <img src="/about/aw2.webp" alt="Case Study 1" />
         </div>
 
-        <div className="case-item9">
+        <div className="case-item1">
           <img src="/about/aw3.webp" alt="Case Study 2" />
         </div>
 
-        <div className="case-item9">
+        <div className="case-item1">
           <img src="/about/g8.webp" alt="Case Study 3" />
         </div>
         
       </div>
-       
+      
     </section>
     </>
   );

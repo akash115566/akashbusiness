@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.form-page {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+}
+
+/* ================= BANNER ================= */
+.form-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid orange;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.banner-left img {
+  height: 60px;
+}
+
+.banner-center {
+  text-align: center;
+}
+
+.banner-center h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.banner-center p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.banner-right {
+  text-align: right;
+  font-size: 14px;
+}
+
+/* ================= SECTION TITLE ================= */
+.section-title {
+  text-align: center;
+  background: orange;
+  color: #000;
+  padding: 8px;
+  margin: 25px 0 15px;
+  font-weight: bold;
+  border: 2px solid #000;
+  letter-spacing: 2px;
+}
+
+/* ================= FORM GRID ================= */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+}
+
+.field {
+  font-size: 14px;
+}
+
+.line {
+  border-bottom: 1px solid #000;
+  height: 22px;
+}
+
+/* ================= SEGMENT ================= */
+.segment-note {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.segment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .form-banner {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .banner-right {
+    text-align: center;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .segment-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+.telecast-section {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* Top Heading */
+.telecast-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 2px solid orange;
+  background-color: orange;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* Segment Section */
+.segment-section {
+  border: 2px solid orange;
+  background-color: #fff7e6;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.segment-section h2 {
+  text-align: left;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #ff6600;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Declaration Section */
+.declaration-section {
+  border: 2px solid orange;
+  background-color: #fff7e6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.declaration-section h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ff6600;
+}
+
+.declaration-section p {
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.declaration-section ul {
+  list-style: decimal;
+  padding-left: 20px;
+  color: #333;
+}
+
+.declaration-section li {
+  margin-bottom: 10px;
+}
+
+/* Platform checkboxes */
+.platforms-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.platform-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .segment-section,
+  .declaration-section {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .telecast-heading {
+    font-size: 1.5rem;
+  }
+
+  .segment-section h2,
+  .declaration-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .checkbox-group label,
+  .declaration-section li {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Container Section */
+.legal-section {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Disclaimer Text */
+.disclaimer-text {
+  margin-bottom: 30px;
+}
+
+.disclaimer-text h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff6600;
+  margin-bottom: 20px;
+}
+
+.disclaimer-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Consent Box */
+.consent-box {
+  border: 2px solid orange;
+  background-color: orange;
+  padding: 25px 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.consent-box h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.consent-box form p {
+  margin-bottom: 15px;
+}
+
+.consent-box form input[type="text"],
+.consent-box form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.consent-box button {
+  background-color: #fff;
+  color: orange;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.consent-box button:hover {
+  background-color: #ffc066;
+  color: #fff;
+}
+
+/* Download/Print Button */
+.consent-box .print-btn {
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .disclaimer-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .consent-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .consent-box form input[type="text"],
+  .consent-box form input[type="date"] {
+    padding: 9px;
+  }
+
+  .consent-box button {
+    padding: 10px 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .legal-section {
+    padding: 20px 15px;
+  }
+
+  .disclaimer-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .disclaimer-text p {
+    font-size: 0.95rem;
+  }
+
+  .consent-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .consent-box form input[type="text"],
+  .consent-box form input[type="date"] {
+    padding: 8px;
+  }
+
+  .consent-box button {
+    padding: 9px 18px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .legal-section {
+    padding: 15px 10px;
+  }
+
+  .disclaimer-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .disclaimer-text p {
+    font-size: 0.9rem;
+  }
+
+  .consent-box h2 {
+    font-size: 1.1rem;
+  }
+
+  .consent-box form input[type="text"],
+  .consent-box form input[type="date"] {
+    padding: 7px;
+  }
+
+  .consent-box button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

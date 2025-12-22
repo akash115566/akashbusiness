@@ -635,76 +635,98 @@
 }
 
 
-
+/* ===============================
+   Info Section
+================================ */
 .info-section {
   width: 100%;
+  padding: 60px 20px;
+  background: #f9fafc;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
   margin: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
 }
 
+/* Card */
 .info-box {
-  background: #ffffff;
-  padding: 25px;
-  width: 100%;
-  min-width: 200px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-  justify-content: space-between;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  position: relative;
+  transition: 0.3s ease;
 }
-
 
 .info-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
+/* Number */
 .info-box h2 {
-  font-size: 40px;
-  color: #007bff;
+  font-size: 48px;
+  font-weight: 700;
+  color: #EBB02D;
   margin-bottom: 10px;
 }
 
+/* Title */
 .info-box h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #222;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #111;
+  line-height: 1.4;
 }
 
+/* Text */
 .info-box p {
   font-size: 15px;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-.tag {
+/* Tag */
+.info-box .tag {
   display: inline-block;
-  margin-top: 12px;
-  padding: 5px 12px;
+  margin-top: 15px;
   font-size: 12px;
-  background: #007bff;
-  color: #fff;
-  border-radius: 5px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #EBB02D;
+  color: #111;
+  font-weight: 600;
 }
 
-/* ---------- Responsive ---------- */
+/* ===============================
+   Responsive
+================================ */
 
-@media (max-width: 480px) {
+/* Tablets */
+@media (max-width: 1024px) {
+  .info-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .info-section {
+    grid-template-columns: 1fr;
+    padding: 40px 15px;
+  }
+
   .info-box {
-    padding: 20px;
+    text-align: center;
   }
 
   .info-box h2 {
-    font-size: 32px;
-  }
-
-  .info-box h3 {
-    font-size: 18px;
+    font-size: 40px;
   }
 }
+
 
 .sales-section {
   width: 100%;
@@ -969,31 +991,29 @@
 }
 
 /* ------------- RESPONSIVE ------------- */
-
 @media (max-width: 900px) {
   .case-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
   .case-item img {
-    height: 220px;
+    aspect-ratio: 4/3;   /* slightly taller for smaller screens */
   }
 }
 
 @media (max-width: 500px) {
   .case-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .case-item img {
-    height: 200px;
+    aspect-ratio: 3/2;   /* mobile-friendly ratio */
   }
 
   .case-header h2 {
     font-size: 26px;
   }
 }
-
 
 .innovation-section {
   width: 100%;

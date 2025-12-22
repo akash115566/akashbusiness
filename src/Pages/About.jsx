@@ -193,7 +193,13 @@ The vast knowledge of these two is so great that by establishing many companies,
         </div>
       </div>
 
-         <div className="info-section">
+       
+
+      
+    </section>
+
+    <section>
+        <div className="info-section">
       
       <div className="info-box">
         <h2>01</h2>
@@ -215,8 +221,6 @@ The vast knowledge of these two is so great that by establishing many companies,
       </div>
 
     </div>
-
-      
     </section>
 
     <section className="sales-section">

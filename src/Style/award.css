@@ -329,7 +329,8 @@
     grid-template-columns: 1fr;
   }
   .gallery-card img {
-    height: 180px;
+    height: auto;
+    object-fit: cover;
   }
 }
 

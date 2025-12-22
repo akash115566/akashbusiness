@@ -40,6 +40,7 @@ const Footer = () => {
               <li><Link to="/service">Startups Marketing Strategy</Link></li>
               <li><Link to="/service">Business Growth Programe Strategy</Link></li>
               <li><Link to="/service">Choose Right Media Platforms</Link></li>
+               <li><Link to="/formPage">Business care tv show registration form</Link></li>
       
             </ul>
           </div>

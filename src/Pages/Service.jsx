@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 
@@ -66,38 +66,30 @@ const Service = () => {
         </div>
       </section>
 
-      <section className="startup-section">
-        <div className="container">
 
-          <h2 className="main-heading">
-            NEW START UP MARKETING STRATEGY
-          </h2>
 
-          <div className="content-wrapper">
 
-            {/* Left Content */}
-            <div className="left-content">
-              <h3>Programmes for Raising New Startups</h3>
 
-              <p>
-                In relation to the development of any startup, it is very important
-                to understand their business model and consumer angle.
-              </p>
+      <section className="low-investment-section11">
+      <div className="low-investment-container11">
+        <h1>NEW START UP MARKETING STRATEGY</h1>
 
-              <button className="call-btn">
-                <img src="./" alt="Call" />
-                CALL NOW
-              </button>
-            </div>
-
-            {/* Right Image */}
-            <div className="right-image">
-              <img src="./about/s1.webp" alt="Startup Strategy" />
-            </div>
-
-          </div>
+        {/* LEFT CONTENT */}
+        <div className="low-investment-left11">
+          <h2 className="low-investment-heading11">Programmes for Raising New Startups</h2>
+          <p className="low-investment-text11">
+            In relation to the development of any startup, it is very important to understand their business model and consumer angle.
+          </p>
+          <button className="low-investment-btn11">CALL NOW</button>
         </div>
-      </section>
+
+        {/* RIGHT IMAGE */}
+        <div className="low-investment-right11">
+          <img src="/about/s1.webp" alt="Low Investment Strategy" className="low-investment-image1" />
+        </div>
+
+      </div>
+    </section>
 
 
 
@@ -107,7 +99,28 @@ const Service = () => {
 
 
 
-      <section className="startup-section" style={{background:"#EBB02D"}}>
+
+      <section className="low-investment-section11"  style={{background:"#EBB02D"}}>
+      <div className="low-investment-container11">
+        <h1>OLD BUSINESS GROWTH PROGRAMMES STRATEGY</h1>
+
+        {/* LEFT CONTENT */}
+        <div className="low-investment-left11">
+          <h2 className="low-investment-heading11" style={{color:"#111"}}>How to Revive an Old Business</h2>
+          <p className="low-investment-text11" style={{color:"#111"}}>
+           Raising the buzz of the product from door to door, Make everyone need, make everyone rote again and again. Stand out from your competitors and make a name for yourself again.
+          </p>
+          <button className="low-investment-btn11" style={{background:"#EBB02D"}}>CALL NOW</button>
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className="low-investment-right11">
+          <img src="/about/s2.webp" alt="Low Investment Strategy" className="low-investment-image1" />
+        </div>
+
+      </div>
+    </section>
+      {/* <section className="startup-section" style={{background:"#EBB02D"}}>
         <div className="container">
 
           <h2 className="main-heading">
@@ -116,7 +129,6 @@ const Service = () => {
 
           <div className="content-wrapper">
 
-            {/* Left Content */}
             <div className="left-content">
               <h3>How to Revive an Old Business</h3>
 
@@ -132,14 +144,14 @@ const Service = () => {
               </button>
             </div>
 
-            {/* Right Image */}
+      
             <div className="right-image">
               <img src="./about/s2.webp" alt="Startup Strategy" />
             </div>
 
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
@@ -153,7 +165,32 @@ const Service = () => {
 
 
 
-      <section className="startup-section" style={{background:"#51073B"}}>
+
+      <section className="low-investment-section11">
+      <div className="low-investment-container11">
+        <h1>HOW TO TARGET YOUR AUDIENCE</h1>
+
+        {/* LEFT CONTENT */}
+        <div className="low-investment-left11">
+          <h2 className="low-investment-heading11" style={{textAlign:'start'}}>Find Your Real Buyer.</h2>
+          <p className="low-investment-text11" style={{fontSize:"1.5rem"}}>
+           Grab real customers, end buyer's hassle, and<br/>
+start your sales<br/>
+For More Information<br/>
+Contact us: 7042438293</p>
+          {/* <button className="low-investment-btn11">CALL NOW</button> */}
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className="low-investment-right11">
+          <img src="/about/s3.webp" alt="Low Investment Strategy" className="low-investment-image1" />
+        </div>
+
+      </div>
+    </section>
+
+
+      {/* <section className="startup-section" style={{background:"#51073B"}}>
         <div className="container">
 
           <h2 className="main-heading">
@@ -162,7 +199,7 @@ const Service = () => {
 
           <div className="content-wrapper">
 
-            {/* Left Content */}
+   
             <div className="left-content">
               <h3>Find Your Real Buyer.</h3>
 
@@ -179,20 +216,48 @@ const Service = () => {
               </button>
             </div>
 
-            {/* Right Image */}
             <div className="right-image">
               <img src="./about/s3.webp" alt="Startup Strategy" />
             </div>
 
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
 
 
 
+
+
+
+
+
+      <section className="low-investment-section11"  style={{background:"#EBB02D"}}>
+      <div className="low-investment-container11">
+        <h1>HOW TO GROW YOUR SALES</h1>
+
+        {/* LEFT CONTENT */}
+        <div className="low-investment-left11">
+          <h2 className="low-investment-heading11" style={{textAlign:"start"}}>Find your real buyer.</h2>
+          <p className="low-investment-text11"style={{fontSize:"1.5rem"}} >
+            When the need of the customer arises,<br/>
+then your business will shine.<br/>
+For More Understanding<br/>
+Contact us: 7042438293
+          </p>
+          {/* <button className="low-investment-btn11">CALL NOW</button> */}
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className="low-investment-right11">
+          <img src="/about/s4.webp" alt="Low Investment Strategy" className="low-investment-image1" />
+        </div>
+
+      </div>
+    </section>
+{/* 
 
 
       <section className="startup-section" style={{background:"#EBB02D"}}>
@@ -204,7 +269,7 @@ const Service = () => {
 
           <div className="content-wrapper">
 
-            {/* Left Content */}
+        
             <div className="left-content">
               <h3>Find your real buyer.</h3>
 
@@ -220,15 +285,13 @@ const Service = () => {
                 CALL NOW
               </button>
             </div>
-
-            {/* Right Image */}
-            <div className="right-image">
+         <div className="right-image">
               <img src="./about/s4.webp" alt="Startup Strategy" />
             </div>
 
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 

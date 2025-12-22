@@ -284,7 +284,9 @@
 
 
 
-.case-section9 {
+
+
+.case-section1 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -293,27 +295,27 @@
 }
 
 /* HEADING */
-.case-header9 h2 {
+.case-header1 h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #670c4f;
 }
 
-.case-header9 p {
+.case-header1 p {
   font-size: 16px;
   color: #670c4f;
   margin-bottom: 40px;
 }
 
 /* IMAGE GRID */
-.case-grid9 {
+.case-grid1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
-.case-item9 img {
+.case-item1 img {
   width: 100%;
   height: 460px;
   object-fit: cover;
@@ -322,7 +324,7 @@
   transition: transform 0.3s ease;
 }
 
-.case-item9 img:hover {
+.case-item1 img:hover {
   transform: scale(1.05);
 }
 
@@ -349,29 +351,27 @@
 }
 
 /* ------------- RESPONSIVE ------------- */
-
 @media (max-width: 900px) {
-  .case-grid9 {
+  .case-grid1 {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .case-item9 img {
-    height: 220px;
+  
+  .case-item1 img {
+    aspect-ratio: 4/3;   /* slightly taller for smaller screens */
   }
 }
 
 @media (max-width: 500px) {
-  .case-grid9 {
-    grid-template-columns: repeat(1, 1fr);
+  .case-grid1 {
+    grid-template-columns: 1fr;
   }
 
-  .case-item9 img {
-    height: 200px;
+  .case-item1 img {
+    aspect-ratio: 3/2;   /* mobile-friendly ratio */
   }
 
-  .case-header9 h2 {
+  .case-header1 h2 {
     font-size: 26px;
   }
 }
-
 

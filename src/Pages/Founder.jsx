@@ -10,7 +10,7 @@ const Founder = () => {
             <section className="founder-section" >
                 {/* Background overlay */}
                 <div className="founder-bg-overlay">
-                     <h2 style={{fontSize:"3rem",textAlign:"center", marginTop:"50px"}}>Our Founder</h2>
+                     <h2 style={{fontSize:"3rem",textAlign:"center", marginTop:"50px",color:"#111"}}>OUR VIBRANT FOUNDER</h2>
                     <div className="founder-container">
 
 
@@ -18,9 +18,9 @@ const Founder = () => {
                         <div className="founder-text">
                            
                             <h3>Ms. Pooja Sharma</h3>
-                            <p>
+                            <h3>
                                 BUSINESS CARE FOUNDER | SENIOR MEDIA TV ANCHOR | CELEBRITY BUSINESS COACH | YOUNGEST ENTREPRENEUR |
-                            </p>
+                            </h3>
                             <p>Young Entrepreneur, Senior Media person, and Business Trainer Pooja sharma</p>
                             <p>
                                 Pooja Sharma is a well-known name in the country and has made a name for
@@ -61,10 +61,7 @@ const Founder = () => {
                 {/* Background overlay */}
                 <div className="founder-bg-overlay">
                     <div className="founder-container">
-                        {/* Founder Image */}
-                        <div className="founder-image">
-                            <img src="/about/s4.webp" alt="Founder" />
-                        </div>
+                      
 
                         {/* Founder Info */}
                         <div className="founder-text">
@@ -91,6 +88,11 @@ const Founder = () => {
 
 
                             <Link to="/Contact"> <button className="founder-btn">Learn More</button></Link>
+                        </div>
+
+                          {/* Founder Image */}
+                        <div className="founder-image">
+                            <img src="/about/s4.webp" alt="Founder" />
                         </div>
                     </div>
 

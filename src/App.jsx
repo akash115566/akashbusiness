@@ -15,6 +15,7 @@ import Whyus from "./Pages/Whyus";
 import ScrollToTop from "./Pages/ScrollToTop";
 import Privacy from "./Pages/Privacy";
 import Terms from "./Pages/Terms";
+import FormPage from "./Pages/FormPage";
 
 const App = () => {
   return (
@@ -34,6 +35,8 @@ const App = () => {
                  <Route path="/why-us" element={<Whyus />} />
                  <Route path="/privacy" element={<Privacy />} />
                  <Route path="/terms" element={<Terms />} />
+                 <Route path="/formPage" element={<FormPage />} />
+              
       </Routes>
       <Footer />
     </BrowserRouter>
