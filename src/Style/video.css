@@ -104,7 +104,8 @@
   /* FIXED BG DISABLED → mobile compatible */
   .gallery-hero {
     /* background-attachment: scroll !important; */
-    height: 50vh;
+    height: auto;
+    min-height: 50vh;
     padding: 30px;
   }
 

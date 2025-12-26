@@ -129,7 +129,8 @@
 @media (max-width: 360px) {
 
   .gallery-hero {
-    height: 50vh;
+    height: auto;
+    min-height: 40vh;
   }
 
   .gallery-hero h1 {
