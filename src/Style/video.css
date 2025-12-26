@@ -103,8 +103,9 @@
 
   /* FIXED BG DISABLED → mobile compatible */
   .gallery-hero {
-    background-attachment: scroll !important;
-    height: 65vh;
+    /* background-attachment: scroll !important; */
+    height: 50vh;
+    padding: 30px;
   }
 
   .gallery-hero .overlay {
@@ -129,7 +130,8 @@
 @media (max-width: 360px) {
 
   .gallery-hero {
-    height: 50vh;
+    height: 30vh;
+    padding: 30px;
   }
 
   .gallery-hero h1 {
