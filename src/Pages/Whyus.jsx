@@ -8,13 +8,9 @@ const Whyus = () => {
       <section className="whyus-section1">
         <div className="overlay1">
           <div className="text-container1">
-            <h2>Why Choose MSME Business Care </h2>
+            <h2>Why Business Care </h2>
             <p>Business improves the quality of life in two ways. Firstly, it provides high-quality goods and service</p>
-            <p>
-              At <strong>BusinessCare Advertising</strong>, we combine creativity, strategy, and technology
-              to provide marketing solutions that deliver measurable results. Our team of experts ensures
-              your brand reaches the right audience while building lasting relationships.
-            </p>
+          
             {/* <ul>
             <li><strong>Innovative Strategies:</strong> Unique marketing approaches to make your brand stand out.</li>
             <li><strong>Expert Team:</strong> Professional marketers, designers, and strategists working for you.</li>

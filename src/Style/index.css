@@ -623,10 +623,13 @@
 @media (max-width: 480px) {
   .top-heading {
     font-size: 18px;
+    margin-top: 30px;
   }
 
   .bold-heading {
     font-size: 15px;
+    line-height: 18px;
+
   }
 
   .small-text {
@@ -945,6 +948,9 @@
 @media (max-width: 480px) {
   .media-right {
     height: 220px;
+  }
+  .media-heading {
+    margin-top: 20px;
   }
 }
 

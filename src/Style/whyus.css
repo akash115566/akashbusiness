@@ -102,7 +102,7 @@
 @media (max-width: 480px) {
 
   .whyus-section1 {
-    height: auto;                 /* auto adjust height */
+    height: 55vh;                 /* auto adjust height */
     padding: 60px 20;              /* top-bottom spacing */
     background-attachment: scroll !important;  
     background-size: cover;

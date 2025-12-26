@@ -52,15 +52,15 @@ const Service = () => {
       >
         <div className="overlay">
           <div className="text-content">
-            <h2>🏆 MSME BusinessCare Awards &  Recognition</h2>
+            <h2>🏆 BusinessCare Awards &  Recognition</h2>
             <h3>
               Celebrating Excellence in <span>Business & Marketing</span>
             </h3>
-            <p>
+            {/* <p>
               BusinessCare’s journey of innovation, impact, and strategic
               excellence has been recognized across multiple prestigious awards
               in India and globally.
-            </p>
+            </p> */}
             {/* <Link to="/Contact">  <button className="cta-btn2">Explore Awards</button></Link> */}
           </div>
         </div>
@@ -177,7 +177,7 @@ const Service = () => {
            Grab real customers, end buyer's hassle, and<br/>
 start your sales<br/>
 For More Information<br/>
-Contact us: 7042438293</p>
+Contact us: 8076151724</p>
           {/* <button className="low-investment-btn11">CALL NOW</button> */}
         </div>
 
@@ -245,7 +245,7 @@ Contact us: 7042438293</p>
             When the need of the customer arises,<br/>
 then your business will shine.<br/>
 For More Understanding<br/>
-Contact us: 7042438293
+Contact us: 8076151724
           </p>
           {/* <button className="low-investment-btn11">CALL NOW</button> */}
         </div>

@@ -93,10 +93,10 @@ const Award = () => {
             <h3>
               Celebrating Excellence in <span>Business & Marketing</span>
             </h3>
-            <p>
+            {/* <p>
               BusinessCare’s journey of innovation, impact, and strategic excellence has been
               recognized across multiple prestigious awards in India and globally.
-            </p>
+            </p> */}
           {/* <Link to="/Contact">  <button className="cta-btn">Explore Awards</button></Link> */}
           </div>
         </div>

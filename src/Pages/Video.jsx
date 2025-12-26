@@ -20,7 +20,7 @@ const Video = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Our MSME Business Care Moments
+            Our Business Care Moments
           </motion.h1>
           <p>Capturing success, creativity, and growth — one frame at a time.</p>
         </div>
