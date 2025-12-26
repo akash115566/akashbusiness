@@ -7,7 +7,7 @@
 /* 🌟 MAIN SECTION */
 .fixed-bg-section2 {
   position: relative;
-  background-image: url("./ba4.webp");
+  background-image: url("/ba4.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -16,7 +16,7 @@ body, #root {
 .awards-hero {
   width: 100%;
   min-height: 450px;
-  background-image:url("./ba2.webp"); /* ⭐ Apni image lagaye */
+  background-image:url("/ba2.webp"); /* ⭐ Apni image lagaye */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
