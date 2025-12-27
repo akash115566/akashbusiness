@@ -103,6 +103,9 @@
   font-size: 0.9rem;
   color: #aaa;
 }
+.footer-column h3,p ,strong{
+  color: #111;
+}
 
 /* 📱 Responsive */
 @media (max-width: 768px) {

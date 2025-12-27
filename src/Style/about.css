@@ -430,7 +430,7 @@
 .progress-circle {
   width: 100%;
   height: 100%;
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
 }
 
 .circle-bg {

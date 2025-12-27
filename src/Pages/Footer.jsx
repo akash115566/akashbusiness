@@ -1,6 +1,7 @@
 import React from "react";
 import "../Style/footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { faFacebookF, faInstagram, faLinkedinIn, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 import { Link } from "react-router-dom";   // ✅ Correct import
@@ -48,33 +49,34 @@ const Footer = () => {
           {/* 🔹 Contact Info */}
           <div className="footer-column">
             <h3>Contact Details</h3>
-            <p>📞 <strong>Phone:</strong> +91 7042-438-293</p>
+            <p>📞 <strong>Phone: +91 807151724</strong></p>
             <p>📧 <strong>Email:</strong> <a href="mailto:Info@businesscare.org.in">Info@businesscare.org.in</a></p>
 
             {/* 🔹 Social Links */}
-            <div className="social-links">
-              <p><strong>Follow Us On:</strong></p>
+     <div className="social-links">
+  <p><strong>Follow Us On:</strong></p>
 
-              <a href="https://www.facebook.com/businesscarenoida/" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-facebook-f"></i>
-              </a>
+  <a href="https://www.facebook.com/businesscarenoida/" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faFacebookF} />
+  </a>
 
-              <a href="https://www.instagram.com/Businesscarenoida/" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
-              </a>
+  <a href="https://www.instagram.com/Businesscarenoida/" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faInstagram} />
+  </a>
 
-              <a href="https://www.linkedin.com/company/business-care-noida/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
+  <a href="https://www.linkedin.com/company/business-care-noida/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faLinkedinIn} />
+  </a>
 
-              <a href="https://twitter.com/businesscareup" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-x-twitter"></i>
-              </a>
+  <a href="https://twitter.com/businesscareup" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faTwitter} />
+  </a>
 
-              <a href="https://www.youtube.com/@BusinessCareNoida/featured" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-youtube"></i>
-              </a>
-            </div>
+  <a href="https://www.youtube.com/@BusinessCareNoida/featured" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faYoutube} />
+  </a>
+</div>
+
 
           </div>
         </div>

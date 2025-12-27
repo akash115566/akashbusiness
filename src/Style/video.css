@@ -10,7 +10,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url("/ba2.webp") center/cover no-repeat;
+  background: url("/ba5.webp");
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -99,18 +99,18 @@
 }
 
 /* ✅ MOBILE (480px) — FULL FIX */
-@media (max-width: 480px) {
 
-  /* FIXED BG DISABLED → mobile compatible */
+ @media (max-width: 480px) {
   .gallery-hero {
-    /* background-attachment: scroll !important; */
-    height: auto;
-    min-height: 50vh;
-    padding: 30px;
+ height: 70vh;
+    /* padding: 30px; */
+  
+
   }
 
   .gallery-hero .overlay {
-    padding-left: 4%;
+    /* padding-left: 4%;
+    margin-right: 50px; */
   }
 
   .gallery-hero h1 {
@@ -124,6 +124,13 @@
 
   .gallery-grid {
     grid-template-columns: 1fr;  /* Single column */
+  }
+}
+@media (max-width: 370px) {
+
+  .gallery-hero {
+    height: 90vh;
+    padding: 30px;
   }
 }
 

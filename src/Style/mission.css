@@ -30,6 +30,10 @@
 .mission-text1 {
   max-width: 600px;
   color: #fff;
+
+  text-align: left;     /* 🔥 text left */
+  margin-left: 0;       /* 🔥 center hatane ke liye */
+  margin-right: auto;   /* 🔥 left lock */
 }
 
 .mission-text1 h2 {
@@ -190,7 +194,7 @@
 .mission-text h2,
 .vision-text h2 {
   font-size: 2.6rem;
-  color: orange;
+  color: #fff;
   margin-bottom: 15px;
   font-weight: 700;
   padding-left: 20px;

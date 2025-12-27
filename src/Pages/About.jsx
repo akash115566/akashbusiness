@@ -67,7 +67,7 @@ const About = () => {
       <section className="fixed-bg-section3">
         <div className="overlay3">
           <div className="text-content3">
-            <h2>बिज़नेस की एक्सक्लूसिव स्ट्रैटेजी</h2>
+            <h2>बिज़नेस की एक्सक्लूसिव<br/> स्ट्रैटेजी</h2>
             <h3>
               सिर्फ <span>BusinessCare</span> पर
             </h3>

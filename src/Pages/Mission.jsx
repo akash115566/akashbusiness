@@ -16,9 +16,9 @@ const Mission = () => {
       <section className="mission-section1" >
         <div className="overlay">
           <div className="mission-text1">
-            <h2>Empowering Your Brand</h2>
+            <h2>Empowering Your <br/> Brand</h2>
             <p>
-              At <strong>BusinessCare Advertising</strong>, we create marketing solutions that
+              At <strong>BusinessCare TV Show</strong>, we create marketing solutions that
               connect your brand with your audience effectively. Let’s transform ideas into results.
             </p>
             {/* <button className="cta-btn">Learn More</button> */}
@@ -38,7 +38,7 @@ const Mission = () => {
             <div className="mission-text">
               <h2>Our Mission</h2>
               <p>
-                At <strong>BusinessCare Advertising</strong>, our mission is to empower brands
+                At <strong>BusinessCare TV Show</strong>, our mission is to empower brands
                 and businesses with innovative marketing solutions that connect them
                 to their audience effectively. We believe in crafting impactful campaigns
                 that not only increase visibility but also build trust and long-lasting relationships.
