@@ -493,12 +493,10 @@
 
 
 
-/* WRAPPER */
 .business-section {
   width: 100%;
-  padding: 0px 20px;
+  padding: 40px 20px 0;   /* ❌ bottom padding hata diya */
   background: #51073B;
-  height: auto;
 }
 
 .business-container {
@@ -506,8 +504,13 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;  /* 🔥 important */
   gap: 40px;
+}
+
+/* LEFT */
+.business-left {
+  width: 52%;
 }
 
 /* LEFT CONTENT */
@@ -564,102 +567,95 @@
   background: #fff;
   color: #111;
 }
-
 /* RIGHT IMAGE */
-.business-right{
-  /* background-color: red; */
+.business-right {
+  width: 48%;
   height: 700px;
-  width: 100%;
-  margin-top: 50px;
+  margin-top: 0;        /* 🔥 NO GAP */
+  display: flex;
+  align-items: flex-end; /* 🔥 image bottom touch */
 }
+
 .business-right img {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
 
+@media (max-width: 1200px) {
+  .business-right {
+    height: 600px;
+  }
 
-/* ========================= */
-/* RESPONSIVE MOBILE–TABLET */
-/* ========================= */
+  .bold-heading {
+    font-size: 26px;
+  }
+}
+@media (max-width: 991px) {
 
-/* Tablets 768–1023px */
-@media (max-width: 1023px) {
   .business-container {
     flex-direction: column;
-    text-align: center;
+  }
+
+  .business-left,
+  .business-right {
+    width: 100%;
+  }
+
+  .business-right {
+    height: auto;
   }
 
   .bullet-box {
     justify-content: center;
   }
-
-  .top-heading {
-    font-size: 22px;
-  }
-
-  .bold-heading {
-    font-size: 18px;
-  }
 }
+@media (max-width: 480px) {
 
-/* Mobiles 480–767px */
-@media (max-width: 767px) {
+  .business-section {
+    padding: 25px 15px 0; /* 🔥 bottom zero */
+  }
+
   .top-heading {
-    font-size: 20px;
+    font-size: 1.5rem;
+    padding: 15px;
   }
 
   .bold-heading {
-    font-size: 16px;
+    font-size: 22px;
+    line-height: 1.3;
   }
 
   .bullet-box {
     flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
-}
-
-/* Small Mobiles 0–480px */
-@media (max-width: 480px) {
-  .top-heading {
-    font-size: 18px;
-    margin-top: 30px;
-  }
-
-  .bold-heading {
-    font-size: 15px;
-    line-height: 18px;
-
-  }
-
-  .small-text {
-    font-size: 14px;
-  }
-
-  .business-btn {
-    padding: 10px 18px;
-    font-size: 14px;
-  }
-  
-  .business-container {
-    flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
 
   .business-right {
-    width: 100%;
-    height: 380px;        /* ❌ 700px hatao */
-    margin-top: 20px;
+    height: auto;
+    align-items: flex-end;   /* 🔥 still bottom */
   }
 
   .business-right img {
     width: 100%;
-    height: auto;        /* 🔥 auto height */
-    object-fit: cover;
-    border-radius: 10px;
+    height: auto;
+    object-fit: contain;     /* ❌ crop nahi */
   }
 }
+@media (max-width: 360px) {
+
+  .bold-heading {
+    font-size: 20px;
+  }
+
+  .business-btn {
+    width: 100%;
+  }
+}
+
+
+
 
 
 
