@@ -570,6 +570,7 @@
   /* background-color: red; */
   height: 700px;
   width: 100%;
+  margin-top: 50px;
 }
 .business-right img {
   width: 100%;
@@ -639,6 +640,24 @@
   .business-btn {
     padding: 10px 18px;
     font-size: 14px;
+  }
+  
+  .business-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .business-right {
+    width: 100%;
+    height: 380px;        /* ❌ 700px hatao */
+    margin-top: 20px;
+  }
+
+  .business-right img {
+    width: 100%;
+    height: auto;        /* 🔥 auto height */
+    object-fit: cover;
+    border-radius: 10px;
   }
 }
 
