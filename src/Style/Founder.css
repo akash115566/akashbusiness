@@ -71,21 +71,21 @@
 }
 
 .founder-text h2 {
-  font-size: 2.8rem;
+  font-size: 2.rem;
   color: #fdd28b;
   margin-bottom: 50px;
   font-weight: 700;
 }
 
 .founder-text h3 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #fff;
   margin-bottom: 20px;
   font-weight: 500;
 }
 
 .founder-text p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.7;
   margin-bottom: 20px;
   color: #f9f9f9;
@@ -199,3 +199,44 @@
     font-size: 0.85rem;
   }
 }
+
+/* 📲 Extra Small (max-width: 480px) */
+@media (max-width: 360px) {
+ 
+
+  .founder-container {
+    gap: 25px;
+  }
+
+  .founder-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .founder-text h3 {
+    font-size: 1rem;
+  }
+
+  .founder-text p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    padding: 20px;
+  }
+  .founder-image{
+    margin-bottom: 170px;
+  }
+
+  .founder-image img {
+    width: 100%;
+    max-width: 250px;
+        margin-bottom: 170px;
+
+    border-radius: 15px;
+    
+  }
+
+  .founder-btn {
+    padding: 9px 20px;
+    font-size: 0.85rem;
+  }
+}
+
