@@ -1,5 +1,6 @@
 import React,{ useRef, useEffect ,useState}  from 'react';
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa"; // react-icons का इस्तेमाल
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -195,7 +196,7 @@ const Home = () => {
             We are Here to Plan your Marketing Strategy
           </p>
 
-          <button className="btn-primary">For Appointment</button>
+          <Link to="/contact" className="btn-primary">For Appointment</Link>
         </div>
       </div>
 
@@ -293,7 +294,7 @@ const Home = () => {
         <p>
         Insufficient marketing, wrong platforms, a lacklustre business plan or even wrong legal structure can prevent your business from thriving. The reasons why many entrepreneurs fail early are endless, some being unique tothe business owner. So, don’t waste time meet us we will design a complete strategy to make you king in yourindustry, to grow your business sales, enhance your distribution network.
         </p>
-        <button className='button1'>Get Appointment</button>
+        <Link to="/service" className='button1' style={{textAlign:'center'}}>Get Appointment</Link>
       </div>
     </div>
     </section>
@@ -327,7 +328,7 @@ const Home = () => {
             </ul>
           </div>
 
-          <button className="business-btn"> LET'S WORK TOGETHER</button>
+          <Link to="/contact" className="business-btn"> LET'S WORK TOGETHER</Link>
         </div>
 
         {/* RIGHT IMAGE */}
@@ -368,7 +369,7 @@ const Home = () => {
             <li>Product sales growth strategy</li>
           </ul>
 
-          <button className="brand-btn">Get Appointment</button>
+          <Link to="/contact" className="brand-btn">Get Appointment</Link>
         </div>
 
       </div>
@@ -395,7 +396,7 @@ const Home = () => {
             will help you to make your business a big brand of the country by our unique techniques
             and ideas.
           </p>
-          <button className="media-btn">Get Appointment</button>
+          <Link to="/contact" style={{textAlign:"center"}} className="media-btn">Get Appointment</Link>
         </div>
 
         {/* RIGHT IMAGE */}
@@ -430,7 +431,9 @@ const Home = () => {
             Will you tell them to be bigger just by seeing the competitors,  
             or by doing what’s right marketing planning, you will make your brand bigger than them.
           </p>
-          <button className="media-platform-btn">CALL NOW</button>
+         <a href="tel:+919876543210">
+  <button className="media-platform-btn" >CALL NOW</button>
+</a>
         </div>
 
         {/* RIGHT IMAGE */}
@@ -450,7 +453,9 @@ const Home = () => {
           <p className="low-investment-text1">
             Can your business flourish without spending a lot of money? What is the best way by which money will be spent less, and your name will be covered in the top 10.
           </p>
-          <button className="low-investment-btn1">CALL NOW</button>
+            <a href="tel:+919876543210">
+  <button className="media-platform-btn" style={{backgroundColor:"#51073B",color:"#fff"}}>CALL NOW</button>
+</a>
         </div>
 
         {/* RIGHT IMAGE */}
@@ -468,9 +473,9 @@ const Home = () => {
           YOUR GOALS ARE INDIVIDUAL. WE BELIEVE BUSINESS ADVICE SHOULD BE TOO.
         </h2>
 
-        <button className="goals-btn">
+        <Link to="/contact" className="goals-btn">
           TAKE THE NEXT STEP <FaArrowRight className="btn-icon" />
-        </button>
+        </Link>
 
       </div>
     </section>

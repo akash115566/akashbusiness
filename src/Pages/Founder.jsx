@@ -41,7 +41,7 @@ const Founder = () => {
 
                         {/* Founder Image */}
                         <div className="founder-image">
-                            <img src="/about/s1.webp" alt="Founder" />
+                            <img src="/f2.webp" alt="Founder" />
                         </div>
                     </div>
 
@@ -81,18 +81,18 @@ const Founder = () => {
                                 national and foreign awards, and he believes that India’s business can become
                                 better only when new techniques are used in it. Ankur not only understands the
                                 business but also has the ability to deal with the problems arising in it from
-                                the root. Having 20 years of experience in TV media, today Ankur is a successful
+                                {/* the root. Having 20 years of experience in TV media, today Ankur is a successful
                                 businessman and is helping thousands of businessmen with increasing losses in
-                                their businesses.
+                                their businesses. */}
                             </p>
 
 
-                            <Link to="/Contact"> <button className="founder-btn">Learn More</button></Link>
+                            {/* <Link to="/Contact"> <button className="founder-btn">Learn More</button></Link> */}
                         </div>
 
                           {/* Founder Image */}
                         <div className="founder-image">
-                            <img src="/about/s4.webp" alt="Founder" />
+                            <img src="/f3.webp" alt="Founder" />
                         </div>
                     </div>
 
