@@ -59,12 +59,7 @@ const Founder = () => {
 
                         {/* Founder Info */}
                         <div className="founder-text">
-                            <h3>Mr. ANKUR BANSAL</h3>
-
-                            <h3>
-
-                               Co-Founder, Entrepreneur, Global Business Coach & Consultant, and Business Strategy Planner
-                            </h3>
+                 
                             <h3>Co-founder, Entrepreneur, Business Coach, and Business Strategy Planner. Ankur Bansal</h3>
                             <p>
                                Mr. Ankur Bansal is a visionary entrepreneur whose journey began at the young age of 12. Over the years, he has transformed himself into one of India’s most influential business strategists with unmatched expertise in media, market planning, and global trade. He started his professional journey as a TV anchor, and through continuous learning and innovation, he soon evolved into a market researcher and market planner. His unique ideas and impactful guidance helped launch and promote numerous astrologers, spiritual gurus, and public personalities across the television industry. With a bold vision and strong entrepreneurial mindset, he co-founded Pooja Movie Creations along with Ms. Pooja Sharma. At a very young age, he took the courageous step of leaving his media job and entering into business without capital, driven purely by dedication, creativity, and hard work. Over time, his strategic abilities made him a trusted media planner for many renowned companies. Under his guidance, countless businessmen have revived and expanded their businesses. His deep understanding of business challenges, combined with practical solutions, has empowered entrepreneurs across India. His remarkable career took a new leap in 2013 when he created and launched the benchmark real-estate show "Property 4 You" on Delhi AajTak. The show quickly became the No. 1 program on AajTak in its category, earning massive popularity and establishing his name as a powerful content and media strategist. As years passed, he diversified into multiple ventures and today plays a major role in BRICS for global trade collaborations, supporting international business expansion and global partnerships. Now, Mr. Ankur Bansal is coming up with his exclusive TV show designed especially for MSMEs, startups, and business owners. This unique show will discuss:
