@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../Style/about.css";
 import { FaPlay } from "react-icons/fa";
@@ -40,11 +41,38 @@ const About = () => {
 
 
 
-  const stats = [
-  { number: '100+', label: 'Live Personal Meetings', percent: 80 },
-  { number: '300+', label: 'Online per day consultation', percent: 90 },
-  { number: '250+', label: 'Video Calls Consultancy', percent: 75 },
+ 
+const statsData = [
+  { number: 100, label: "Live Personal Meetings", percent: 80 },
+  { number: 300, label: "Online per day consultation", percent: 90 },
+  { number: 250, label: "Video Calls Consultancy", percent: 75 },
 ];
+
+
+  const [stats, setStats] = useState(
+    statsData.map(item => ({ ...item, count: 0, progress: 0 }))
+  );
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStats(prev =>
+        prev.map(stat => ({
+          ...stat,
+          count:
+            stat.count < stat.number
+              ? stat.count + Math.ceil(stat.number / 60)
+              : stat.number,
+          progress:
+            stat.progress < stat.percent
+              ? stat.progress + 0.01
+              : stat.percent,
+        }))
+      );
+    }, 300);
+
+    return () => clearInterval(interval);
+  }, []);
+
 
   const timeline = [
     { year: "2016", location: "We Available in Noida" },
@@ -125,31 +153,35 @@ The vast knowledge of these two is so great that by establishing many companies,
             <li>📋 Feasibility Studies & Business Plans</li>
           </ul>
 
-        <div className="stats">
-  {stats.map((stat, idx) => (
-    <div key={idx} className="stat-item">
-      <div className="stat-circle">
-        <svg className="progress-circle" viewBox="0 0 36 36">
-          <path
-            className="circle-bg"
-            d="M18 2.0845
-               a 15.9155 15.9155 0 0 1 0 31.831
-               a 15.9155 15.9155 0 0 1 0 -31.831"
-          />
-          <path
-            className="circle"
-            strokeDasharray={`${stat.percent}, 100`}
-            d="M18 2.0845
-               a 15.9155 15.9155 0 0 1 0 31.831
-               a 15.9155 15.9155 0 0 1 0 -31.831"
-          />
-          <text x="18" y="20.35" className="circle-text">{stat.number}</text>
-        </svg>
-      </div>
-      <p>{stat.label}</p>
+    <div className="stats">
+      {stats.map((stat, idx) => (
+        <div key={idx} className="stat-item">
+          <svg className="progress-circle" viewBox="0 0 36 36">
+            {/* background */}
+            <path
+              className="circle-bg"
+              d="M18 2.0845
+                 a 15.9155 15.9155 0 0 1 0 31.831
+                 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            {/* animated progress */}
+            <path
+              className="circle"
+              strokeDasharray={`${stat.progress}, 100`}
+              d="M18 2.0845
+                 a 15.9155 15.9155 0 0 1 0 31.831
+                 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            {/* number */}
+            <text x="18" y="20.35" className="circle-text">
+              {stat.count}+
+            </text>
+          </svg>
+
+          <p>{stat.label}</p>
+        </div>
+      ))}
     </div>
-  ))}
-</div>
 
         </div>
 

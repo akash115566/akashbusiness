@@ -213,6 +213,49 @@ const Home = () => {
 
     </section>
 
+
+<section className="international-section">
+  {/* Heading with border */}
+  <div className="heading-box">
+    <h2>International Operations and Trade</h2>
+  </div>
+
+  {/* Videos */}
+  <div className="videos-column">
+    <div className="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/Xg0cenE-PW8"
+        title="Video 1"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+    <div className="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/nmGjvNz2Tgw"
+        title="Video 2"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+    <div className="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/KUAk1jqn6yw"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+
+
 <section
   className="purpose-section"
  

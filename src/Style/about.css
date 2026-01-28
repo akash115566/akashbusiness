@@ -422,14 +422,14 @@
 }
 
 .stat-circle {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   position: relative;
 }
 
 .progress-circle {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   transform: rotate(0deg);
 }
 
