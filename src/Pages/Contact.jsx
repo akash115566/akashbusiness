@@ -54,7 +54,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
     e.preventDefault();
 
-    const phoneNumber = "919927239876"; // 👈 apna WhatsApp number (91 ke sath)
+    const phoneNumber = "918799746544"; // 👈 apna WhatsApp number (91 ke sath)
 
     const message = `
 📌 *New Business Enquiry*
