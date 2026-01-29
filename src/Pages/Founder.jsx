@@ -70,8 +70,8 @@ const Founder = () => {
                         </div>
 
                           {/* Founder Image */}
-                     <div className="founder-image" style={{ marginBottom: "-170px" }}>
-  <img src="/f3.webp" alt="Founder" />
+                     <div className="founder-image" >
+  <img src="/f3.webp" alt="Founder"  style={{marginTop:"50px"}}/>
 </div>
 
                     </div>

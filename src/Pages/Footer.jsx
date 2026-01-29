@@ -49,7 +49,7 @@ const Footer = () => {
           {/* 🔹 Contact Info */}
           <div className="footer-column">
             <h3>Contact Details</h3>
-            <p>📞 <strong>Phone: +91 807151724</strong></p>
+            <p>📞 <strong>Phone: +91 8076151724</strong></p>
             <p>📧 <strong>Email:</strong> <a href="mailto:Info@businesscare.org.in">Info@businesscare.org.in</a></p>
 
             {/* 🔹 Social Links */}

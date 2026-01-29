@@ -28,6 +28,71 @@ const Contact = () => {
   // })
 
 
+
+
+   const [formData, setFormData] = useState({
+    companyName: "",
+    ownerName: "",
+    mobile: "",
+    website: "",
+    email: "",
+    businessType: "",
+    product: "",
+    budget: "",
+    location: "",
+    meetingType: "On Call",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+
+
+
+
+    const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const phoneNumber = "919927239876"; // 👈 apna WhatsApp number (91 ke sath)
+
+    const message = `
+📌 *New Business Enquiry*
+
+🏢 Company: ${formData.companyName}
+👤 Owner: ${formData.ownerName}
+📞 Mobile: ${formData.mobile}
+🌐 Website: ${formData.website}
+📧 Email: ${formData.email}
+💼 Business Type: ${formData.businessType}
+📦 Product: ${formData.product}
+💰 Monthly Budget: ${formData.budget}
+📍 Location: ${formData.location}
+📅 Meeting Type: ${formData.meetingType}
+    `;
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappURL, "_blank");
+  };
+
+  useEffect(() => {
+  setFormData((prev) => ({
+    ...prev,
+    website: "https://example.com"  // Default value
+  }));
+}, [])
+
+const message = `
+Company: ${formData.companyName}
+Website: ${formData.website || "Not Provided"}
+`;
+
+
+
+
   return (
     <>
       {/* 🔹 Stylish Static Banner */}
@@ -67,65 +132,74 @@ const Contact = () => {
           </div>
 
           {/* Right Form */}
-       <form className="appointment-form">
+        <form className="appointment-form" onSubmit={handleSubmit}>
 
-  <div className="form-group">
-    <label>Company Name</label>
-    <input type="text" placeholder="" />
-  </div>
+      <div className="form-group">
+        <label>Company Name</label>
+        <input type="text" name="companyName" onChange={handleChange} />
+      </div>
 
-  <div className="form-group">
-    <label>Owner Name</label>
-    <input type="text" />
-  </div>
+      <div className="form-group">
+        <label>Owner Name</label>
+        <input type="text" name="ownerName" onChange={handleChange} />
+      </div>
 
-  <div className="form-group">
-    <label>Mobile No.</label>
-    <input type="tel" />
-  </div>
+      <div className="form-group">
+        <label>Mobile No.</label>
+        <input type="tel" name="mobile" onChange={handleChange} />
+      </div>
 
-  <div className="form-group">
-    <label>Website</label>
-    <input type="url" />
-  </div>
+      <div className="form-group">
+        <label>Website</label>
+      <input
+  type="url"
+  name="website"
+  value={formData.website}
+  onChange={handleChange}
+  placeholder="https://www.yourwebsite.com (Optional)"
+/>
 
-  <div className="form-group">
-    <label>Your Email</label>
-    <input type="email" />
-  </div>
+      </div>
 
-  <div className="form-group">
-    <label>Type of Business</label>
-    <input type="text" />
-  </div>
+      <div className="form-group">
+        <label>Your Email</label>
+        <input type="email" name="email" onChange={handleChange} />
+      </div>
 
-  <div className="form-group">
-    <label>Product</label>
-    <input type="text" />
-  </div>
+      <div className="form-group">
+        <label>Type of Business</label>
+        <input type="text" name="businessType" onChange={handleChange} />
+      </div>
 
-  <div className="form-group">
-    <label>Monthly Budget</label>
-    <input type="text" />
-  </div>
+      <div className="form-group">
+        <label>Product</label>
+        <input type="text" name="product" onChange={handleChange} />
+      </div>
 
-  <div className="form-group">
-    <label>Business Location</label>
-    <input type="text" />
-  </div>
+      <div className="form-group">
+        <label>Monthly Budget</label>
+        <input type="text" name="budget" onChange={handleChange} />
+      </div>
 
-  <div className="form-group full">
-    <label>Select Meeting Type</label>
-    <select>
-      <option>On Call</option>
-      <option>Video Call</option>
-      <option>Office Meeting</option>
-    </select>
-  </div>
+      <div className="form-group">
+        <label>Business Location</label>
+        <input type="text" name="location" onChange={handleChange} />
+      </div>
 
-  <button className="submit-btn">Submit</button>
+      <div className="form-group full">
+        <label>Select Meeting Type</label>
+        <select name="meetingType" onChange={handleChange}>
+          <option>On Call</option>
+          <option>Video Call</option>
+          <option>Office Meeting</option>
+        </select>
+      </div>
 
-</form>
+      <button type="submit" className="submit-btn">
+        Submit on WhatsApp
+      </button>
+
+    </form>
 
         </div>
 
