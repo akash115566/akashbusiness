@@ -327,7 +327,7 @@ Come To Us And We Will Show You How To Take Your Company To New Heights
   </div>
 </section>
 
-    <section>
+
         <div className="why-fail-section">
       <div className="section-image">
         <img src="/slide/p1.webp" alt="Entrepreneurship" />
@@ -340,7 +340,7 @@ Come To Us And We Will Show You How To Take Your Company To New Heights
         <Link to="/service" className='button1' style={{textAlign:'center'}}>Get Appointment</Link>
       </div>
     </div>
-    </section>
+  
 
        <section className="business-section">
       <div className="business-container">
