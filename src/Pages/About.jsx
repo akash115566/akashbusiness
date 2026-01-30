@@ -99,11 +99,11 @@ const statsData = [
             <h3>
               सिर्फ <span>BusinessCare</span> पर
             </h3>
-            <p>
+            {/* <p>
               आधुनिक मार्केटिंग के नए दौर में, हम आपके ब्रांड को सही दिशा, सही ऑडियंस और
               स्मार्ट ग्रोथ स्ट्रैटेजी के साथ आगे बढ़ाते हैं।
-            </p>
-          <Link to="/Contact"> <button className="cta-btn">Get Started</button></Link>
+            </p> */}
+          {/* <Link to="/Contact"> <button className="cta-btn">Get Started</button></Link> */}
           </div>
         </div>
       </section>

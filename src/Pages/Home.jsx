@@ -265,16 +265,16 @@ const Home = () => {
       <h1>
         ज्यादातर बिजनेसमैन बिजनेस एक्सपेंशन के लिए{" "}
         <span>पुरानी तकनीकों</span> का इस्तेमाल करते हैं
-      </h1>
 
-      <p>
+
+      <p style={{fontSize:"1.55rem"}}>
         जिसके चलते बिजनेस <strong>लॉस</strong> में चले जाते हैं।
         व्यापार की छोटी सी रणनीति की गलतियाँ आपको <strong>घाटे</strong> में ला सकती हैं।
       </p>
+            </h1>
 
       <p className="english-text">
-        Most business owners use outdated methods for business expansion, which can lead to losses.
-        Even small strategy mistakes can put your business in a loss.
+Come To Us And We Will Show You How To Take Your Company To New Heights
       </p>
 
       <div className="media-container">
@@ -318,7 +318,7 @@ const Home = () => {
 
       return (
         <div className="logo-card" key={index}>
-          <Icon size={50} color="#EBB02D" />
+          <Icon size={70} color="#EBB02D" />
           <h3>{item.text}</h3>
           <button>{item.button}</button>
         </div>
