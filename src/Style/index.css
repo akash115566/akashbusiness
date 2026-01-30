@@ -257,7 +257,7 @@
 }
 
 .purpose-content h1 span {
-  color: #2563eb; /* Highlight color */
+  color: #ebd425; /* Highlight color */
 }
 
 .purpose-content p {
@@ -407,7 +407,9 @@ text-align: center;
     padding: 30px;
   }
 .english-text {
-  font-size: 1.5rem;
+  font-size: 1.55rem;
+  margin-top: -40px;
+
 }
 
   .media-left h2 {
@@ -802,6 +804,18 @@ text-align: center;
   .bold-heading {
     font-size: 20px;
   }
+    .bullet-box {
+    display: block;   /* agar flex hai to */
+  }
+
+  .bullet-box ul {
+    margin: 0;
+    padding-left: 18px; /* bullets ke liye */
+  }
+
+  .bullet-box ul + ul {
+    margin-top: 8px; /* thoda controlled gap */
+  }
 
   .business-btn {
     width: 100%;
@@ -930,7 +944,7 @@ text-align: center;
 /* Small Mobiles */
 @media (max-width: 480px) {
   .brand-main-heading {
-    font-size: 18px;
+    font-size: 30px;
   }
 
   .brand-left img {
@@ -1208,8 +1222,8 @@ text-align: center;
   }
 
   .gallery-item1 img {
-    width: 250px;
-    height: 370px;
+    width: 310px;
+    height: 450px;
     border-radius: 50%;
   }
 }
