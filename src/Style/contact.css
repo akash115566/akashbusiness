@@ -32,8 +32,15 @@
 
 .banner-content11 h1 {
   font-size: 48px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
+}
+.banner-content11 p{
+  font-size: 18px;
+  color: #67074d;
+  margin-top: 20px;
+  font-weight: 900;
+
 }
 
 /* Wave Divider */

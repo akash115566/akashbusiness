@@ -254,6 +254,18 @@ const Home = () => {
   </div>
 </section>
 
+<section className="services-section3">
+  <h2 className="services-heading3">Our Services</h2>
+
+  <ul className="services-list3">
+    <li>Product Teleshopping Making</li>
+    <li>TV Commercials Advts Making</li>
+    <li>Interview in Business Care Tv Show</li>
+    <li>Dealership & Distributorship Making Plan</li>
+  </ul>
+</section>
+
+
 
 
 <section
@@ -474,7 +486,7 @@ Come To Us And We Will Show You How To Take Your Company To New Heights
             Will you tell them to be bigger just by seeing the competitors,  
             or by doing what’s right marketing planning, you will make your brand bigger than them.
           </p>
-         <a href="tel:+919876543210">
+         <a href="tel:+918076151724">
   <button className="media-platform-btn" >CALL NOW</button>
 </a>
         </div>
@@ -496,7 +508,7 @@ Come To Us And We Will Show You How To Take Your Company To New Heights
           <p className="low-investment-text1">
             Can your business flourish without spending a lot of money? What is the best way by which money will be spent less, and your name will be covered in the top 10.
           </p>
-            <a href="tel:+919876543210">
+            <a href="tel:+918076151724">
   <button className="media-platform-btn" style={{backgroundColor:"#51073B",color:"#fff"}}>CALL NOW</button>
 </a>
         </div>

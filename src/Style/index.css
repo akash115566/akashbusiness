@@ -236,6 +236,82 @@
 }
 
 
+/* Section Wrapper */
+.services-section3 {
+  padding: 60px 20px;
+  background: #0b0b0b;
+  text-align: center;
+}
+
+/* Heading */
+.services-heading3 {
+  font-size: 2.2rem;
+  color: #fdd28b;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* List */
+.services-list3 {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.services-list3 li {
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 12px 0;
+  position: relative;
+}
+
+/* Custom Bullet */
+.services-list3 li::before {
+  content: "✔";
+  color: #fdd28b;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .services-heading3 {
+    font-size: 1.8rem;
+  }
+
+  .services-list3 li {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .services-heading3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .services-list3 li {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+}
+
+/* Small Mobile – 360px */
+@media (max-width: 360px) {
+  .services-heading3 {
+    font-size: 1.3rem;
+  }
+
+  .services-list3 li {
+    font-size: 0.85rem;
+    padding: 8px 0;
+  }
+}
+
+
+
 
 /* ===== Purpose Section ===== */
 .purpose-section {

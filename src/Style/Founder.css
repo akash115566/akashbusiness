@@ -3,6 +3,135 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.mission-section11 {
+  position: relative;
+  height: 120vh; /* full viewport height */
+  background-image: url("/f4.webp"); /* your image path */
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; fixed background */
+  display: flex;
+  align-items: center; 
+  overflow: hidden;
+}
+
+.overlay11 {
+  /* background: rgba(0, 0, 0, 0.5); dark overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; /* vertical center */
+  padding-left: 10%; /* left text padding */
+}
+
+.mission-text11 {
+  max-width: 600px;
+  color: #fff;
+
+  text-align: left;     /* 🔥 text left */
+  margin-left: 0;       /* 🔥 center hatane ke liye */
+  margin-right: auto;   /* 🔥 left lock */
+}
+
+.mission-text11 h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f7931e;
+}
+
+.mission-text11 p{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.cta-btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f7931e, #ffbb55);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(135deg, #ff9f45, #ffc47a);
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .mission-text11 h2 {
+    font-size: 2.5rem;
+  }
+  .mission-text11 p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .overlay11 {
+    padding-left: 5%;
+    justify-content: center; /* center on mobile */
+  }
+  .mission-text11 h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .mission-text11 p {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  .cta-btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+}
+/* ✅ 480px Responsive Fix */
+@media (max-width: 480px) {
+
+  .mission-section11 {
+     height: 45vh;                 /* auto adjust height */
+    padding: 60px 20;              /* top-bottom spacing */
+    background-attachment: scroll !important;  
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .overlay11 {
+    padding: 0 4%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mission-text11 {
+    max-width: 100%;
+  }
+
+  .mission-text11 h2 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+  }
+
+  .mission-text11 p {
+    font-size: 0.9rem;
+  }
+
+  .cta-btn {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+
 .founder-section {
   width: 100%;
   background: #EBB02D;
@@ -28,8 +157,8 @@
   flex-wrap: wrap;
   max-width: 1350px;
   margin: 0 auto;
-  margin-top: 50px;
-  gap: 50px;
+  margin-top: 0px;
+  gap: 0px;
 }
 /* Founder Image */
 .founder-image {
@@ -56,12 +185,12 @@
 .founder-bg-overlay h4 {
   font-size: 1rem;
   margin-bottom: 20px;
-  margin: 30px;
+  margin: 0px;
 }
 .founder-bg-overlay p,ul{
   font-size: 1rem;
-  margin-bottom: 20px;
-  margin: 30px;
+  margin-bottom: 0px;
+  margin: 0px;
 }
 
 /* Founder Text */
@@ -73,21 +202,21 @@
 .founder-text h2 {
   font-size: 2.rem;
   color: #fdd28b;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   font-weight: 700;
 }
 
 .founder-text h3 {
   font-size: 1.2rem;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-weight: 500;
 }
 
 .founder-text p {
   font-size: 1rem;
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   color: #f9f9f9;
   text-align: justify;
 }
@@ -217,9 +346,30 @@
 
   .founder-image img {
     width: 100%;
-    max-width: 250px;
+    max-width: 450px;
     display: block;     /* inline-gap remove */
     margin-bottom: 0;   /* ❌ no gap */
     border-radius: 15px;
+  }
+
+    .founder-text {
+    text-align: center; /* optional */
+    gap: -60px;
+  }
+
+  .founder-text h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;   /* ✅ reduced */
+  }
+
+  .founder-text h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;    /* ✅ reduced */
+  }
+
+  .founder-text p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 10px;   /* ✅ reduced */
   }
 }
