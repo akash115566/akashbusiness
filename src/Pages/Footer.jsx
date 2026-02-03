@@ -65,11 +65,11 @@ const Footer = () => {
      <div className="social-links">
   <p><strong>Follow Us On:</strong></p>
 
-  <a href="https://www.facebook.com/businesscarenoida/" target="_blank" rel="noopener noreferrer">
+  <a href="https://share.google/fnkU5NXc1Vu23FTSW" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon icon={faFacebookF} />
   </a>
 
-  <a href="https://www.instagram.com/Businesscarenoida/" target="_blank" rel="noopener noreferrer">
+  <a href="https://share.google/yG4numo2IQ2TW394i" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon icon={faInstagram} />
   </a>
 
@@ -77,11 +77,11 @@ const Footer = () => {
     <FontAwesomeIcon icon={faLinkedinIn} />
   </a>
 
-  <a href="https://twitter.com/businesscareup" target="_blank" rel="noopener noreferrer">
+  <a href="https://x.com/businesscareup" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon icon={faTwitter} />
   </a>
 
-  <a href="https://www.youtube.com/@BusinessCareNoida/featured" target="_blank" rel="noopener noreferrer">
+  <a href="https://share.google/thz5aGDzQ6FRjbskI" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon icon={faYoutube} />
   </a>
 </div>
