@@ -7,6 +7,15 @@ import { faFacebookF, faInstagram, faLinkedinIn, faTwitter, faYoutube } from "@f
 import { Link } from "react-router-dom";   // ✅ Correct import
 
 const Footer = () => {
+
+
+  const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"   // smooth hata bhi sakte ho
+  });
+};
+
   return (
     <>
       <footer
@@ -35,12 +44,12 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Services</h3>
             <ul>
-               <li><Link to="/service">Grow Your Sales</Link></li>
-              <li><Link to="/home">Low Investment Big Buzz</Link></li>
-              <li><Link to="/service">Find your Target Audience</Link></li>
-              <li><Link to="/service">Startups Marketing Strategy</Link></li>
-              <li><Link to="/service">Business Growth Programe Strategy</Link></li>
-              <li><Link to="/service">Choose Right Media Platforms</Link></li>
+               <li><Link to="/service"  onClick={scrollToTop}>Grow Your Sales</Link></li>
+              <li><Link to="/"  onClick={scrollToTop}>Low Investment Big Buzz</Link></li>
+              <li><Link to="/service"  onClick={scrollToTop}>Find your Target Audience</Link></li>
+              <li><Link to="/service"  onClick={scrollToTop}>Startups Marketing Strategy</Link></li>
+              <li><Link to="/service"  onClick={scrollToTop}>Business Growth Programe Strategy</Link></li>
+              <li><Link to="/"  onClick={scrollToTop}>Choose Right Media Platforms</Link></li>
                <li><Link to="/formPage">Business care tv show registration form</Link></li>
       
             </ul>
