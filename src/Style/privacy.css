@@ -69,66 +69,92 @@
   }
 }
 
-/* Section */
+/* Wrapper */
 .privacy-section {
-  padding: 80px 0;
-  background-color: #ffffff;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.7;
 }
 
-/* Container */
-.privacy-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* Title */
-.privacy-title {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 50px;
-  color: #111827;
-}
-
-/* Grid */
-.privacy-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-/* Text */
-.privacy-left p,
-.privacy-right p {
+/* Paragraphs */
+.privacy-section p {
   font-size: 16px;
-  line-height: 1.8;
-  color: #374151;
   margin-bottom: 18px;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .privacy-grid {
-    grid-template-columns: 1fr;
+/* Headings */
+.privacy-section h3 {
+  font-size: 22px;
+  margin: 30px 0 12px;
+  color: #c9184a; /* Valentine / brand tone */
+  position: relative;
+}
+
+/* Underline effect */
+.privacy-section h3::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #c9184a;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+/* Lists */
+.privacy-section ul {
+  margin: 10px 0 20px 20px;
+}
+
+.privacy-section li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* ===================== */
+/* 📱 Mobile (max 576px) */
+/* ===================== */
+@media (max-width: 576px) {
+  .privacy-section {
+    padding: 40px 15px;
   }
 
-  .privacy-title {
-    font-size: 30px;
+  .privacy-section p,
+  .privacy-section li {
+    font-size: 15px;
+  }
+
+  .privacy-section h3 {
+    font-size: 19px;
   }
 }
 
-@media (max-width: 576px) {
+/* ===================== */
+/* 📱 Tablet (577px–992px) */
+/* ===================== */
+@media (min-width: 577px) and (max-width: 992px) {
   .privacy-section {
-    padding: 60px 0;
+    padding: 50px 30px;
   }
 
-  .privacy-title {
-    font-size: 26px;
+  .privacy-section h3 {
+    font-size: 21px;
+  }
+}
+
+/* ===================== */
+/* 💻 Large screens (1200px+) */
+/* ===================== */
+@media (min-width: 1200px) {
+  .privacy-section {
+    max-width: 1200px;
   }
 
-  .privacy-left p,
-  .privacy-right p {
-    font-size: 15px;
+  .privacy-section p,
+  .privacy-section li {
+    font-size: 17px;
   }
 }

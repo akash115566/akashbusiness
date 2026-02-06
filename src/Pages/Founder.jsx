@@ -34,8 +34,8 @@ const Founder = () => {
                             <h3 style={{fontSize:"2rem"}}>Ms. Pooja Sharma</h3>
                             <h3 style={{fontSize:"1rem"}}>
                               BUSINESS CARE FOUNDER | SENIOR MEDIA TV ANCHOR | CELEBRITY BUSINESS COACH | YOUNGEST ENTREPRENEUR | LAWYER,BRICS MEMBER |
-                            </h3>
-                            <p style={{fontSize:"1rem",lineHeight:"30px"}}>Young Entrepreneur, Senior Media person, and Business Trainer Pooja sharma</p>
+                           YOUNG ENTERPRENEUR , SENIOR MEDIA PERSON, AND BUSINESS TRANER POOJA SHARMA </h3>
+                          
                             <p >
                               Pooja Sharma is a well-known personality in India, celebrated for her versatility, leadership, and exceptional achievements across media, business, and social welfare. She began her journey at a young age, winning hearts on television as a news anchor, and later gaining recognition as an actress in TV serials and short films. In 2016, with a bold vision, she founded her own Production Company Pooja Movie Creations, marking the beginning of her inspiring entrepreneurial journey. Along with her corporate accomplishments, Pooja Sharma has made significant contributions to society. She has served as the Chairperson of the Social Justice Board, and later founded and chaired the Commission for National Justice & Women Safety, playing a pivotal role in social welfare and women empowerment. Her influence extends globally as well—she is associated with BRICS, actively promoting international trade expansion and global business collaborations. A law graduate and an experienced business legal advisor, she combines knowledge with leadership, making her contributions diverse and impactful. Not only is she a successful industrialist, but she is also deeply committed to social upliftment, dedicated to empowering communities and contributing to national progress. At a young age, she achieved a rare milestone—establishing 14 companies in just 14 years, making her one of the most dynamic businesswomen in the country.
                             </p>
