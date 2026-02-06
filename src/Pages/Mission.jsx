@@ -18,7 +18,7 @@ const Mission = () => {
           <div className="mission-text1">
             <h2>Empowering <br/> Your Brand</h2>
             <p>
-              At <strong>BusinessCare TV Show</strong>, <br/> we create marketing solutions that
+              At BusinessCare TV Show, <br/> we create marketing solutions that
               
             </p>
             {/* <button className="cta-btn">Learn More</button> */}

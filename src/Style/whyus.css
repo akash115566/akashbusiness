@@ -32,6 +32,7 @@
 .text-container1 h2 {
   font-size: 3rem;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .text-container1 p {

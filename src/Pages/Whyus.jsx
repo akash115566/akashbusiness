@@ -8,7 +8,7 @@ const Whyus = () => {
       <section className="whyus-section1">
         <div className="overlay1">
           <div className="text-container1">
-            <h2>Why Business Care </h2>
+            <h2>Why Business<br/> Care </h2>
             <p>Business improves the quality of life in two ways. Firstly, it provides high-quality goods and service</p>
           
             {/* <ul>

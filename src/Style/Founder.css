@@ -263,9 +263,7 @@
   }
 }
 @media (max-width: 600px) {
-  .founder-section {
-    /* padding: 50px 5%; */
-  }
+ 
 
   .founder-container {
     flex-direction: column;
@@ -319,7 +317,7 @@
 
   .founder-image img {
     width: 100%;
-    max-width: 250px;
+    max-width: 550px;
     border-radius: 15px;
   }
 
@@ -346,7 +344,8 @@
 
   .founder-image img {
     width: 100%;
-    max-width: 450px;
+    height: 600px;
+    max-width: 590px;
     display: block;     /* inline-gap remove */
     margin-bottom: 0;   /* ❌ no gap */
     border-radius: 15px;
