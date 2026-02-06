@@ -16,10 +16,10 @@ const Mission = () => {
       <section className="mission-section1" >
         <div className="overlay">
           <div className="mission-text1">
-            <h2>Empowering Your <br/> Brand</h2>
+            <h2>Empowering <br/> Your Brand</h2>
             <p>
-              At <strong>BusinessCare TV Show</strong>, we create marketing solutions that
-              connect your brand with your audience effectively. Let’s transform ideas into results.
+              At <strong>BusinessCare TV Show</strong>, <br/> we create marketing solutions that
+              
             </p>
             {/* <button className="cta-btn">Learn More</button> */}
           </div>
