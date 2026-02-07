@@ -89,8 +89,9 @@ const Navbar = () => {
         left: 0,
         width: "100%",
         zIndex: 999,
-        background: "#fff",       // themeColor removed
+        background: "#111",       // themeColor removed
         padding: "10px 20px",
+        border:"1px solid  #fff",
         borderBottom: "1px solid #ccc",
         transition: "all 0.3s ease"
       }}>
@@ -101,18 +102,18 @@ const Navbar = () => {
           maxWidth: "1200px",
           margin: "0 auto"
         }}>
-          <div style={{ fontSize: "20px", fontWeight: "bold", color: "#111" }}><img
+          <div style={{ fontSize: "20px", fontWeight: "bold", color: "#fff" }}><img
     src="./lo1.jpeg"
     alt="MSME Business Care"
     style={{ height: "32px", width: "auto" }}
   /></div>
 
           {/* Navbar Links */}
-         <div className="nav-links" style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+         <div className="nav-links" style={{ display: "flex", alignItems: "center", gap: "20px", }}>
 
-            <Link to="/" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Home</Link>
+            <Link to="/" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Home</Link>
             <div onMouseEnter={() => setIsAboutOpen(true)} onMouseLeave={() => setIsAboutOpen(false)} style={{ position: "relative" }}>
-              <Link to="/about" style={{ ...linkStyle, display: "flex", alignItems: "center", color:"#111" }}>About ▾</Link>
+              <Link to="/about" style={{ ...linkStyle, display: "flex", alignItems: "center", color:"#fff" }}>About ▾</Link>
               {isAboutOpen && (
                 <div style={{
                   position: "absolute",
@@ -126,46 +127,46 @@ const Navbar = () => {
                   overflow: "hidden",
                   boxShadow: "0 4px 10px rgba(0,0,0,0.2)"
                 }}>
-                  <Link to="/founder" style={{ ...dropdownLinkStyle, color:"#111" }}>Our Founder</Link>
-                  <Link to="/mission" style={{ ...dropdownLinkStyle, color:"#111" }}>Mission & Vision</Link>
-                  <Link to="/why-us" style={{ ...dropdownLinkStyle, color:"#111" }}>Why Us</Link>
+                  <Link to="/founder" style={{ ...dropdownLinkStyle, color:"#fff" }}>Our Founder</Link>
+                  <Link to="/mission" style={{ ...dropdownLinkStyle, color:"#fff" }}>Mission & Vision</Link>
+                  <Link to="/why-us" style={{ ...dropdownLinkStyle, color:"#fff" }}>Why Us</Link>
                 </div>
               )}
             </div>
-            <Link to="/award" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Award</Link>
-            <Link to="/service" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Service</Link>
-            <Link to="/video" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Video</Link>
-            <Link to="/gallery" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Gallery</Link>
-            <Link to="/contact" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Contact</Link>
+            <Link to="/award" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Award</Link>
+            <Link to="/service" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Service</Link>
+            <Link to="/video" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Video</Link>
+            <Link to="/gallery" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Gallery</Link>
+            <Link to="/contact" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Contact</Link>
           </div>
 
           {/* Hamburger for mobile */}
           <div className="hamburger" onClick={() => setIsOpen(!isOpen)} style={{ display: "none", flexDirection: "column", cursor: "pointer", gap: "5px" }}>
-            <span style={{ width: "25px", height: "3px", background: "#111" }}></span>
-            <span style={{ width: "25px", height: "3px", background: "#111" }}></span>
-            <span style={{ width: "25px", height: "3px", background: "#111" }}></span>
+            <span style={{ width: "25px", height: "3px", background: "#fff" }}></span>
+            <span style={{ width: "25px", height: "3px", background: "#fff" }}></span>
+            <span style={{ width: "25px", height: "3px", background: "#fff" }}></span>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isOpen && (
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", background: "#fff", padding: "10px 0" }}>
-            <Link to="/" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Home</Link>
+            <Link to="/" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Home</Link>
             <div style={{ width: "100%", textAlign: "center" }}>
               <div onClick={() => setIsAboutOpen(!isAboutOpen)} style={{ ...linkStyle, display: "block", cursor: "pointer", color:"#111" }}>About ▾</div>
               {isAboutOpen && (
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", paddingTop: "5px" }}>
-                  <Link to="/founder" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#111" }}>Our Founder</Link>
-                  <Link to="/mission" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#111" }}>Mission & Vision</Link>
-                  <Link to="/why-us" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#111" }}>Why Us</Link>
+                  <Link to="/founder" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Our Founder</Link>
+                  <Link to="/mission" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Mission & Vision</Link>
+                  <Link to="/why-us" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Why Us</Link>
                 </div>
               )}
             </div>
-            <Link to="/award" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Award</Link>
-            <Link to="/service" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Service</Link>
-            <Link to="/video" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Video</Link>
-            <Link to="/gallery" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Gallery</Link>
-            <Link to="/contact" onClick={handleLinkClick} style={{ ...linkStyle, color:"#111" }}>Contact</Link>
+            <Link to="/award" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Award</Link>
+            <Link to="/service" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Service</Link>
+            <Link to="/video" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Video</Link>
+            <Link to="/gallery" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Gallery</Link>
+            <Link to="/contact" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Contact</Link>
           </div>
         )}
 

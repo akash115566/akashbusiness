@@ -182,7 +182,7 @@ const Home = () => {
         <div className="hero-right">
           <h2 className="hero-title">MEET LIVE WITH INDIA'S CELEBRITY BUSINESS COACHES</h2>
 
-          <h3 className="coach-names">Mr. Ankur Bansal<br/><span style={{color:"#fff"}}>&</span><br />Ms. Pooja Sharma</h3>
+          <h3 className="coach-names">Mr. Ankur Bansal<br/><span style={{color:"#340303"}}>&</span><br />Ms. Pooja Sharma</h3>
 
           <p className="coach-subtitle">CELEBRITY COACHES</p>
 
@@ -279,13 +279,13 @@ const Home = () => {
         <span>पुरानी तकनीकों</span> का इस्तेमाल करते हैं
 
 
-      <p style={{fontSize:"1.55rem"}}>
+      <p style={{fontSize:"2rem"}}>
         जिसके चलते बिजनेस <strong style={{color:"orange"}}>लॉस</strong> में चले जाते हैं।
         व्यापार की छोटी सी रणनीति की गलतियाँ आपको <strong style={{color:"orange"}}>घाटे</strong> में ला सकती हैं।
       </p>
             </h1>
 
-      <p className="english-text" style={{ fontSize:"1.55rem"}}>
+      <p className="english-text" style={{ fontSize:"2rem"}}>
 Come To Us And We Will Show You How To Take Your Company To New Heights
       </p>
 
