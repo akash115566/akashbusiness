@@ -9,7 +9,7 @@ const Whyus = () => {
         <div className="overlay1">
           <div className="text-container1">
             <h2>Why Business<br/> Care </h2>
-            <p>Business improves the quality of life in two ways. Firstly, it provides high-quality goods and service</p>
+            <p style={{textAlign:"left",fontWeight:"500"}}>Business improves the quality <br/>of life in two ways. Firstly, it<br/> provides high-quality goods<br/> and service</p>
           
             {/* <ul>
             <li><strong>Innovative Strategies:</strong> Unique marketing approaches to make your brand stand out.</li>

@@ -166,5 +166,44 @@
   }
   .hamburger {
     display: flex;
+    background-color: black;
   }
+  /* Hamburger */
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #111;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: black;
+  width: 100%;
+}
+
+/* Dropdown menu for desktop */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu a {
+  padding: 10px 15px;
+  text-align: left;
+  color: #fff;
+}
+
 }

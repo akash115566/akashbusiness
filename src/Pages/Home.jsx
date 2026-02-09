@@ -118,11 +118,18 @@ const Home = () => {
 
 
   const mediaPoints = [
-    "Prime time TV channel placements",
-    "Targeted digital & social media ads",
-    "Strategic news & business media coverage",
-    "Brand visibility across multi-platforms",
-    "ROI-focused media planning",
+    "Media Placement Strategy",
+    "Television media promotion & advertising",
+    "TV commercial placements on national tv channels as per the product",
+    "TV ad films development as per the product",
+    "Concrete innovative ideas for tv commercial ads",
+    "Radio ads planning & placements",
+    "IPL specials promotions for exclusive products",
+    "OTT platforms promotions",
+    "Airports promotions pan india",
+    "Metro promotions pan india",
+    "PVR cinemas pan india",
+    "In films tv serials promotions & integrations",
   ];
 
   const duplicatedImages = [
@@ -274,25 +281,25 @@ const Home = () => {
 >
   <div className="purpose-container">
     <div className="purpose-content">
-      <h1>
+      <h1 style={{textAlign:'left'}}>
         ज्यादातर बिजनेसमैन बिजनेस एक्सपेंशन के लिए{" "}
         <span>पुरानी तकनीकों</span> का इस्तेमाल करते हैं
 
 
-      <p style={{fontSize:"2rem"}}>
+    
         जिसके चलते बिजनेस <strong style={{color:"orange"}}>लॉस</strong> में चले जाते हैं।
         व्यापार की छोटी सी रणनीति की गलतियाँ आपको <strong style={{color:"orange"}}>घाटे</strong> में ला सकती हैं।
-      </p>
+   
             </h1>
 
-      <p className="english-text" style={{ fontSize:"2rem"}}>
+      {/* <p className="english-text" style={{ fontSize:"2rem"}}>
 Come To Us And We Will Show You How To Take Your Company To New Heights
-      </p>
+      </p> */}
 
       <div className="media-container">
         {/* Left Content */}
         <div className="media-left">
-          <h2>Media Placement Strategy</h2>
+          <h2 style={{fontSize:"2rem"}}>Come To Us And We Will Show You How To Take Your Company To New Heights</h2>
           <ul>
             {mediaPoints.map((point, index) => (
               <li key={index}>{point}</li>

@@ -115,7 +115,7 @@
 
   .footer-container {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
 
   .social-links a {

@@ -95,14 +95,16 @@ const Navbar = () => {
         borderBottom: "1px solid #ccc",
         transition: "all 0.3s ease"
       }}>
-        <div style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          maxWidth: "1200px",
-          margin: "0 auto"
-        }}>
-          <div style={{ fontSize: "20px", fontWeight: "bold", color: "#fff" }}><img
+       <div style={{
+  display: "flex",
+  alignItems: "center",
+  gap: "15px"
+}}>
+  {/* Hamburger */}
+ 
+
+          <div style={{ fontSize: "20px", fontWeight: "bold", color: "#fff" }}>
+            <img
     src="./lo1.jpeg"
     alt="MSME Business Care"
     style={{ height: "32px", width: "auto" }}
@@ -119,7 +121,7 @@ const Navbar = () => {
                   position: "absolute",
                   top: "100%",
                   left: 0,
-                  background: "#fff",   // themeColor removed
+                  background: "#111",   // themeColor removed
                   display: "flex",
                   flexDirection: "column",
                   minWidth: "180px",
@@ -150,10 +152,10 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", background: "#fff", padding: "10px 0" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start",textAlign:"left", gap: "10px", background: "#111", padding: "10px 0" }}>
             <Link to="/" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Home</Link>
-            <div style={{ width: "100%", textAlign: "center" }}>
-              <div onClick={() => setIsAboutOpen(!isAboutOpen)} style={{ ...linkStyle, display: "block", cursor: "pointer", color:"#111" }}>About ▾</div>
+            <div style={{ width: "100%", textAlign: "left" }}>
+              <div onClick={() => setIsAboutOpen(!isAboutOpen)} style={{ ...linkStyle, display: "block", cursor: "pointer", color:"#fff" }}>About ▾</div>
               {isAboutOpen && (
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", paddingTop: "5px" }}>
                   <Link to="/founder" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Our Founder</Link>
