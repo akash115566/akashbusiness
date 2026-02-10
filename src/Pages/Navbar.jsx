@@ -98,7 +98,8 @@ const Navbar = () => {
        <div style={{
   display: "flex",
   alignItems: "center",
-  gap: "15px"
+  gap: "45px",
+  width: "1200px",
 }}>
   {/* Hamburger */}
  
@@ -111,7 +112,7 @@ const Navbar = () => {
   /></div>
 
           {/* Navbar Links */}
-         <div className="nav-links" style={{ display: "flex", alignItems: "center", gap: "20px", }}>
+         <div className="nav-links" style={{ display: "flex", alignItems: "center", gap: "100px" }}>
 
             <Link to="/" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Home</Link>
             <div onMouseEnter={() => setIsAboutOpen(true)} onMouseLeave={() => setIsAboutOpen(false)} style={{ position: "relative" }}>
@@ -152,7 +153,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start",textAlign:"left", gap: "10px", background: "#111", padding: "10px 0" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start",textAlign:"left", gap: "20px", background: "#111", padding: "10px 0" }}>
             <Link to="/" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Home</Link>
             <div style={{ width: "100%", textAlign: "left" }}>
               <div onClick={() => setIsAboutOpen(!isAboutOpen)} style={{ ...linkStyle, display: "block", cursor: "pointer", color:"#fff" }}>About ▾</div>
