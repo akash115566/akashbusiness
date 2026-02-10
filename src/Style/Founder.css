@@ -370,5 +370,6 @@
     font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 10px;   /* ✅ reduced */
+    word-spacing: 2px;
   }
 }
