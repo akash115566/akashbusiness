@@ -258,6 +258,18 @@ const Home = () => {
         allowFullScreen
       ></iframe>
     </div>
+
+
+     <div className="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/qFwWAnjr7tQ"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
   </div>
 </section>
 

@@ -50,7 +50,7 @@
     width: 250px;
     padding: 16px;
     border-radius: 5px;
-    border: 1px solid #333;
+    border: 1px solid rgb(87, 23, 23);
     color: #333;
 }
 .hero-text1{
@@ -69,6 +69,7 @@
 .hero-title{
     text-decoration: underline;
     word-spacing: 0.1px;
+    color:rgb(87, 23, 23) ;
 }
 .btn-primary {
   padding: 12px ;
