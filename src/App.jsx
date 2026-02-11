@@ -16,6 +16,7 @@ import ScrollToTop from "./Pages/ScrollToTop";
 import Privacy from "./Pages/Privacy";
 import Terms from "./Pages/Terms";
 import FormPage from "./Pages/FormPage";
+import Associate from "./Pages/Associate";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
                  <Route path="/privacy" element={<Privacy />} />
                  <Route path="/terms" element={<Terms />} />
                  <Route path="/formPage" element={<FormPage />} />
+                  <Route path="/associate" element={<Associate />} />
               
       </Routes>
       <Footer />

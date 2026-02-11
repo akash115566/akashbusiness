@@ -36,6 +36,7 @@ const Footer = () => {
               <li><Link to="/why-us">Why Business Care</Link></li>
                <li><Link to="/privacy">Privacy & Policy</Link></li>
                  <li><Link to="/terms">Terms and Conditions</Link></li>
+                 <li><Link to="/associate">Business Care Associate Form</Link></li>
                        
             </ul>
           </div>

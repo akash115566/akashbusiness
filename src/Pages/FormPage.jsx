@@ -401,527 +401,355 @@
 
 
 
-// import React from "react";
-// import { jsPDF } from "jspdf";
-// import html2canvas from "html2canvas";
-// import "../Style/form.css"
+import React from "react";
+import { jsPDF } from "jspdf";
+import html2canvas from "html2canvas";
+import "../Style/form.css"
 
-// const FormPage = () => {
+const FormPage = () => {
 
 
-//   const downloadPDF = () => {
-//     const element = document.getElementById("form-content"); // wrap your form in a div with this id
+  const downloadPDF = () => {
+    const element = document.getElementById("form-content"); // wrap your form in a div with this id
 
-//     html2canvas(element, { scale: 2, useCORS: true }).then((canvas) => {
-//       const imgData = canvas.toDataURL("image/png");
-//       const pdf = new jsPDF("p", "mm", "a4");
-//       const pdfWidth = pdf.internal.pageSize.getWidth();
-//       const pdfHeight = pdf.internal.pageSize.getHeight();
-//       const imgWidth = pdfWidth;
-//       const imgHeight = (canvas.height * imgWidth) / canvas.width;
+    html2canvas(element, { scale: 2, useCORS: true }).then((canvas) => {
+      const imgData = canvas.toDataURL("image/png");
+      const pdf = new jsPDF("p", "mm", "a4");
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = pdf.internal.pageSize.getHeight();
+      const imgWidth = pdfWidth;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-//       let heightLeft = imgHeight;
-//       let position = 0;
+      let heightLeft = imgHeight;
+      let position = 0;
 
-//       pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
-//       heightLeft -= pdfHeight;
+      pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+      heightLeft -= pdfHeight;
 
-//       while (heightLeft > 0) {
-//         position -= pdfHeight;
-//         pdf.addPage();
-//         pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
-//         heightLeft -= pdfHeight;
-//       }
+      while (heightLeft > 0) {
+        position -= pdfHeight;
+        pdf.addPage();
+        pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+        heightLeft -= pdfHeight;
+      }
 
-//       pdf.save("Business-Care-Form.pdf");
-//     });
-//   };
-//   return (
-//     <>
-//      <div id="form-content">
+      pdf.save("Business-Care-Form.pdf");
+    });
+  };
+  return (
+    <>
+     <div id="form-content">
      
-//     <div className="form-page">
+    <div className="form-page">
 
-//       {/* ================= BANNER ================= */}
-//       <div className="form-banner">
-//         <div className="banner-left">
-//           <img src="/lo1.jpeg" alt="Business Care Logo" />
-//         </div>
+      {/* ================= BANNER ================= */}
+      <div className="form-banner">
+        <div className="banner-left">
+          <img src="/lo1.jpeg" alt="Business Care Logo" />
+        </div>
 
-//         <div className="banner-center">
-//           <h1>BUSINESS CARE TV SHOW</h1>
-//           <p>( उ भ र ता भा र त )</p>
-//         </div>
+        <div className="banner-center">
+          <h1>BUSINESS CARE TV SHOW</h1>
+          <p>( उ भ र ता भा र त )</p>
+        </div>
 
-//         <div className="banner-right">
-//           <p>📞 8076151724</p>
-//           <p>www.msmebusinesscare.com</p>
-//           <p>www.businesscare.org.in</p>
-//         </div>
-//       </div>
+        <div className="banner-right">
+          <p>📞 8076151724</p>
+          <p>www.msmebusinesscare.com</p>
+          <p>www.businesscare.org.in</p>
+        </div>
+      </div>
 
-//       {/* ================= CLIENT INFORMATION ================= */}
-//       <div className="section-title">
-//         CLIENT &nbsp; INFORMATION
-//       </div>
+      {/* ================= CLIENT INFORMATION ================= */}
+      <div className="section-title">
+        CLIENT &nbsp; INFORMATION
+      </div>
 
-//      <div className="form-grid">
-//   <div className="field">Founder Full Name</div>
-//   <input type="text" name="founderName" placeholder="Enter Founder Full Name" className="line" />
+     <div className="form-grid">
+  <div className="field">Founder Full Name</div>
+  <input type="text" name="founderName" placeholder="Enter Founder Full Name" className="line" />
 
-//   <div className="field">Company Name</div>
-//   <input type="text" name="companyName" placeholder="Enter Company Name" className="line" />
+  <div className="field">Company Name</div>
+  <input type="text" name="companyName" placeholder="Enter Company Name" className="line" />
 
-//   <div className="field">GST No</div>
-//   <input type="text" name="gstNumber" placeholder="Enter GST Number" className="line" />
+  <div className="field">GST No</div>
+  <input type="text" name="gstNumber" placeholder="Enter GST Number" className="line" />
 
-//   <div className="field">Gender (Male / Female)</div>
-//   <input type="text" name="gender" placeholder="Enter Gender" className="line" />
+  <div className="field">Gender (Male / Female)</div>
+  <input type="text" name="gender" placeholder="Enter Gender" className="line" />
 
-//   <div className="field">CIN No</div>
-//   <input type="text" name="cinNumber" placeholder="Enter CIN Number" className="line" />
+  <div className="field">CIN No</div>
+  <input type="text" name="cinNumber" placeholder="Enter CIN Number" className="line" />
 
-//   <div className="field">Address</div>
-//   <input type="text" name="address" placeholder="Enter Address" className="line" />
+  <div className="field">Address</div>
+  <input type="text" name="address" placeholder="Enter Address" className="line" />
 
-//   <div className="field">City</div>
-//   <input type="text" name="city" placeholder="Enter City" className="line" />
+  <div className="field">City</div>
+  <input type="text" name="city" placeholder="Enter City" className="line" />
 
-//   <div className="field">Phone Number</div>
-//   <input type="text" name="phoneNumber" placeholder="Enter Phone Number" className="line" />
+  <div className="field">Phone Number</div>
+  <input type="text" name="phoneNumber" placeholder="Enter Phone Number" className="line" />
 
-//   <div className="field">Zip Code</div>
-//   <input type="text" name="zipCode" placeholder="Enter Zip Code" className="line" />
-// </div>
-
-
-//       {/* ================= CONTACT INFORMATION ================= */}
-//       <div className="section-title">
-//         CONTACT &nbsp;INFORMATION
-//       </div>
-
-//      <div className="form-grid">
-//   <div className="field">Authorised Representative Name</div>
-//   <input type="text" name="authorizedRepName" placeholder="Enter Name" className="line" />
-
-//   <div className="field">Phone (Work / Cell)</div>
-//   <input type="text" name="workPhone" placeholder="Enter Phone Number" className="line" />
-
-//   <div className="field">Owner Contact Name</div>
-//   <input type="text" name="ownerContactName" placeholder="Enter Name" className="line" />
-
-//   <div className="field">Emergency Phone</div>
-//   <input type="text" name="emergencyPhone" placeholder="Enter Emergency Phone" className="line" />
-
-//   <div className="field">Registered Address</div>
-//   <input type="text" name="registeredAddress" placeholder="Enter Address" className="line" />
-
-//   <div className="field">Alternate Phone</div>
-//   <input type="text" name="alternatePhone" placeholder="Enter Phone Number" className="line" />
-// </div>
+  <div className="field">Zip Code</div>
+  <input type="text" name="zipCode" placeholder="Enter Zip Code" className="line" />
+</div>
 
 
-//       {/* ================= BUSINESS REGISTRATION ================= */}
-//       <div className="section-title">
-//         BUSINESS &nbsp; REGISTRATION &nbsp; INFORMATION
-//       </div>
+      {/* ================= CONTACT INFORMATION ================= */}
+      <div className="section-title">
+        CONTACT &nbsp;INFORMATION
+      </div>
 
-//      <div className="form-grid">
-//   <div className="field">Government Registrations (Yes / No)</div>
-//   <input type="text" name="governmentRegistration" placeholder="Yes / No" className="line" />
+     <div className="form-grid">
+  <div className="field">Authorised Representative Name</div>
+  <input type="text" name="authorizedRepName" placeholder="Enter Name" className="line" />
 
-//   <div className="field">GST Number</div>
-//   <input type="text" name="gstNumber" placeholder="Enter GST Number" className="line" />
+  <div className="field">Phone (Work / Cell)</div>
+  <input type="text" name="workPhone" placeholder="Enter Phone Number" className="line" />
 
-//   <div className="field">PAN Number (Company / Owner)</div>
-//   <input type="text" name="panNumber" placeholder="Enter PAN Number" className="line" />
+  <div className="field">Owner Contact Name</div>
+  <input type="text" name="ownerContactName" placeholder="Enter Name" className="line" />
 
-//   <div className="field">CIN Number (Pvt. Ltd. / Ltd.)</div>
-//   <input type="text" name="cinNumber" placeholder="Enter CIN Number" className="line" />
+  <div className="field">Emergency Phone</div>
+  <input type="text" name="emergencyPhone" placeholder="Enter Emergency Phone" className="line" />
 
-//   <div className="field">MSME Registration No. (Optional)</div>
-//   <input type="text" name="msmeNumber" placeholder="Enter MSME Number" className="line" />
+  <div className="field">Registered Address</div>
+  <input type="text" name="registeredAddress" placeholder="Enter Address" className="line" />
 
-//   <div className="field">IEC Code (If applicable)</div>
-//   <input type="text" name="iecCode" placeholder="Enter IEC Code" className="line" />
-// </div>
-
-//       {/* ================= BUSINESS SEGMENT ================= */}
-//       <div className="section-title">
-//         BUSINESS &nbsp; SEGMENT
-//       </div>
-
-//       <p className="segment-note">
-//         ( Please tick or write your segment )
-//       </p>
-
-//      <div className="segment-grid">
-//   <label>
-//     <input type="checkbox" name="businessSegment" value="FMCG" /> FMCG
-//   </label>
-//   <label>
-//     <input type="checkbox" name="businessSegment" value="Ayurvedic" /> Ayurvedic
-//   </label>
-//   <label>
-//     <input type="checkbox" name="businessSegment" value="Grocery" /> Grocery
-//   </label>
-//   <label>
-//     <input type="checkbox" name="businessSegment" value="Real Estate" /> Real Estate
-//   </label>
-//   <label>
-//     <input type="checkbox" name="businessSegment" value="Manufacturing" /> Manufacturing
-//   </label>
-//   <label>
-//     <input type="checkbox" name="businessSegment" value="Other" /> Other
-//   </label>
-//   <label>
-//     <input type="checkbox" name="businessSegment" value="Technology / IT" /> Technology / IT
-//   </label>
-//   <label>
-//     <input type="checkbox" name="businessSegment" value="Pharma" /> Pharma
-//   </label>
-//   <label>
-//     <input type="checkbox" name="businessSegment" value="Agriculture" /> Agriculture
-//   </label>
-//   <label>
-//     <input type="checkbox" name="businessSegment" value="Cosmetics" /> Cosmetics
-//   </label>
-// </div>
+  <div className="field">Alternate Phone</div>
+  <input type="text" name="alternatePhone" placeholder="Enter Phone Number" className="line" />
+</div>
 
 
+      {/* ================= BUSINESS REGISTRATION ================= */}
+      <div className="section-title">
+        BUSINESS &nbsp; REGISTRATION &nbsp; INFORMATION
+      </div>
 
+     <div className="form-grid">
+  <div className="field">Government Registrations (Yes / No)</div>
+  <input type="text" name="governmentRegistration" placeholder="Yes / No" className="line" />
 
-//     <section className="telecast-section">
-//       {/* Top Heading */}
-//       <h1 className="telecast-heading">TELECASTDETAILS</h1>
+  <div className="field">GST Number</div>
+  <input type="text" name="gstNumber" placeholder="Enter GST Number" className="line" />
 
-//       {/* Segment Selected */}
-//       <div className="segment-section">
-//         <h2>Segment Selected:</h2>
-//         <div className="checkbox-group">
-//           <label><input type="checkbox" /> Founder Story</label>
-//           <label><input type="checkbox" /> Startup Feature</label>
-//           <label><input type="checkbox" /> Global Business Leaders</label>
-//           <label><input type="checkbox" /> MSME Feature</label>
-//           <label><input type="checkbox" /> Product Showcase</label>
-//           <label><input type="checkbox" /> Franchise & Dealer Network Feature</label>
-//           <label><input type="checkbox" /> Other:</label>
-//         </div>
-//       </div>
+  <div className="field">PAN Number (Company / Owner)</div>
+  <input type="text" name="panNumber" placeholder="Enter PAN Number" className="line" />
 
-//       {/* Declaration & Compliance */}
-//       <div className="declaration-section">
-//         <h2>Declaration & Compliance</h2>
-//         <p style={{color:"#111"}}>Please read carefully and acknowledge:</p>
-//         <ul>
-//           <li>All information provided by me and my company is true, correct, and legally compliant.</li>
-//           <li>Business Care is only a media platform and does not promote, sell, or endorse any product or service on behalf of my business.</li>
-//           <li>If any information submitted by me is found false, misleading, or legally non-compliant, Business Care has the right to: Hold or cancel the telecast, Edit or remove misleading content, Deny participation.</li>
-//           <li>
-//             I authorize Business Care to telecast, publish, and distribute my interview/content on:
-//             <div className="platforms-left">
-//               <div className="platform-item">
-//                 <span>Aaj Tak HD</span> <input type="checkbox" />
-//               </div>
-//               <div className="platform-item">
-//                 <span>CNBC Prime</span> <input type="checkbox" />
-//               </div>
-//               <div className="platform-item">
-//                 <span>ABP News</span> <input type="checkbox" />
-//               </div>
-//               <div className="platform-item">
-//                 <span>YouTube, Social Media, Partner Platforms</span> <input type="checkbox" />
-//               </div>
-//             </div>
-//           </li>
-//           <li>I consent to Business Care using my interview clips, photos, and brand content for editorial, promotional, and marketing purposes.</li>
-//           <li>I agree that Business Care / Pooja Movie Creations / TV channel is not responsible for any legal, financial, or business-related consequences arising from my company’s claims or activities.</li>
-//         </ul>
-//       </div>
-//     </section>
+  <div className="field">CIN Number (Pvt. Ltd. / Ltd.)</div>
+  <input type="text" name="cinNumber" placeholder="Enter CIN Number" className="line" />
+
+  <div className="field">MSME Registration No. (Optional)</div>
+  <input type="text" name="msmeNumber" placeholder="Enter MSME Number" className="line" />
+
+  <div className="field">IEC Code (If applicable)</div>
+  <input type="text" name="iecCode" placeholder="Enter IEC Code" className="line" />
+</div>
+
+      {/* ================= BUSINESS SEGMENT ================= */}
+      <div className="section-title">
+        BUSINESS &nbsp; SEGMENT
+      </div>
+
+      <p className="segment-note">
+        ( Please tick or write your segment )
+      </p>
+
+     <div className="segment-grid">
+  <label>
+    <input type="checkbox" name="businessSegment" value="FMCG" /> FMCG
+  </label>
+  <label>
+    <input type="checkbox" name="businessSegment" value="Ayurvedic" /> Ayurvedic
+  </label>
+  <label>
+    <input type="checkbox" name="businessSegment" value="Grocery" /> Grocery
+  </label>
+  <label>
+    <input type="checkbox" name="businessSegment" value="Real Estate" /> Real Estate
+  </label>
+  <label>
+    <input type="checkbox" name="businessSegment" value="Manufacturing" /> Manufacturing
+  </label>
+  <label>
+    <input type="checkbox" name="businessSegment" value="Other" /> Other
+  </label>
+  <label>
+    <input type="checkbox" name="businessSegment" value="Technology / IT" /> Technology / IT
+  </label>
+  <label>
+    <input type="checkbox" name="businessSegment" value="Pharma" /> Pharma
+  </label>
+  <label>
+    <input type="checkbox" name="businessSegment" value="Agriculture" /> Agriculture
+  </label>
+  <label>
+    <input type="checkbox" name="businessSegment" value="Cosmetics" /> Cosmetics
+  </label>
+</div>
 
 
 
-// <section className="legal-section">
-//   {/* Legal Disclaimer Text */}
-//   <div className="disclaimer-text">
-//     <h2>Legal Disclaimer</h2>
-//     <p>
-//       Pooja Movie Creations and Business Care TV Show have no involvement, responsibility, or association with any legal activity, past fraud, criminal case, or police matter related to any businessman, businesswoman, brand, or company participating in the show.
-//     </p>
-//     <p>
-//       All participants are solely responsible for the authenticity, legality, and truthfulness of the information they provide. Business Care TV Show strictly follows media and advertising standards and does not promote or support any false, misleading, or fraudulent information.
-//     </p>
-//     <p>
-//       If any complaint, dispute, or legal issue arises, or if any misleading content is detected: Business Care reserves full rights to immediately stop, remove, or cancel the telecast without any liability. This platform is exclusively for advertising, branding, and promotional purposes, and all legal responsibilities lie with the business owner or company providing the information.
-//     </p>
-//     <p>
-//       Business Care and Pooja Movie Creations are strictly media and advertising platforms. We do not take any responsibility for: any fraud, misrepresentation, cheating, or 420 activities done by any business owner or participant; any false or misleading claims made by the business owner during interviews or promotional content; any disputes, financial dealings, or transactions between the business owner and the public. All content aired or published by Business Care TV Show is purely for advertising and promotional purposes only. The accuracy, legality, and authenticity of all information shared by the business owner remains solely their own responsibility. If any misconduct or false information is detected, Business Care reserves the right to withhold, edit, or cancel the telecast without liability.
-//     </p>
-//   </div>
 
-//   {/* Consent & Signature Form */}
-//   <div className="consent-box">
-//     <h2>CONSENT & SIGNATURE</h2>
-//     <form id="consentForm">
-//       <p>
-//         <label htmlFor="ownerName">Owner/Authorized Signatory Name:</label><br />
-//         <input type="text" id="ownerName" name="ownerName" required style={{ width: '100%', padding: '8px', borderRadius: '4px', border: 'none', marginBottom: '10px' }} />
-//       </p>
-//       <p>
-//         <label htmlFor="signature">Signature:</label><br />
-//         <input type="text" id="signature" name="signature" required style={{ width: '100%', padding: '8px', borderRadius: '4px', border: 'none', marginBottom: '10px' }} />
-//       </p>
-//       <p>
-//         <label htmlFor="date">Date:</label><br />
-//         <input type="date" id="date" name="date" required style={{ width: '100%', padding: '8px', borderRadius: '4px', border: 'none', marginBottom: '10px' }} />
-//       </p>
-//       <p>
-//         <label htmlFor="place">Place:</label><br />
-//         <input type="text" id="place" name="place" required style={{ width: '100%', padding: '8px', borderRadius: '4px', border: 'none', marginBottom: '10px' }} />
-//       </p>
-//       <p>
-//         <label htmlFor="stamp">Company Stamp:</label><br />
-//         <input type="text" id="stamp" name="stamp" required style={{ width: '100%', padding: '8px', borderRadius: '4px', border: 'none', marginBottom: '10px' }} />
-//       </p>
-//       <p style={{ textAlign: 'center' }}>
-//         {/* <button type="submit" style={{ backgroundColor: '#fff', color: 'orange', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', fontWeight: 600 }}>Submit</button> */}
-//       </p>
-//     </form>
+    <section className="telecast-section">
+      {/* Top Heading */}
+      <h1 className="telecast-heading">TELECASTDETAILS</h1>
 
-//     {/* Download / Print Button */}
-//     {/* <p style={{ textAlign: 'center', marginTop: '20px' }}>
-//       <button 
-//         onClick={() => window.print()} 
-//         style={{ backgroundColor: '#fff', color: 'orange', padding: '10px 20px', borderRadius: '5px', border: 'none', cursor: 'pointer', fontWeight: 600 }}
-//       >
-//         Print / Download
-//       </button>
-//     </p> */}
-//   </div>
-// </section>
+      {/* Segment Selected */}
+      <div className="segment-section">
+        <h2>Segment Selected:</h2>
+        <div className="checkbox-group">
+          <label><input type="checkbox" /> Founder Story</label>
+          <label><input type="checkbox" /> Startup Feature</label>
+          <label><input type="checkbox" /> Global Business Leaders</label>
+          <label><input type="checkbox" /> MSME Feature</label>
+          <label><input type="checkbox" /> Product Showcase</label>
+          <label><input type="checkbox" /> Franchise & Dealer Network Feature</label>
+          <label><input type="checkbox" /> Other:</label>
+        </div>
+      </div>
+
+      {/* Declaration & Compliance */}
+      <div className="declaration-section">
+        <h2>Declaration & Compliance</h2>
+        <p style={{color:"#111"}}>Please read carefully and acknowledge:</p>
+        <ul>
+          <li>All information provided by me and my company is true, correct, and legally compliant.</li>
+          <li>Business Care is only a media platform and does not promote, sell, or endorse any product or service on behalf of my business.</li>
+          <li>If any information submitted by me is found false, misleading, or legally non-compliant, Business Care has the right to: Hold or cancel the telecast, Edit or remove misleading content, Deny participation.</li>
+          <li>
+            I authorize Business Care to telecast, publish, and distribute my interview/content on:
+            <div className="platforms-left">
+              <div className="platform-item">
+                <span>Aaj Tak HD</span> <input type="checkbox" />
+              </div>
+              <div className="platform-item">
+                <span>CNBC Prime</span> <input type="checkbox" />
+              </div>
+              <div className="platform-item">
+                <span>ABP News</span> <input type="checkbox" />
+              </div>
+              <div className="platform-item">
+                <span>YouTube, Social Media, Partner Platforms</span> <input type="checkbox" />
+              </div>
+            </div>
+          </li>
+          <li>I consent to Business Care using my interview clips, photos, and brand content for editorial, promotional, and marketing purposes.</li>
+          <li>I agree that Business Care / Pooja Movie Creations / TV channel is not responsible for any legal, financial, or business-related consequences arising from my company’s claims or activities.</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+<section className="legal-section">
+  {/* Legal Disclaimer Text */}
+  <div className="disclaimer-text">
+    <h2>Legal Disclaimer</h2>
+    <p>
+      Pooja Movie Creations and Business Care TV Show have no involvement, responsibility, or association with any legal activity, past fraud, criminal case, or police matter related to any businessman, businesswoman, brand, or company participating in the show.
+    </p>
+    <p>
+      All participants are solely responsible for the authenticity, legality, and truthfulness of the information they provide. Business Care TV Show strictly follows media and advertising standards and does not promote or support any false, misleading, or fraudulent information.
+    </p>
+    <p>
+      If any complaint, dispute, or legal issue arises, or if any misleading content is detected: Business Care reserves full rights to immediately stop, remove, or cancel the telecast without any liability. This platform is exclusively for advertising, branding, and promotional purposes, and all legal responsibilities lie with the business owner or company providing the information.
+    </p>
+    <p>
+      Business Care and Pooja Movie Creations are strictly media and advertising platforms. We do not take any responsibility for: any fraud, misrepresentation, cheating, or 420 activities done by any business owner or participant; any false or misleading claims made by the business owner during interviews or promotional content; any disputes, financial dealings, or transactions between the business owner and the public. All content aired or published by Business Care TV Show is purely for advertising and promotional purposes only. The accuracy, legality, and authenticity of all information shared by the business owner remains solely their own responsibility. If any misconduct or false information is detected, Business Care reserves the right to withhold, edit, or cancel the telecast without liability.
+    </p>
+  </div>
+
+  {/* Consent & Signature Form */}
+  <div className="consent-box">
+    <h2>CONSENT & SIGNATURE</h2>
+    <form id="consentForm">
+      <p>
+        <label htmlFor="ownerName">Owner/Authorized Signatory Name:</label><br />
+        <input type="text" id="ownerName" name="ownerName" required style={{ width: '100%', padding: '8px', borderRadius: '4px', border: 'none', marginBottom: '10px' }} />
+      </p>
+      <p>
+        <label htmlFor="signature">Signature:</label><br />
+        <input type="text" id="signature" name="signature" required style={{ width: '100%', padding: '8px', borderRadius: '4px', border: 'none', marginBottom: '10px' }} />
+      </p>
+      <p>
+        <label htmlFor="date">Date:</label><br />
+        <input type="date" id="date" name="date" required style={{ width: '100%', padding: '8px', borderRadius: '4px', border: 'none', marginBottom: '10px' }} />
+      </p>
+      <p>
+        <label htmlFor="place">Place:</label><br />
+        <input type="text" id="place" name="place" required style={{ width: '100%', padding: '8px', borderRadius: '4px', border: 'none', marginBottom: '10px' }} />
+      </p>
+      <p>
+        <label htmlFor="stamp">Company Stamp:</label><br />
+        <input type="text" id="stamp" name="stamp" required style={{ width: '100%', padding: '8px', borderRadius: '4px', border: 'none', marginBottom: '10px' }} />
+      </p>
+      <p style={{ textAlign: 'center' }}>
+        {/* <button type="submit" style={{ backgroundColor: '#fff', color: 'orange', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer', fontWeight: 600 }}>Submit</button> */}
+      </p>
+    </form>
+
+    {/* Download / Print Button */}
+    {/* <p style={{ textAlign: 'center', marginTop: '20px' }}>
+      <button 
+        onClick={() => window.print()} 
+        style={{ backgroundColor: '#fff', color: 'orange', padding: '10px 20px', borderRadius: '5px', border: 'none', cursor: 'pointer', fontWeight: 600 }}
+      >
+        Print / Download
+      </button>
+    </p> */}
+  </div>
+</section>
  
 
 
 
-//       {/* Buttons */}
-//       <div style={{ textAlign: "center", marginTop: "20px" }}>
-//         <button
-//           onClick={() => window.print()}
-//           style={{
-//             backgroundColor: "orange",
-//             color: "#fff",
-//             padding: "10px 20px",
-//             borderRadius: "5px",
-//             border: "none",
-//             cursor: "pointer",
-//             fontWeight: 600,
-//             marginRight: "10px",
-//           }}
-//         >
-//           🖨 Print
-//         </button>
+      {/* Buttons */}
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <button
+          onClick={() => window.print()}
+          style={{
+            backgroundColor: "orange",
+            color: "#fff",
+            padding: "10px 20px",
+            borderRadius: "5px",
+            border: "none",
+            cursor: "pointer",
+            fontWeight: 600,
+            marginRight: "10px",
+          }}
+        >
+          🖨 Print
+        </button>
 
-//         <button
-//           onClick={downloadPDF}
-//           style={{
-//             backgroundColor: "orange",
-//             color: "#fff",
-//             padding: "10px 20px",
-//             borderRadius: "5px",
-//             border: "none",
-//             cursor: "pointer",
-//             fontWeight: 600,
-//           }}
-//         >
-//           ⬇ Download PDF
-//         </button>
-//       </div>
+        <button
+          onClick={downloadPDF}
+          style={{
+            backgroundColor: "orange",
+            color: "#fff",
+            padding: "10px 20px",
+            borderRadius: "5px",
+            border: "none",
+            cursor: "pointer",
+            fontWeight: 600,
+          }}
+        >
+          ⬇ Download PDF
+        </button>
+      </div>
 
-//     </div>
+    </div>
     
     
-//     </div>
+    </div>
 
     
 
 
 
-//     </>
-//   );
-// };
-
-// export default FormPage;
-
-import React, { useState } from "react";
-import "../Style/form.css";
-
-const AssociateForm = () => {
-  const [formData, setFormData] = useState({
-    applicantName: "",
-    associateName: "",
-    dob: "",
-    address: "",
-    adhaar: "",
-    pan: "",
-    mobile: "",
-    state: "",
-    city: "",
-    companyName: "",
-    gstNo: "",
-  });
-
-  const [files, setFiles] = useState({});
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleFileChange = (e) => {
-    setFiles({ ...files, [e.target.name]: e.target.files[0] });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const message = `
-*New Associate Registration*
-
-Applicant Name: ${formData.applicantName}
-Associate Name: ${formData.associateName}
-DOB: ${formData.dob}
-Address: ${formData.address}
-Adhaar No: ${formData.adhaar}
-PAN No: ${formData.pan}
-Mobile: ${formData.mobile}
-State: ${formData.state}
-City: ${formData.city}
-Company Name: ${formData.companyName}
-GST No: ${formData.gstNo}
-
-Uploaded Files:
-Photo: ${files.photo?.name || "Not Uploaded"}
-Adhaar: ${files.adhaarFile?.name || "Not Uploaded"}
-PAN: ${files.panFile?.name || "Not Uploaded"}
-Passport: ${files.passport?.name || "Not Uploaded"}
-GST Certificate: ${files.gstFile?.name || "Not Uploaded"}
-Electricity Bill: ${files.electricity?.name || "Not Uploaded"}
-Rent Agreement: ${files.rent?.name || "Not Uploaded"}
-Bank Passbook: ${files.bank?.name || "Not Uploaded"}
-    `;
-
-    const phoneNumber = "918076151724"; // apna WhatsApp number daalo
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-    window.open(whatsappURL, "_blank");
-  };
-
-  return (
-  <div className="form-container">
-  <h2>Associate Registration Form</h2>
-
-  <form onSubmit={handleSubmit} className="form-grid">
-
-    <input type="text" name="applicantName" placeholder="Applicant Name" onChange={handleChange} required />
-    <input type="text" name="associateName" placeholder="Associate Name" onChange={handleChange} required />
-    <input type="date" name="dob" onChange={handleChange} required />
-    <input type="text" name="address" placeholder="Address" onChange={handleChange} required />
-    <input type="text" name="adhaar" placeholder="Adhaar Card No" onChange={handleChange} required />
-    <input type="text" name="pan" placeholder="PAN Card No" onChange={handleChange} required />
-    <input type="tel" name="mobile" placeholder="Mobile No" onChange={handleChange} required />
-    <input type="text" name="state" placeholder="State" onChange={handleChange} required />
-    <input type="text" name="city" placeholder="City" onChange={handleChange} required />
-    <input type="text" name="companyName" placeholder="Associate Company Name" onChange={handleChange} />
-    <input type="text" name="gstNo" placeholder="Associate GST No" onChange={handleChange} />
-
-    <div className="file-group full-width">
-      <label>Photo</label>
-      <input  type="file"
-    name="photo"
-    accept="image/*"
-    capture="environment"
-    onChange={handleFileChange}
-    required />
-    </div>
-
-    <div className="file-group full-width">
-      <label>Adhaar Card</label>
-      <input   type="file"
-    name="adhaarFile"
-    accept="image/*"
-    capture="environment"
-    onChange={handleFileChange}
-    required />
-    </div>
-
-    <div className="file-group full-width">
-      <label>PAN Card</label>
-      <input  type="file"
-    name="panFile"
-    accept="image/*"
-    capture="environment"
-    onChange={handleFileChange}
-    required />
-    </div>
-
-    <div className="file-group full-width">
-      <label>Passport</label>
-      <input  type="file"
-    name="passport"
-    accept="image/*"
-    capture="environment"
-    onChange={handleFileChange}
-    required />
-    </div>
-
-    <div className="file-group full-width">
-      <label>GST Certificate</label>
-      <input   type="file" 
-    name="gstFile" 
-    accept="image/*"
-    capture="environment"
-    onChange={handleFileChange} 
-    required />
-    </div>
-
-    <div className="file-group full-width">
-      <label>Electricity Bill</label>
-      <input type="file" 
-    name="electricity" 
-    accept="image/*"
-    capture="environment"
-    onChange={handleFileChange} 
-    required/>
-    </div>
-
-    <div className="file-group full-width">
-      <label>Rent Agreement</label>
-      <input  type="file" 
-    name="rent" 
-    accept="image/*"
-    capture="environment"
-    onChange={handleFileChange} 
-    required />
-    </div>
-
-    <div className="file-group full-width">
-      <label>Bank Passbook Copy</label>
-      <input  type="file" 
-    name="bank" 
-    accept="image/*"
-    capture="environment"
-    onChange={handleFileChange} 
-    required />
-    </div>
-
-    <button type="submit" className="submit-btn">
-      Submit
-    </button>
-
-  </form>
-</div>
-
+    </>
   );
 };
 
-export default AssociateForm;
+export default FormPage;
+

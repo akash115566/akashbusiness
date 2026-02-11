@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main Container */
+.form-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+/* Heading */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* Form Grid Layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Input Fields */
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.form-grid input:focus {
+  border-color: #000;
+  outline: none;
+}
+
+/* Full Width Section (File Uploads) */
+.full-width {
+  grid-column: span 2;
+}
+
+/* File Inputs */
+.file-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.file-group input {
+  padding: 8px;
+  background: #f8f8f8;
+}
+
+/* Submit Button */
+.submit-btn {
+  grid-column: span 2;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #333;
+}
+
+/* ---------------- */
+/* Tablet Responsive */
+/* ---------------- */
+
+@media (max-width: 992px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width,
+  .submit-btn {
+    grid-column: span 1;
+  }
+}
+
+/* ---------------- */
+/* Mobile Responsive */
+/* ---------------- */
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 15px;
+    margin: 20px 10px;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+  }
+
+  .form-grid input {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
