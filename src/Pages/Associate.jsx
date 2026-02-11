@@ -85,7 +85,7 @@ Bank Passbook: ${files.bank?.name || "Not Uploaded"}
       <input  type="file"
     name="photo"
     accept="image/*"
-    capture="environment"
+    // capture="environment"
     onChange={handleFileChange}
     required />
     </div>
@@ -95,7 +95,7 @@ Bank Passbook: ${files.bank?.name || "Not Uploaded"}
       <input   type="file"
     name="adhaarFile"
     accept="image/*"
-    capture="environment"
+    // capture="environment"
     onChange={handleFileChange}
     required />
     </div>
@@ -105,7 +105,7 @@ Bank Passbook: ${files.bank?.name || "Not Uploaded"}
       <input  type="file"
     name="panFile"
     accept="image/*"
-    capture="environment"
+    // capture="environment"
     onChange={handleFileChange}
     required />
     </div>
@@ -115,7 +115,7 @@ Bank Passbook: ${files.bank?.name || "Not Uploaded"}
       <input  type="file"
     name="passport"
     accept="image/*"
-    capture="environment"
+    // capture="environment"
     onChange={handleFileChange}
     required />
     </div>
@@ -125,7 +125,7 @@ Bank Passbook: ${files.bank?.name || "Not Uploaded"}
       <input   type="file" 
     name="gstFile" 
     accept="image/*"
-    capture="environment"
+    // capture="environment"
     onChange={handleFileChange} 
     required />
     </div>
@@ -135,7 +135,7 @@ Bank Passbook: ${files.bank?.name || "Not Uploaded"}
       <input type="file" 
     name="electricity" 
     accept="image/*"
-    capture="environment"
+    // capture="environment"
     onChange={handleFileChange} 
     required/>
     </div>
@@ -145,7 +145,7 @@ Bank Passbook: ${files.bank?.name || "Not Uploaded"}
       <input  type="file" 
     name="rent" 
     accept="image/*"
-    capture="environment"
+    // capture="environment"
     onChange={handleFileChange} 
     required />
     </div>
@@ -155,7 +155,7 @@ Bank Passbook: ${files.bank?.name || "Not Uploaded"}
       <input  type="file" 
     name="bank" 
     accept="image/*"
-    capture="environment"
+    // capture="environment"
     onChange={handleFileChange} 
     required />
     </div>
