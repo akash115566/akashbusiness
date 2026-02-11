@@ -836,42 +836,82 @@ Bank Passbook: ${files.bank?.name || "Not Uploaded"}
 
     <div className="file-group full-width">
       <label>Photo</label>
-      <input type="file" name="photo" onChange={handleFileChange} />
+      <input  type="file"
+    name="photo"
+    accept="image/*"
+    capture="environment"
+    onChange={handleFileChange}
+    required />
     </div>
 
     <div className="file-group full-width">
       <label>Adhaar Card</label>
-      <input type="file" name="adhaarFile" onChange={handleFileChange} />
+      <input   type="file"
+    name="adhaarFile"
+    accept="image/*"
+    capture="environment"
+    onChange={handleFileChange}
+    required />
     </div>
 
     <div className="file-group full-width">
       <label>PAN Card</label>
-      <input type="file" name="panFile" onChange={handleFileChange} />
+      <input  type="file"
+    name="panFile"
+    accept="image/*"
+    capture="environment"
+    onChange={handleFileChange}
+    required />
     </div>
 
     <div className="file-group full-width">
       <label>Passport</label>
-      <input type="file" name="passport" onChange={handleFileChange} />
+      <input  type="file"
+    name="passport"
+    accept="image/*"
+    capture="environment"
+    onChange={handleFileChange}
+    required />
     </div>
 
     <div className="file-group full-width">
       <label>GST Certificate</label>
-      <input type="file" name="gstFile" onChange={handleFileChange} />
+      <input   type="file" 
+    name="gstFile" 
+    accept="image/*"
+    capture="environment"
+    onChange={handleFileChange} 
+    required />
     </div>
 
     <div className="file-group full-width">
       <label>Electricity Bill</label>
-      <input type="file" name="electricity" onChange={handleFileChange} />
+      <input type="file" 
+    name="electricity" 
+    accept="image/*"
+    capture="environment"
+    onChange={handleFileChange} 
+    required/>
     </div>
 
     <div className="file-group full-width">
       <label>Rent Agreement</label>
-      <input type="file" name="rent" onChange={handleFileChange} />
+      <input  type="file" 
+    name="rent" 
+    accept="image/*"
+    capture="environment"
+    onChange={handleFileChange} 
+    required />
     </div>
 
     <div className="file-group full-width">
       <label>Bank Passbook Copy</label>
-      <input type="file" name="bank" onChange={handleFileChange} />
+      <input  type="file" 
+    name="bank" 
+    accept="image/*"
+    capture="environment"
+    onChange={handleFileChange} 
+    required />
     </div>
 
     <button type="submit" className="submit-btn">
