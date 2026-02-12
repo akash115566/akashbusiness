@@ -17,6 +17,7 @@ import Privacy from "./Pages/Privacy";
 import Terms from "./Pages/Terms";
 import FormPage from "./Pages/FormPage";
 import Associate from "./Pages/Associate";
+import Legal from "./Pages/Legal";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
                  <Route path="/terms" element={<Terms />} />
                  <Route path="/formPage" element={<FormPage />} />
                   <Route path="/associate" element={<Associate />} />
+                  <Route path="/legal" element={<Legal />} />
               
       </Routes>
       <Footer />

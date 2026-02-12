@@ -47,12 +47,10 @@ const Service = () => {
     <>
       {/* 🏆 Awards Section */}
       <section
-        className="awards-hero fixed-bg-section"
-
-      >
+        className="awards-hero fixed-bg-section">
         <div className="overlay">
           <div className="text-content">
-            <h2>🏆 BusinessCare Awards &  Recognition</h2>
+            <h2>🏆 BusinessCare Awards & Recognition</h2>
             <h3>
               Celebrating Excellence in <span>Business & Marketing</span>
             </h3>
@@ -107,7 +105,7 @@ const Service = () => {
         {/* LEFT CONTENT */}
         <div className="low-investment-left11">
           <h2 className="low-investment-heading11" style={{color:"#111"}}>How to Revive an Old Business</h2>
-          <p className="low-investment-text11" style={{color:"#111"}}>
+          <p className="low-investment-text11" style={{color:"#111" ,fontSize:"18px"}}>
            Raising the buzz of the product from door to door, Make everyone need, make everyone rote again and again. Stand out from your competitors and make a name for yourself again.
           </p>
           <button className="low-investment-btn11" style={{background:"#EBB02D"}}>CALL NOW</button>

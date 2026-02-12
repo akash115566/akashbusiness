@@ -52,6 +52,7 @@ const Footer = () => {
               <li><Link to="/service"  onClick={scrollToTop}>Business Growth Programe Strategy</Link></li>
               <li><Link to="/"  onClick={scrollToTop}>Choose Right Media Platforms</Link></li>
                <li><Link to="/formPage">Business care tv show registration form</Link></li>
+                      <li><Link to="/legal">Business Care Tv Show Associates Legal Terms </Link></li>
       
             </ul>
           </div>

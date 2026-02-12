@@ -51,7 +51,7 @@
     padding: 16px;
     border-radius: 5px;
     border: 1px solid rgb(87, 23, 23);
-    color: #333;
+    color:  rgb(87, 23, 23);
 }
 .hero-text1{
     font-size: 45px;
@@ -60,10 +60,10 @@
     font-weight: 500;
 }
 .hero-text{
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
     word-spacing: 0.001px;
-    color: #222;
+    color:  rgb(87, 23, 23);
     font-weight: 400;
 }
 .hero-title{
@@ -299,7 +299,7 @@
 }
 
 .services-list3 li {
-  font-size: 1.1rem;
+  font-size: 20px;
   color: #fff;
   padding: 12px 0;
   position: relative;
@@ -698,7 +698,7 @@ text-align: center;
 }
 
 .section-content p {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 25px;
   line-height: 1.6;
   color: rgb(76, 20, 20);
@@ -808,7 +808,7 @@ text-align: center;
 }
 
 .small-text {
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -990,7 +990,7 @@ text-align: center;
 }
 
 .brand-text {
-  font-size: 16px;
+  font-size: 20px;
   color: #111;
   margin-bottom: 20px;
 }
@@ -1197,7 +1197,7 @@ text-align: center;
 }
 
 .media-text {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   color: #111;
   margin-bottom: 25px;
@@ -1399,7 +1399,7 @@ text-align: center;
 }
 
 .media-platform-text {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   color: #111;
   margin-bottom: 25px;
@@ -1541,7 +1541,7 @@ text-align: center;
 }
 
 .low-investment-text1 {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   color: #fff;
   margin-bottom: 25px;

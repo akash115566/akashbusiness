@@ -224,6 +224,7 @@
 }
 .about-text p{
   padding: -10px;
+  font-size: 20px;
 }
 
 .about-content {
@@ -395,7 +396,7 @@
 }
 
 .left-side p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -567,7 +568,7 @@
 }
 
 .left p {
-  font-size: 1rem;
+  font-size:18px;
   margin-bottom: 25px;
   color: #555;
 }
@@ -687,7 +688,7 @@
 
 /* Text */
 .info-box p {
-  font-size: 15px;
+  font-size: 18px;
   color: #555;
   line-height: 1.6;
 }
@@ -765,7 +766,7 @@
 }
 
 .sales-right p {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   color: #4d0654;
   margin-bottom: 20px;
@@ -847,7 +848,7 @@
   color: #555;
   line-height: 1.6;
   margin-bottom: 25px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* PROGRESS BLOCK */
@@ -947,7 +948,7 @@
 }
 
 .case-header p {
-  font-size: 16px;
+  font-size: 18px;
   color: #670c4f;
   margin-bottom: 40px;
 }
@@ -1050,7 +1051,7 @@
 }
 
 .innovation-right p {
-  font-size: 25px;
+  font-size: 18px;
   color: #54063a;
   margin-bottom: 25px;
   line-height: 1.6;

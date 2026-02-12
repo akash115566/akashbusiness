@@ -121,7 +121,7 @@ const statsData = [
               />
             </div> */}
             <div className="about-text">
-              <p>
+              <p style={{fontSize:"20px"}}>
                Business Care was started by great minds in the media industry who have benefited thousands of
 business owners with their knowledge and wisdom. Business Care is such a wonderful research and initiative of these two scholars who have made their career in the media, appearing on many big TV channels.Founders of Business Care Miss Pooja Sharma is a media industry professional and television celebrity.become entrepreneurs, and Mr. Ankur Bansal, who are very young in age. In 12 years, the company hasregistered the title to open 14 companies. But their personality and knowledge make them adifferent person in the country.At a young age, they have become a well-known name of the country today.These two young minds have advanced knowledge of establishing a product in the market. The
 The vast knowledge of these two is so great that by establishing many companies, they have broughtthem to a point.
