@@ -800,7 +800,7 @@ text-align: center;
 }
 
 .bold-heading {
-  font-size: 30px;
+  font-size:2rem;
   font-weight: 400;
   color: #fff;
   line-height: 1;
@@ -808,7 +808,7 @@ text-align: center;
 }
 
 .small-text {
-  font-size: 20px;
+  font-size: 2rem;
   color: #fff;
   margin-bottom: 20px;
 }
