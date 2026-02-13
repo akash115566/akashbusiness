@@ -893,14 +893,14 @@ text-align: center;
     padding: 25px 15px 0; /* 🔥 bottom zero */
   }
 
-  .top-heading {
-    font-size: 1.5rem;
-    padding: 15px;
-  }
-
+.top-heading{
+  font-size: 1.5rem;
+}
   .bold-heading {
-    font-size: 22px;
-    line-height: 1.3;
+    font-size: 1.5rem;
+  }
+  .small-text{
+    font-size: 1.5rem
   }
 
   .bullet-box {
@@ -920,9 +920,14 @@ text-align: center;
   }
 }
 @media (max-width: 360px) {
-
+.top-heading{
+  font-size: 1.5rem;
+}
   .bold-heading {
-    font-size: 20px;
+    font-size: 1.5rem;
+  }
+  .small-text{
+    font-size: 1.5rem
   }
     .bullet-box {
     display: block;   /* agar flex hai to */
@@ -940,6 +945,7 @@ text-align: center;
   .business-btn {
     width: 100%;
   }
+  
 }
 
 
@@ -1066,6 +1072,9 @@ text-align: center;
   .brand-main-heading {
     font-size: 30px;
   }
+  .brand-text {
+    font-size: 15px;
+  }
    .brand-bullets li {
     font-size: 15px;
     line-height: 17px;
@@ -1081,6 +1090,30 @@ text-align: center;
     padding: 10px 20px;
   }
 }
+/* Small Mobiles */
+@media (max-width: 360px) {
+  .brand-main-heading {
+    font-size: 30px;
+  }
+  .brand-text {
+    font-size: 18px;
+  }
+   .brand-bullets li {
+    font-size: 18px;
+    line-height: 17px;
+    text-align: left;
+  }
+
+  .brand-left img {
+    width: 100%;
+  }
+
+  .brand-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
 
 
 
