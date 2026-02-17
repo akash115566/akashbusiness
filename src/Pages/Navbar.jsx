@@ -40,7 +40,7 @@ const Navbar = () => {
 
   {/* Left */}
   <div>
-    A-111, Sec-63, Noida UP-201301 | +91 7042-438-293
+    {/* A-111, Sec-63, Noida UP-201301 | +91 7042-438-293 */}
   </div>
 
   {/* Right */}
