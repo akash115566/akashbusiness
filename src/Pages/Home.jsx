@@ -386,10 +386,10 @@ Come To Us And We Will Show You How To Take Your Company To New Heights
             Let's Change The Strategy. By India’s Most Recent Business Coaches & Business Strategy Media Experts SINCE 18 YEARS
           </h3>
 
-          <p className="small-text">
+          {/* <p className="small-text">
             Business Advisor Counsellor & Consultant.<br />
             Pan India More Than Thousand Business Owners Taking His Advises For Business Enhancement
-          </p>
+          </p> */}
 
           <div className="bullet-box">
             <ul>

@@ -283,13 +283,15 @@
   text-align: center;
 }
 
-/* Heading */
 .services-heading3 {
   font-size: 2.2rem;
   color: #fdd28b;
   margin-bottom: 30px;
   font-weight: 700;
+  border: 2px solid #fdd28b;
+  padding: 10px;
 }
+
 
 /* List */
 .services-list3 {
@@ -923,12 +925,16 @@ text-align: center;
 @media (max-width: 360px) {
 .top-heading{
   font-size: 1.5rem;
+  padding: 10px;
 }
   .bold-heading {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    padding: 3px;
   }
   .small-text{
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    line-height: 25px;
+    
   }
     .bullet-box {
     display: block;   /* agar flex hai to */
