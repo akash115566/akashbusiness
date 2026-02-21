@@ -70,7 +70,8 @@
     text-decoration: underline;
     /* word-spacing: 0.1px; */
     font-weight: 100;
-    color:rgb(87, 23, 23) ;
+    /* color:rgb(87, 23, 23) ; */
+    color: #111;
     font-size: 1.5rem;
 }
 .btn-primary {
@@ -508,6 +509,8 @@
 
   .purpose-content h1 {
     font-size: 2rem;
+    text-align: center;
+    padding: 20px;
   }
 
   .media-left h2 {
