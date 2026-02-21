@@ -187,7 +187,7 @@ const Home = () => {
 
         {/* RIGHT CONTENT */}
         <div className="hero-right">
-          <h2 className="hero-title">MEET LIVE WITH INDIA'S CELEBRITY BUSINESS COACHES</h2>
+          <h2 className="hero-title" style={{fontWeight:"500"}}>MEET LIVE WITH INDIA'S CELEBRITY BUSINESS COACHES</h2>
 
           <h3 className="coach-names">Mr. Ankur Bansal<br/><span style={{color:"#340303"}}>&</span><br />Ms. Pooja Sharma</h3>
 

@@ -68,10 +68,9 @@
 }
 .hero-title{
     text-decoration: underline;
-    /* word-spacing: 0.1px; */
-    font-weight: 100;
+    /* word-spacing: 0.1px; *
     /* color:rgb(87, 23, 23) ; */
-    color: #111;
+    color: #fff;
     font-size: 1.5rem;
 }
 .btn-primary {
@@ -186,6 +185,7 @@
   .hero-title{
   text-align: left;
   padding: 20px;
+  font-weight: 800;
    font-weight: 1;
   }
 
