@@ -293,7 +293,7 @@ const Home = () => {
 >
   <div className="purpose-container">
     <div className="purpose-content">
-      <h1 style={{textAlign:'left'}}>
+      <h1 >
         ज्यादातर बिजनेसमैन बिजनेस एक्सपेंशन के लिए{" "}
         <span>पुरानी तकनीकों</span> का इस्तेमाल करते हैं
 
