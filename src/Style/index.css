@@ -1388,6 +1388,13 @@ font-size: 14px;
     padding: 0px;
   }
 }
+@media (max-width: 998px) {
+  .gallery-item1 img {
+    width: 220px;
+    height: 360px;
+    padding: 0px;
+  }
+}
 @media (max-width: 768px) {
   .gallery-item1 img {
     width: 200px;
