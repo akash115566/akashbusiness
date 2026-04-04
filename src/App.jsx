@@ -35,7 +35,7 @@ const App = () => {
              <Route path="/video" element={<Video />} />
                <Route path="/gallery" element={<Gallery />} />
                <Route path="/contact" element={<Contact />} />
-                 <Route path="/founder" element={<Founder />} />
+                 <Route path="/Pooja Sharma – Founder of Business Care TV Show" element={<Founder />} />
                  <Route path="/mission" element={<Mission />} />
                  <Route path="/why-us" element={<Whyus />} />
                  <Route path="/privacy" element={<Privacy />} />

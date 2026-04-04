@@ -130,7 +130,7 @@ const Navbar = () => {
                   overflow: "hidden",
                   boxShadow: "0 4px 10px rgba(0,0,0,0.2)"
                 }}>
-                  <Link to="/founder" style={{ ...dropdownLinkStyle, color:"#fff" }}>Our Founder</Link>
+                  <Link to="/Pooja Sharma – Founder of Business Care TV Show" style={{ ...dropdownLinkStyle, color:"#fff" }}>Our Founder</Link>
                   <Link to="/mission" style={{ ...dropdownLinkStyle, color:"#fff" }}>Mission & Vision</Link>
                   <Link to="/why-us" style={{ ...dropdownLinkStyle, color:"#fff" }}>Why Us</Link>
                     <Link to="/tv-advertising-india" style={dropdownLinkStyle}>TV Advertising</Link>
@@ -163,7 +163,7 @@ const Navbar = () => {
               <div onClick={() => setIsAboutOpen(!isAboutOpen)} style={{ ...linkStyle, display: "block", cursor: "pointer", color:"#fff" }}>About ▾</div>
               {isAboutOpen && (
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", paddingTop: "5px" }}>
-                  <Link to="/founder" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Our Founder</Link>
+                  <Link to="/Pooja Sharma – Founder of Business Care TV Show" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Our Founder</Link>
                   <Link to="/mission" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Mission & Vision</Link>
                   <Link to="/why-us" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Why Us</Link>
                                 <Link to="/tv-advertising-india" onClick={handleLinkClick} style={dropdownLinkStyle}>TV Advertising</Link>

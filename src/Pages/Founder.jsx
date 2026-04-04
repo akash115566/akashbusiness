@@ -31,7 +31,7 @@ const Founder = () => {
                         {/* Founder Info */}
                         <div className="founder-text">
                            
-                            <h3 style={{fontSize:"2rem"}}>Ms. Pooja Sharma</h3>
+                            <h3 style={{fontSize:"2rem"}}>Ms. Pooja Sharma – Founder of Business Care TV Show</h3>
                             <h3 style={{fontSize:"1rem"}}>
                               BUSINESS CARE FOUNDER | SENIOR MEDIA TV ANCHOR | CELEBRITY BUSINESS COACH | YOUNGEST ENTREPRENEUR | LAWYER,BRICS MEMBER |
                            , AND BUSINESS TRAINER.</h3>
