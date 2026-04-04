@@ -120,7 +120,261 @@
   font-size: 16px;
   font-weight: 500;
 }
+/* =========================
+   TELECASTING SECTION
+========================= */
 
+.telecasting {
+  background: #EBB02D;
+  padding: 70px 20px;
+}
+
+.telecasting .container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+.telecasting-heading,
+.telecasting-heading2 {
+  font-size: 2.3rem;
+  margin-bottom: 0px;
+  width: 100%;
+  line-height: 1.3;
+  text-align: center;
+
+}
+
+.telecasting-heading2 {
+  margin-top: 0px;
+}
+
+/* =========================
+   SUBTEXT
+========================= */
+
+.telecasting-subtext,
+.telecasting-subtext2,
+.telecasting-footer {
+  max-width: 950px;
+  margin: 0 auto 30px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* =========================
+   LOGO WRAPPERS
+========================= */
+
+.channel-logos1
+ {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 1px 0;
+}
+
+/* =========================
+   LOGO IMAGES
+========================= */
+
+.channel-logos1 img {
+  width: 100%;
+  max-height: 100px;
+  max-width: 200px;
+  background-color: #676262;
+  height: 100px;
+  /* mix-blend-mode: multiply; */
+  object-fit: fill;
+}
+/* CHANNEL LOGOS WRAPPER */
+.channel-logos2 {
+  display: flex;             /* Flex container */
+  flex-wrap: wrap;           /* Wrap if screen chhoti ho */
+  justify-content: center;   /* Horizontal center */
+  align-items: center;       /* Vertical center */
+  gap: 30px;                 /* Equal spacing between logos */
+  width: 100%;               /* Full width */
+  margin: 0 auto 40px auto; /* Center container */
+}
+
+/* LOGO IMAGES */
+.channel-logos2 img {
+  width: 100%;
+  max-height: 100px;
+  max-width: 200px;
+  background-color: #676262;
+  height: 100px;
+  /* mix-blend-mode: multiply; */
+  object-fit: fill;
+}
+
+.channel-logos2 img:hover {
+  transform: scale(1.05);
+}
+
+.channel-logos1 img:hover,
+.channel-logos2 img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   TIMING SECTION
+========================= */
+
+.timing-section {
+  margin-top: 2px;
+  padding: 0px;
+}
+
+.timing-section strong {
+  display: block;
+  font-size: 2rem;
+  margin: -20px 0;
+  padding: 0px;
+}
+
+/* =========================
+   LARGE SCREEN (1400px+)
+========================= */
+
+@media (min-width: 1400px) {
+  .telecasting-heading {
+    font-size: 2.6rem;
+  }
+
+  .timing-section strong {
+    font-size: 2.2rem;
+  }
+}
+
+/* =========================
+   TABLET (992px)
+========================= */
+
+@media (max-width: 992px) {
+
+  .telecasting-heading,
+  .telecasting-heading2 {
+    font-size: 1.9rem;
+  }
+
+  .channel-logos1 img,
+  .channel-logos2 img {
+    height: 50px;
+    max-width: 120px;
+  }
+
+  .timing-section strong {
+    font-size: 1.5rem;
+  }
+}
+
+/* =========================
+   SMALL TABLET (768px)
+========================= */
+
+@media (max-width: 768px) {
+
+  .telecasting-heading,
+  .telecasting-heading2 {
+    font-size: 1.6rem;
+  }
+
+  .channel-logos1,
+  .channel-logos2 {
+    gap: 20px;
+  }
+
+  .telecasting-subtext,
+  .telecasting-subtext2,
+  .telecasting-footer {
+    font-size: 1rem;
+  }
+}
+
+/* =========================
+   MOBILE (576px)
+========================= */
+
+@media (max-width: 576px) {
+
+  .telecasting {
+    padding: 50px 15px;
+  }
+
+  .telecasting-heading,
+  .telecasting-heading2 {
+    font-size: 1.4rem;
+  }
+
+  .channel-logos1 img,
+  .channel-logos2 img {
+    height: 40px;
+    max-width: 100px;
+  }
+
+  .timing-section strong {
+    font-size: 1.1rem;
+  }
+}
+
+/* =========================
+   480px
+========================= */
+
+@media (max-width: 480px) {
+
+  .telecasting-heading,
+  .telecasting-heading2 {
+    font-size: 1.2rem;
+  }
+
+  .channel-logos1 img,
+  .channel-logos2 img {
+    height: 36px;
+    max-width: 90px;
+  }
+
+  .timing-section strong {
+    font-size: 1rem;
+  }
+}
+
+/* =========================
+   360px (Small Devices)
+========================= */
+
+@media (max-width: 360px) {
+
+  .telecasting {
+    padding: 40px 10px;
+  }
+
+  .telecasting-heading,
+  .telecasting-heading2 {
+    font-size: 1rem;
+  }
+
+  .channel-logos1 img,
+  .channel-logos2 img {
+    height: 30px;
+    max-width: 75px;
+  }
+
+  .timing-section strong {
+    font-size: 0.9rem;
+  }
+}
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-inner {
@@ -214,6 +468,10 @@
 }
 
 
+
+
+
+
 /* Section */
 .international-section {
   padding: 60px 16px;
@@ -283,6 +541,38 @@
     border-width: 2px;
   }
 }
+
+
+
+
+
+
+.bcw-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.bcw-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.bcw-video-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.bcw-video-container iframe {
+  width: 300px;
+  height: 530px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+} 
 
 
 /* Section Wrapper */
@@ -1381,16 +1671,30 @@ font-size: 14px;
 }
 
 /* =================== RESPONSIVE =================== */
+@media (max-width: 1366px) {
+  .gallery-item1 img {
+    width: 280px;
+    height: 400px;
+    padding: 0px;
+  }
+}
+@media (max-width: 1220px) {
+  .gallery-item1 img {
+    width: 250px;
+    height: 360px;
+    padding: 0px;
+  }
+}
 @media (max-width: 1024px) {
   .gallery-item1 img {
-    width: 220px;
+    width: 200px;
     height: 360px;
     padding: 0px;
   }
 }
 @media (max-width: 998px) {
   .gallery-item1 img {
-    width: 220px;
+    width: 200px;
     height: 360px;
     padding: 0px;
   }

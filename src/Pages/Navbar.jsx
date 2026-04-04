@@ -133,6 +133,10 @@ const Navbar = () => {
                   <Link to="/founder" style={{ ...dropdownLinkStyle, color:"#fff" }}>Our Founder</Link>
                   <Link to="/mission" style={{ ...dropdownLinkStyle, color:"#fff" }}>Mission & Vision</Link>
                   <Link to="/why-us" style={{ ...dropdownLinkStyle, color:"#fff" }}>Why Us</Link>
+                    <Link to="/tv-advertising-india" style={dropdownLinkStyle}>TV Advertising</Link>
+                <Link to="/dealer-network-india" style={dropdownLinkStyle}>Dealer Network</Link>
+                <Link to="/business-promotion-services" style={dropdownLinkStyle}>Business Promotion</Link>
+                <Link to="/advertise-on-aaj-tak" style={dropdownLinkStyle}>Advertise on Aaj Tak</Link>
                 </div>
               )}
             </div>
@@ -162,6 +166,11 @@ const Navbar = () => {
                   <Link to="/founder" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Our Founder</Link>
                   <Link to="/mission" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Mission & Vision</Link>
                   <Link to="/why-us" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Why Us</Link>
+                                <Link to="/tv-advertising-india" onClick={handleLinkClick} style={dropdownLinkStyle}>TV Advertising</Link>
+              <Link to="/dealer-network-india" onClick={handleLinkClick} style={dropdownLinkStyle}>Dealer Network</Link>
+              <Link to="/business-promotion-services" onClick={handleLinkClick} style={dropdownLinkStyle}>Business Promotion</Link>
+              <Link to="/advertise-on-aaj-tak" onClick={handleLinkClick} style={dropdownLinkStyle}>Advertise on Aaj Tak</Link>
+                    
                 </div>
               )}
             </div>

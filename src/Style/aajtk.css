@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Main Container */
+.page {
+  padding: 60px 8%;
+  background: linear-gradient(180deg, #1a0000, #0a0a0a);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Main Heading */
+.page h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 800;
+  color: #ff2d2d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Sub Headings */
+.page h2 {
+  font-size: 1.7rem;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  color: #ff4d4d;
+  position: relative;
+  padding-left: 14px;
+}
+
+.page h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  height: 70%;
+  width: 5px;
+  background: #ff2d2d;
+  border-radius: 2px;
+}
+
+/* Paragraph */
+.page p {
+  font-size: 1.05rem;
+  color: #e5e5e5;
+  max-width: 850px;
+}
+
+/* Grid List */
+.page ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+/* List Card Style */
+.page ul li {
+  list-style: none;
+  background: rgba(255, 0, 0, 0.08);
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.page ul li:hover {
+  background: rgba(255, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Button */
+.page button {
+  margin-top: 35px;
+  padding: 14px 30px;
+  background: #ff2d2d;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.page button:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
+
+/* ---------------------- */
+/* 📱 Mobile (max 480px) */
+/* ---------------------- */
+@media (max-width: 480px) {
+  .page {
+    padding: 40px 5%;
+  }
+
+  .page h1 {
+    font-size: 1.9rem;
+  }
+
+  .page h2 {
+    font-size: 1.3rem;
+  }
+
+  .page p {
+    font-size: 0.95rem;
+  }
+
+  .page ul {
+    grid-template-columns: 1fr;
+  }
+
+  .page button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* ---------------------- */
+/* 📲 Tablet (max 768px) */
+/* ---------------------- */
+@media (max-width: 768px) {
+  .page h1 {
+    font-size: 2.2rem;
+  }
+
+  .page h2 {
+    font-size: 1.5rem;
+  }
+
+  .page ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------------- */
+/* 💻 Large Screens (1200px+) */
+/* ---------------------- */
+@media (min-width: 1200px) {
+  .page {
+    padding: 80px 10%;
+  }
+
+  .page h1 {
+    font-size: 3.2rem;
+  }
+
+  .page h2 {
+    font-size: 2rem;
+  }
+
+  .page p {
+    font-size: 1.1rem;
+  }
+}

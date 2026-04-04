@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Main Page */
+.page {
+  padding: 60px 8%;
+  background: #0f0f0f;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+/* Heading */
+.page h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Sub Headings */
+.page h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #facc15;
+}
+
+/* Paragraph */
+.page p {
+  font-size: 1.05rem;
+  color: #ccc;
+  max-width: 800px;
+}
+
+/* List */
+.page ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.page ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Button */
+.page button {
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: #facc15;
+  color: #000;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.page button:hover {
+  background: #eab308;
+  transform: scale(1.05);
+}
+
+/* ---------------------- */
+/* 📱 Mobile (max 480px) */
+/* ---------------------- */
+@media (max-width: 480px) {
+  .page {
+    padding: 40px 5%;
+  }
+
+  .page h1 {
+    font-size: 1.9rem;
+  }
+
+  .page h2 {
+    font-size: 1.3rem;
+  }
+
+  .page p {
+    font-size: 0.95rem;
+  }
+
+  .page button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* ---------------------- */
+/* 📲 Tablet (481px - 768px) */
+/* ---------------------- */
+@media (max-width: 768px) {
+  .page h1 {
+    font-size: 2.2rem;
+  }
+
+  .page h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ---------------------- */
+/* 💻 Large Screen (1200px+) */
+/* ---------------------- */
+@media (min-width: 1200px) {
+  .page {
+    padding: 80px 12%;
+  }
+
+  .page h1 {
+    font-size: 3.2rem;
+  }
+
+  .page h2 {
+    font-size: 2rem;
+  }
+
+  .page p {
+    font-size: 1.1rem;
+  }
+}

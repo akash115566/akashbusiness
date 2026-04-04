@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Main Container */
+.page {
+  padding: 60px 8%;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Main Heading */
+.page h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* Sub Headings */
+.page h2 {
+  font-size: 1.7rem;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  color: #38bdf8;
+  position: relative;
+  padding-left: 12px;
+}
+
+.page h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  height: 70%;
+  width: 4px;
+  background: #38bdf8;
+  border-radius: 2px;
+}
+
+/* Paragraph */
+.page p {
+  font-size: 1.05rem;
+  color: #cbd5f5;
+  max-width: 850px;
+}
+
+/* Grid List (Premium Look) */
+.page ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+/* List Items Card Style */
+.page ul li {
+  list-style: none;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.page ul li:hover {
+  background: rgba(56, 189, 248, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Button */
+.page button {
+  margin-top: 35px;
+  padding: 14px 30px;
+  background: #38bdf8;
+  color: #000;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.page button:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* ---------------------- */
+/* 📱 Mobile (max 480px) */
+/* ---------------------- */
+@media (max-width: 480px) {
+  .page {
+    padding: 40px 5%;
+  }
+
+  .page h1 {
+    font-size: 1.9rem;
+  }
+
+  .page h2 {
+    font-size: 1.3rem;
+  }
+
+  .page p {
+    font-size: 0.95rem;
+  }
+
+  .page ul {
+    grid-template-columns: 1fr;
+  }
+
+  .page button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* ---------------------- */
+/* 📲 Tablet (max 768px) */
+/* ---------------------- */
+@media (max-width: 768px) {
+  .page h1 {
+    font-size: 2.2rem;
+  }
+
+  .page h2 {
+    font-size: 1.5rem;
+  }
+
+  .page ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------------- */
+/* 💻 Large Screens (1200px+) */
+/* ---------------------- */
+@media (min-width: 1200px) {
+  .page {
+    padding: 80px 10%;
+  }
+
+  .page h1 {
+    font-size: 3.2rem;
+  }
+
+  .page h2 {
+    font-size: 2rem;
+  }
+
+  .page p {
+    font-size: 1.1rem;
+  }
+}

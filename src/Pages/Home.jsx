@@ -187,7 +187,7 @@ const Home = () => {
 
         {/* RIGHT CONTENT */}
         <div className="hero-right">
-          <h2 className="hero-title" style={{fontWeight:"500"}}>MEET LIVE WITH INDIA'S CELEBRITY BUSINESS COACHES</h2>
+         <Link to="/founder"> <h2 className="hero-title" style={{fontWeight:"500"}}>MEET LIVE WITH INDIA'S Business Care Founder</h2> </Link>
 
           <h3 className="coach-names">Mr. Ankur Bansal<br/><span style={{color:"#340303"}}>&</span><br />Ms. Pooja Sharma</h3>
 
@@ -207,6 +207,94 @@ const Home = () => {
         </div>
       </div>
 
+
+
+
+       <section className="telecasting">
+      <div className="container">
+
+        {/* Heading */}
+        <h2 className="telecasting-heading">
+          Business Care – Now Telecasting Across India & 
+          Launching Soon in USA, UAE & Oman
+        </h2>
+
+        {/* Sub Text */}
+        <p className="telecasting-subtext">
+          The Iconic Business Television Show “Business Care” is proudly 
+          telecasting on India’s leading national channels including 
+          Aaj Tak, CNBC Prime, Times Now, News18, Zee News, Zee TV, 
+          &TV, Anmol TV and streaming worldwide on ZEE5.
+        </p>
+
+        {/* Channel Logos */}
+        <div className="channel-logos1">
+          <img src="/c31.jfif" alt="Aaj Tak" />
+          <img src="/c32.jfif" alt="CNBC Prime" />
+          <img src="/c1.webp" alt="Times Now" />
+          <img src="/c3.webp" alt="News18" />
+          <img src="/c5.jfif" alt="Zee News" />
+          <img src="/c7.png" alt="ZEE5" />
+           <img src="/c33.jfif" alt="News18" />
+             <img src="/c34.jfif" alt="News18" />
+          <img src="/c9.png" alt="Zee News" />
+          <img src="/c10.jfif" alt="ZEE5" />
+          <img src="/c37.jfif" alt="CNBC Prime" />
+          <img src="/c38.jfif" alt="Times Now" />
+          <img src="/c13.png" alt="News18" />
+          <img src="/c35.jfif" alt="Zee News" />
+          <img src="/c15.jfif" alt="ZEE5" />
+           <img src="/c36.jfif" alt="News18" />
+          <img src="/c17.png" alt="Zee News" />
+          <img src="/c18.jfif" alt="ZEE5" />
+           {/* <img src="/c19.png" alt="ZEE5" /> */}
+        </div>
+
+
+
+          <h2 className="telecasting-heading2" >
+         Coming soon 
+        </h2>
+      
+
+        {/* Sub Text */}
+        <p className="telecasting-subtext2">
+         Times Now / Zee Business/ ET Now / TV Today / Colors / Zee5  and many more platform
+ Business Care Program Launching soon in USA and Middle East on 
+Zee TV
+        </p>
+
+        {/* Channel Logos */}
+        <div className="channel-logos2"  >
+          <img src="/c21.png" alt="Aaj Tak" />
+          <img src="/c22.jfif" alt="CNBC Prime" />
+          <img src="/c23.png" alt="Times Now" />
+          <img src="/c24.png" alt="News18" />
+          <img src="/c25.jfif" alt="Zee News" />
+          <img src="/c26.png" alt="ZEE5" />
+        </div>
+ <p className="telecasting-subtext timing-section">
+  <strong>Channel – Zee TV USA</strong><br />
+  <span>08:30 AM ET (Sat or Sun)</span><br />
+  <span>10:30 AM ET (Sat)</span><br /><br />
+
+  <strong>Channel – Zee TV MENA (UAE, Saudi, Oman, Bahrain, Qatar, Kuwait)</strong><br />
+  <span>07:30 AM UAE Time</span><br />
+  <span>08:00 AM UAE Time</span>
+</p>
+
+    
+        {/* Global Expansion Text */}
+        <p className="telecasting-footer">
+          Expanding its global footprint, Business Care is all set to 
+          launch soon in the United States, United Arab Emirates, and Oman, 
+          taking India’s No.1 Business TV Show to an international audience 
+          and strengthening its global business presence.
+        </p>
+
+      </div>
+    </section>
+
       {/* ⭐ COUNTERS CENTER BOTTOM ⭐ */}
       <div className="achievement-wrapper">
         <h3 className="ach-title">OUR ACHIEVEMENTS</h3>
@@ -219,6 +307,8 @@ const Home = () => {
       </div>
 
     </section>
+
+       
 
 
 <section className="international-section">
@@ -270,8 +360,267 @@ const Home = () => {
       ></iframe>
     </div>
 
+
+     <div className="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/ImOiZUELJc0"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+    <div className="video-wrapper">
+      <iframe
+        src= "https://www.youtube.com/embed/VCjA0d9OcG4"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+
+
+    <div className="video-wrapper">
+      <iframe
+        src= "https://www.youtube.com/embed/mmpu2_6cXmo"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+
+     <div className="video-wrapper">
+      <iframe
+        src= "https://www.youtube.com/embed/yzfJ5HyicpY"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+     <div className="video-wrapper">
+      <iframe
+        src= "https://www.youtube.com/embed/xZnS9AtGi8k"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+
+     <div className="video-wrapper">
+      <iframe
+        src= "https://www.youtube.com/embed/qFwWAnjr7tQ"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+
+
+
+      <div className="video-wrapper">
+      <iframe
+        src= "https://www.youtube.com/embed/7bEXxaRY1mI"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+
+
+     <div className="video-wrapper">
+      <iframe
+        src= "https://www.youtube.com/embed/nmGjvNz2Tgw"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+     <div className="video-wrapper">
+      <iframe
+        src= "https://www.youtube.com/embed/bJ2S3FR40WQ"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+
+    <div className="video-wrapper">
+      <iframe
+        src= "https://www.youtube.com/embed/oDPARWKhGLo"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+
+
+      <div className="video-wrapper">
+      <iframe
+        src= "https://www.youtube.com/embed/Fr4muE-65S4?start=2"
+        title="Video 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+     <div className="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/qFwWAnjr7tQ"
+
+            title="Video 3"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+
+
+        
+<div className="video-wrapper">
+  <iframe
+src="https://www.youtube.com/embed/G8ai54ObAaU"
+    title="Video 3"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+
+
+
+<div className="video-wrapper">
+  <iframe
+src="https://www.youtube.com/embed/pRixU0hN2Dg"
+    title="Video 3"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+
+
+<div className="video-wrapper">
+  <iframe
+src="https://www.youtube.com/embed/J5PwSYZnRr4"
+    title="Video 3"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+
+
+
+<div className="video-wrapper">
+  <iframe
+src="https://www.youtube.com/embed/vlb1fcsW7oY"
+    title="Video 3"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+
+<div className="video-wrapper">
+  <iframe
+src="https://www.youtube.com/embed/cczqrx-KufI"
+    title="Video 3"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+
+
+<div className="video-wrapper">
+  <iframe
+src="https://www.youtube.com/embed/ydHR_VXoXkI"
+    title="Video 3"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+
+<div className="video-wrapper">
+  <iframe
+src="https://www.youtube.com/embed/U4kJTXQbBwQ"
+    title="Video 3"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+  
+
+   <div className="video-wrapper">
+  <iframe
+    src="https://www.youtube.com/embed/bPz6amQzdqE"
+    title="Video 3"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+
   </div>
 </section>
+
+ <section className="bcw-section">
+      <h2 className="bcw-heading">Business Care Winners</h2>
+
+      <div className="bcw-video-container">
+        <iframe
+          src="https://www.youtube.com/embed/w5YY9qyhlw4"
+          title="Business Winner 1"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+
+        <iframe
+          src="https://www.youtube.com/embed/Xv1Pw7zMiEM"
+          title="Business Winner 2"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+
+
+
+
+
+      </div>
+    </section>
 
 <section className="services-section3">
   <h2 className="services-heading3">Our Services</h2>

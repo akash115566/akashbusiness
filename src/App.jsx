@@ -18,7 +18,10 @@ import Terms from "./Pages/Terms";
 import FormPage from "./Pages/FormPage";
 import Associate from "./Pages/Associate";
 import Legal from "./Pages/Legal";
-
+import TvAdvertising from "./Pages/TvAdvertising";
+import DealerNetwork from "./Pages/DealerNetwork";
+import BusinessPromotion from "./Pages/BusinessPromotion";
+import AajTak from "./Pages/AajTak";
 const App = () => {
   return (
     <BrowserRouter>
@@ -40,6 +43,10 @@ const App = () => {
                  <Route path="/formPage" element={<FormPage />} />
                   <Route path="/associate" element={<Associate />} />
                   <Route path="/legal" element={<Legal />} />
+                    <Route path="/tv-advertising-india" element={<TvAdvertising />} />
+        <Route path="/dealer-network-india" element={<DealerNetwork />} />
+        <Route path="/business-promotion-services" element={<BusinessPromotion />} />
+        <Route path="/advertise-on-aaj-tak" element={<AajTak />} />
               
       </Routes>
       <Footer />
