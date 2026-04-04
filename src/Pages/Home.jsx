@@ -187,9 +187,10 @@ const Home = () => {
 
         {/* RIGHT CONTENT */}
         <div className="hero-right">
-       <Link to="/Pooja Sharma – Founder of Business Care TV Show">  <h2 className="hero-title" style={{fontWeight:"500"}}>MEET LIVE WITH INDIA'S CELEBRITY BUSINESS COACHES</h2></Link> 
+       {/* <Link to="/pooja-sharma-business-care">  <h2 className="hero-title" style={{fontWeight:"500"}}>MEET LIVE WITH INDIA'S CELEBRITY BUSINESS COACHES</h2></Link>  */}
+       <Link to="/pooja-sharma-business-care">  <h2 className="hero-title" style={{fontWeight:"500"}}>Business Care Founder</h2></Link> 
 
-          <h3 className="coach-names">Mr. Ankur Bansal<br/><span style={{color:"#340303"}}>&</span><br />Ms. Pooja Sharma</h3>
+          <h3 className="coach-names">Co-Founder Mr. Ankur Bansal<br/><span style={{color:"#340303"}}>&</span><br />Ms. Pooja Sharma – Founder of Business Care TV Show</h3>
 
           <p className="coach-subtitle">CELEBRITY COACHES</p>
 
