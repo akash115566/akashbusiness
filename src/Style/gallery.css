@@ -6,7 +6,7 @@
 /* 🔹 Hero Section (Fixed Background) */
 /* 🔹 Hero Section (Fixed Background) */
 /* ✅ HERO SECTION */
-.gallery-hero {
+.gallery-hero1 {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -20,7 +20,7 @@
   /* background-attachment: fixed; */
 }
 
-.gallery-hero .overlay {
+.gallery-hero1 .overlay1 {
   width: 100%;
   height: 100%;
   display: flex;
@@ -31,13 +31,13 @@
   text-align: left;
 }
 
-.gallery-hero h1 {
+.gallery-hero1 h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.gallery-hero p {
+.gallery-hero1 p {
   font-size: 1.2rem;
   max-width: 500px;
   color: #f0f0f0;
@@ -45,102 +45,90 @@
 
 /* ✅ GALLERY SECTION */
 .gallery-section {
-  padding: 80px 5%;
-  background: #fff;
+  width: 100%;
+  padding: 20px 5%;
+  box-sizing: border-box;
   text-align: center;
+  background: #fff;
 }
 
 .gallery-section h2 {
-  font-size: 2rem;
-  color: #fff;
-  margin-bottom: 40px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.gallery-item {
-  overflow: hidden;
-  /* border-radius: 12px; */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.gallery-item img {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
   width: 100%;
-  height: 100%;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 320px;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
-.gallery-item:hover img {
-  transform: scale(1.05);
+.gallery-grid img:hover {
+  transform: translateY(-10px) scale(1.03);
 }
 
-/* ✅ TABLET (768px) */
-@media (max-width: 768px) {
-  .gallery-hero {
-    height: 60vh;
-  }
-
-  .gallery-hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .gallery-hero p {
-    font-size: 1rem;
-  }
-
-  .gallery-hero .overlay {
-    padding-left: 6%;
+/* Laptop */
+@media (max-width: 1200px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* ✅ MOBILE (480px) — FULL FIX */
-@media (max-width: 480px) {
-
-  /* FIXED BG DISABLED → mobile compatible */
-  .gallery-hero {
-    background-attachment: scroll !important;
-    height: 65vh;
-  }
-
-  .gallery-hero .overlay {
-    padding-left: 4%;
-  }
-
-  .gallery-hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .gallery-hero p {
-    font-size: 0.95rem;
-    max-width: 90%;
+/* Tablet */
+@media (max-width: 992px) {
+  .gallery-section {
+    padding: 60px 4%;
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr;  /* Single column */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .gallery-grid img {
+    height: 280px;
   }
 }
 
-/* ✅ SMALL MOBILE (360px & 320px) */
-@media (max-width: 360px) {
-
-  .gallery-hero {
-    height: auto;
-    min-height: 40vh;
+/* Mobile */
+@media (max-width: 768px) {
+  .gallery-section h2 {
+    margin-bottom: 35px;
   }
 
-  .gallery-hero h1 {
-    font-size: 1.5rem;
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
-  .gallery-hero p {
-    font-size: 0.85rem;
+  .gallery-grid img {
+    height: 250px;
+    border-radius: 14px;
   }
 }
 
+/* Small Mobile */
+@media (max-width: 480px) {
+  .gallery-section {
+    padding: 45px 15px;
+  }
 
-
+  .gallery-grid img {
+    height: 220px;
+  }
+}

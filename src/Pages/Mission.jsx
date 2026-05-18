@@ -1,4 +1,5 @@
 import React from "react";
+    import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 import "../Style/mission.css"; // Make sure this file exists
@@ -13,6 +14,45 @@ const Mission = () => {
   ];
   return (
     <>
+
+
+<Helmet>
+  <title>Our Mission & Vision | Business Care TV Show</title>
+
+  <meta
+    name="description"
+    content="Discover the mission and vision of Business Care TV Show. We empower businesses with innovative marketing strategies, branding solutions, and media planning to achieve long-term growth."
+  />
+
+  <meta
+    name="keywords"
+    content="Business Care mission, Business Care vision, marketing strategy India, branding services, media planning, MSME growth platform"
+  />
+
+  <link
+    rel="canonical"
+    href="https://businesscare.org.in/mission"
+  />
+
+  {/* ✅ ORGANIZATION SCHEMA */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Business Care TV Show",
+      "url": "https://businesscare.org.in",
+      "logo": "https://businesscare.org.in/logo.png",
+      "description": "Business Care TV Show is India's leading MSME growth platform offering marketing strategy, branding, and media planning services.",
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://www.instagram.com/",
+        "https://www.youtube.com/"
+      ]
+    }
+    `}
+  </script>
+</Helmet>
       <section className="mission-section1" >
         <div className="overlay">
           <div className="mission-text1">
@@ -33,7 +73,9 @@ const Mission = () => {
           {/* Mission */}
           <div className="mission-box">
             <div className="mission-image">
-              <img src="/about/m1.webp" alt="Mission" />
+              <img src="/about/m1.webp"   alt="Company Mission and Business Vision"
+  title="Our Mission"
+  loading="eager"/>
             </div>
             <div className="mission-text">
               <h2>Our Mission</h2>
@@ -66,7 +108,9 @@ const Mission = () => {
               </p>
             </div>
             <div className="vision-image">
-              <img src="/about/m2.webp" alt="Vision" />
+              <img src="/about/m2.webp"   alt="Company Vision"
+  title="Our Vision"
+  loading="eager"/>
             </div>
           </div>
         </div>

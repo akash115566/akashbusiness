@@ -4,13 +4,46 @@ import { Helmet } from "react-helmet";
 
 const DealerNetwork = () => {
   return (
-    <div className="page">
-      <Helmet>
-        <title>Dealer & Distributor Network in India</title>
-        <meta name="description" content="Expand your business with dealer and distributor network services across India. Connect with Business Care today." />
-        <meta name="keywords" content="Dealer Network India" />
-        <link rel="canonical" href="https://yourwebsite.com/dealer-network-india" />
+    <>
+     <Helmet>
+        <title>Dealer & Distributor Network Services in India | Business Care</title>
+
+        <meta
+          name="description"
+          content="Build your dealer and distributor network across India with Business Care. Expand your business, increase sales and grow faster with expert strategies."
+        />
+
+        <meta
+          name="keywords"
+          content="dealer network India, distributor network India, channel partners India, business expansion India"
+        />
+
+        {/* ✅ Correct Canonical */}
+        <link
+          rel="canonical"
+          href="https://businesscare.org.in/dealer-network-india"
+        />
+
+        {/* ✅ SCHEMA MARKUP */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Dealer & Distributor Network Services",
+            "provider": {
+              "@type": "Organization",
+              "name": "Business Care",
+              "url": "https://businesscare.org.in"
+            },
+            "areaServed": "India",
+            "description": "Build dealer and distributor network across India with expert onboarding, lead generation and business expansion strategies."
+          }
+          `}
+        </script>
       </Helmet>
+    <div className="page">
+    
 
       <h1>Dealer Network India</h1>
 
@@ -37,6 +70,7 @@ const DealerNetwork = () => {
 
       <button>Build Network Now</button>
     </div>
+    </>
   );
 };
 

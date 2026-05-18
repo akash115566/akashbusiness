@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import "../Style/award.css";
 
 const Award = () => {
@@ -85,6 +86,34 @@ const Award = () => {
 
   return (
     <>
+    <Helmet>
+  <title>Business Care Awards & Achievements | Marketing Excellence India</title>
+  <meta 
+    name="description" 
+    content="Explore Business Care awards, achievements and recognitions in business consulting, marketing strategy and MSME growth across India." 
+  />
+  <link rel="canonical" href="https://yourdomain.com/awards" />
+    {/* 🔹 SCHEMA MARKUP */}
+
+      <script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Business Care",
+  "url": "https://businesscare.org.in",
+  "logo": "https://businesscare.org.in/logo.png",
+  "description": "Award winning business consulting and marketing company in India",
+  "sameAs": [
+    "https://www.facebook.com/",
+    "https://www.instagram.com/",
+    "https://www.linkedin.com/"
+  ]
+}
+`}
+</script>
+      
+</Helmet>
       {/* 🔹 Hero Section */}
       <section className="awards-hero fixed-bg-section2">
         <div className="overlay2">
@@ -124,7 +153,7 @@ const Award = () => {
         <div className="gallery-container">
           {images.map((img, index) => (
             <div className="gallery-card" key={index}>
-              <img src={img} alt={`Gallery ${index + 1}`} />
+              <img src={img} alt={`Gallery ${index + 1}`} loading="lazy"/>
             </div>
           ))}
         </div>
@@ -135,7 +164,7 @@ const Award = () => {
 
 
 
-
+  
 
 
   

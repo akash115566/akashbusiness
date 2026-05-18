@@ -1,8 +1,88 @@
 import React from "react";
+  import { Helmet } from "react-helmet";
 import "../Style/legal.css";
 
 const Legal = () => {
   return (
+    <>
+
+  
+
+<Helmet>
+  <title>
+    Business Care Legal Terms | Trademark, Policies & Compliance
+  </title>
+
+  <meta
+    name="description"
+    content="Read the official legal terms, trademark policies, payment rules, and compliance guidelines for Business Care TV Show associates, vendors, and partners."
+  />
+
+  <meta
+    name="keywords"
+    content="Business Care legal terms, trademark policy India, business associate agreement, MSME TV show legal, Business Care compliance"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  {/* ✅ CANONICAL */}
+  <link
+    rel="canonical"
+    href="https://businesscare.org.in/legal"
+  />
+
+  {/* ✅ OPEN GRAPH */}
+  <meta
+    property="og:title"
+    content="Business Care Legal Terms & Policies"
+  />
+  <meta
+    property="og:description"
+    content="Official legal policies, trademark protection, and compliance rules for Business Care TV Show associates."
+  />
+  <meta
+    property="og:url"
+    content="https://businesscare.org.in/legal"
+  />
+  <meta property="og:type" content="website" />
+
+  {/* ✅ TWITTER */}
+  <meta name="twitter:card" content="summary" />
+  <meta
+    name="twitter:title"
+    content="Business Care Legal Terms & Policies"
+  />
+  <meta
+    name="twitter:description"
+    content="Read Business Care TV Show legal guidelines and trademark policies."
+  />
+
+  {/* ✅ LEGAL PAGE SCHEMA */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Business Care Legal Terms",
+      "url": "https://businesscare.org.in/legal",
+      "description": "Official legal terms, trademark policies, and compliance guidelines for Business Care TV Show associates."
+    }
+    `}
+  </script>
+
+  {/* ✅ ORGANIZATION SCHEMA */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Business Care",
+      "url": "https://businesscare.org.in",
+      "logo": "https://businesscare.org.in/logo.png"
+    }
+    `}
+  </script>
+</Helmet>
     <div className="legal-container">
 
       <h1 className="legal-main-heading">
@@ -129,6 +209,7 @@ Blacklisting from future collaborations</li>
       </div>
 
     </div>
+    </>
   );
 };
 

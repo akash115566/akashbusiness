@@ -1,0 +1,236 @@
+/* InvestorRegistration.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  font-family: "Poppins", sans-serif;
+}
+
+.investor-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.investor-form {
+  width: 100%;
+  max-width: 1100px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.form-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.form-header h1 {
+  font-size: 2.5rem;
+  color: #0f172a;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .form-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .form-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .form-header h1 {
+    font-size: 1.7rem;
+    line-height: 1.4;
+  }
+}
+
+.form-section {
+  margin-bottom: 40px;
+}
+
+.form-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #2563eb;
+  border-left: 5px solid #2563eb;
+  padding-left: 12px;
+}
+
+.form-section h3 {
+  margin-bottom: 18px;
+  color: #111827;
+  font-size: 1.1rem;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.2);
+}
+
+textarea {
+  margin-top: 20px;
+  resize: none;
+}
+
+.checkbox-section {
+  margin-top: 25px;
+}
+
+.checkbox-grid,
+.radio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.checkbox-grid label,
+.radio-grid label {
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkbox-grid label:hover,
+.radio-grid label:hover {
+  background: #eff6ff;
+  border-color: #2563eb;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  transform: scale(1.2);
+}
+
+.other-input {
+  margin-top: 15px;
+}
+
+.declaration-text {
+  margin-bottom: 25px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+.footer-text {
+  margin-top: 30px;
+  text-align: center;
+  color: #4b5563;
+  line-height: 1.8;
+}
+.footer-text p{
+    color: #111;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .investor-form {
+    padding: 25px;
+  }
+
+  .investor-form h1 {
+    font-size: 1.8rem;
+  }
+
+  .input-grid,
+  .checkbox-grid,
+  .radio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-section h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .investor-container {
+    padding: 15px;
+  }
+
+  .investor-form {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  input,
+  textarea {
+    padding: 13px;
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+  }
+}

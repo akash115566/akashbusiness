@@ -13,7 +13,7 @@ body, #root {
 
 
 /* ✅ MAIN HERO SECTION */
-.awards-hero {
+.awards-hero1 {
   width: 100%;
   min-height: 450px;
   background-image:url("/ba2.webp"); /* ⭐ Apni image lagaye */
@@ -27,7 +27,7 @@ body, #root {
 }
 
 /* ✅ OVERLAY */
-.overlay {
+.overlay1 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.55);
@@ -38,28 +38,28 @@ body, #root {
 }
 
 /* ✅ TEXT BLOCK */
-.text-content {
+.text-content1 {
   max-width: 800px;
   color: #fff;
   text-align: center;
   padding: 0 1rem;
 }
 
-.text-content h2 {
+.text-content1 h2 {
   font-size: 2.2rem;
   margin-bottom: 0.8rem;
 }
 
-.text-content h3 {
+.text-content1 h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
-.text-content h3 span {
+.text-content1 h3 span {
   color: orange;
 }
 
-.text-content p {
+.text-content1 p {
   font-size: 1rem;
   line-height: 1.6;
 }

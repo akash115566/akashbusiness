@@ -5,41 +5,43 @@
 }
 
 
+
+
 .whyus-section1 {
   position: relative;
-  height: 100vh; /* full screen height */
+  height: 100vh;
   background: url("/about/a1.jpeg") no-repeat center center;
   background-size: cover;
   display: flex;
-  justify-content: flex-start; /* text on left */
+  justify-content: flex-start;   /* left */
   align-items: center;
-  color: #fff;
 }
 
-.whyus-section1 .overlay {
-  background: rgba(0, 0, 0, 0.6); /* dark overlay for readability */
+.overlay1 {
   width: 100%;
   height: 100%;
+  background: rgba(0,0,0,0.1);
   display: flex;
+  justify-content: flex-start;   /* 🔥 important */
   align-items: center;
 }
 
 .text-container1 {
-  padding-left: 50px;
+  margin-left: 80px;   /* 🔥 left spacing */
   max-width: 600px;
 }
 
 .text-container1 h2 {
+  text-align: left;    /* 🔥 main */
   font-size: 3rem;
   margin-bottom: 20px;
-  text-align: left;
+  color: #fff;
 }
 
 .text-container1 p {
+  text-align: left;
   font-size: 1.2rem;
-  margin-bottom: 20px;
-  line-height: 1.6;
-  /* color: white; */
+  color: #ddd;
 }
 
 .text-container1 ul {
@@ -127,6 +129,7 @@
   .text-container1 h2 {
     font-size: 1.8rem;
     line-height: 1.3;
+    text-align: left;
     
   }
 
@@ -140,6 +143,133 @@
     margin: 15px auto 0;
   }
 }
+@media (max-width: 360px) {
+
+  .overlay {
+    display: flex;
+    justify-content: flex-start !important;  /* 🔥 force left */
+    align-items: center;
+    text-align: left !important;            /* 🔥 text left */
+  }
+
+  .text-container1 {
+    max-width: 60%;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: auto;                     /* 🔥 push left */
+    text-align: left !important;
+  }
+
+  .text-container1 h2 {
+    font-size: 1.3rem;
+    text-align: left !important;
+  }
+
+  .text-container1 p {
+    font-size: 0.85rem;
+    text-align: left !important;
+  }
+
+}
+
+
+
+.business-care-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #fff, #fff5ec);
+  display: flex;
+  justify-content: center;
+}
+
+.business-care-container {
+ 
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* 🔥 Heading with Border */
+.business-care-heading {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 25px;
+
+  display: inline-block;
+  padding: 10px 25px;
+
+  border: 3px solid #ff6600;
+  border-radius: 10px;
+
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* 🔥 Stylish Hover Effect */
+.business-care-heading:hover {
+  background-color: #ff6600;
+  color: #fff;
+  border-color: #111;
+}
+
+.business-care-heading span {
+  color: #111;
+}
+
+/* 🔹 Text */
+.business-care-text {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* 🔥 Quote Box */
+.business-care-quote {
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #ff6600, #ff8533);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255,102,0,0.3);
+}
+
+/* 📱 Tablet */
+@media (max-width: 768px) {
+  .business-care-container {
+    padding: 30px 20px;
+  }
+
+  .business-care-heading {
+    font-size: 32px;
+  }
+
+  .business-care-text {
+    font-size: 15px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .business-care-section {
+    padding: 50px 15px;
+  }
+
+  .business-care-heading {
+    font-size: 26px;
+  }
+
+  .business-care-quote {
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+
+
 
 
 

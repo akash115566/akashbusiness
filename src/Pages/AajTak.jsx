@@ -4,13 +4,46 @@ import { Helmet } from "react-helmet";
 
 const AajTak = () => {
   return (
-    <div className="page">
+    <>
       <Helmet>
-        <title>Advertise on Aaj Tak | TV Ads India</title>
-        <meta name="description" content="Run your business ads on Aaj Tak channel with Business Care. Get maximum reach and brand visibility." />
-        <meta name="keywords" content="Advertise on Aaj Tak" />
-        <link rel="canonical" href="https://yourwebsite.com/advertise-on-aaj-tak" />
+        <title>Advertise on Aaj Tak Channel | TV Advertising India</title>
+
+        <meta
+          name="description"
+          content="Advertise on Aaj Tak channel with Business Care. Get maximum brand visibility, high TRP reach and powerful TV advertising campaigns across India."
+        />
+
+        <meta
+          name="keywords"
+          content="advertise on Aaj Tak, Aaj Tak ad cost, TV advertising India, news channel ads India"
+        />
+
+        {/* ✅ Correct Canonical */}
+        <link
+          rel="canonical"
+          href="https://businesscare.org.in/advertise-on-aaj-tak"
+        />
+
+        {/* ✅ SCHEMA MARKUP */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Aaj Tak Advertising Service",
+            "provider": {
+              "@type": "Organization",
+              "name": "Business Care",
+              "url": "https://businesscare.org.in"
+            },
+            "areaServed": "India",
+            "description": "Run ads on Aaj Tak news channel with expert planning, ad creation and campaign management services."
+          }
+          `}
+        </script>
       </Helmet>
+    <div className="page">
+    
 
       <h1>Advertise on Aaj Tak</h1>
 
@@ -36,7 +69,9 @@ const AajTak = () => {
 
       <button>Book Aaj Tak Ad</button>
     </div>
+    </>
   );
 };
+
 
 export default AajTak;

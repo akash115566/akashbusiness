@@ -27,47 +27,33 @@ const Navbar = () => {
       {/* Top Info Bar */}
    <div
   className="top-info-bar"
-  style={{
-    background: "#111",
-    color: "#fff",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "6px 20px",
-    fontSize: "14px",
-  }}
+
 >
 
   {/* Left */}
-  <div>
-    {/* A-111, Sec-63, Noida UP-201301 | +91 7042-438-293 */}
+  <div className="top-left">
+  
+    <h2 >Businesscare Tv Show</h2>
   </div>
 
   {/* Right */}
-  <div style={{  
-    color: "#fff",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "6px 20px",
-    fontSize: "14px",
-    gap:"10px" }}>
+  <div className="top-right" >
  
 
     <div className="social-icons" style={{gap:"15px",display:"flex", color:"#fff"}}>
-      <a href="https://www.facebook.com/businesscarenoida/" target="_blank" rel="noopener noreferrer" style={{color:"#fff"}}>
+      <a href="https://share.google/fnkU5NXc1Vu23FTSW" target="_blank" rel="noopener noreferrer" style={{color:"#fff"}}>
         <FaFacebookF />
       </a>
-      <a href="https://x.com/businesscareup" target="_blank" rel="noopener noreferrer" style={{color:"#fff"}}>
+      <a href="https://x.com/BusinesscareI" target="_blank" rel="noopener noreferrer" style={{color:"#fff"}}>
         <FaTwitter />
       </a>
-      <a href="https://www.linkedin.com/company/business-care-noida/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" style={{color:"#fff"}}>
+      <a href="hhttps://www.linkedin.com/in/pooja-movie-creations-india/" target="_blank" rel="noopener noreferrer" style={{color:"#fff"}}>
         <FaLinkedinIn />
       </a>
-      <a href="https://www.instagram.com/Businesscarenoida/" target="_blank" rel="noopener noreferrer" style={{color:"#fff"}}>
+      <a href="https://share.google/yG4numo2IQ2TW394i" target="_blank" rel="noopener noreferrer" style={{color:"#fff"}}>
         <FaInstagram />
       </a>
-      <a href="https://www.youtube.com/@BusinessCareNoida/featured" target="_blank" rel="noopener noreferrer"style={{color:"#fff"}}>
+      <a href="https://share.google/thz5aGDzQ6FRjbskI" target="_blank" rel="noopener noreferrer"style={{color:"#fff"}}>
         <FaYoutube />
       </a>
       <a href="/search" style={{color:"#fff"}}>
@@ -99,7 +85,7 @@ const Navbar = () => {
   display: "flex",
   alignItems: "center",
   gap: "45px",
-  width: "1200px",
+
 }}>
   {/* Hamburger */}
  
@@ -112,7 +98,7 @@ const Navbar = () => {
   /></div>
 
           {/* Navbar Links */}
-         <div className="nav-links" style={{ display: "flex", alignItems: "center", gap: "100px" }}>
+         <div className="nav-links" style={{ color:"#fff" }}>
 
             <Link to="/" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Home</Link>
             <div onMouseEnter={() => setIsAboutOpen(true)} onMouseLeave={() => setIsAboutOpen(false)} style={{ position: "relative" }}>
@@ -133,10 +119,10 @@ const Navbar = () => {
                   <Link to="/pooja-sharma-business-care" style={{ ...dropdownLinkStyle, color:"#fff" }}>Our Founder</Link>
                   <Link to="/mission" style={{ ...dropdownLinkStyle, color:"#fff" }}>Mission & Vision</Link>
                   <Link to="/why-us" style={{ ...dropdownLinkStyle, color:"#fff" }}>Why Us</Link>
-                    <Link to="/tv-advertising-india" style={dropdownLinkStyle}>TV Advertising</Link>
-                <Link to="/dealer-network-india" style={dropdownLinkStyle}>Dealer Network</Link>
-                <Link to="/business-promotion-services" style={dropdownLinkStyle}>Business Promotion</Link>
-                <Link to="/advertise-on-aaj-tak" style={dropdownLinkStyle}>Advertise on Aaj Tak</Link>
+                    <Link to="/tv-advertising-india" style={{ ...dropdownLinkStyle, color:"#fff" }}>TV Advertising</Link>
+                <Link to="/dealer-network-india" style={{ ...dropdownLinkStyle, color:"#fff" }}>Dealer Network</Link>
+                <Link to="/business-promotion-services" style={{ ...dropdownLinkStyle, color:"#fff" }}>Business Promotion</Link>
+                <Link to="/advertise-on-aaj-tak" style={{ ...dropdownLinkStyle, color:"#fff" }}>Advertise on Aaj Tak</Link>
                 </div>
               )}
             </div>
@@ -144,6 +130,7 @@ const Navbar = () => {
             <Link to="/service" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Service</Link>
             <Link to="/video" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Video</Link>
             <Link to="/gallery" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Gallery</Link>
+                        <Link to="/blog" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Blog</Link>
             <Link to="/contact" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Contact</Link>
           </div>
 
@@ -158,6 +145,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start",textAlign:"left", gap: "20px", background: "#111", padding: "10px 0" }}>
+            
             <Link to="/" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Home</Link>
             <div style={{ width: "100%", textAlign: "left" }}>
               <div onClick={() => setIsAboutOpen(!isAboutOpen)} style={{ ...linkStyle, display: "block", cursor: "pointer", color:"#fff" }}>About ▾</div>
@@ -166,10 +154,10 @@ const Navbar = () => {
                   <Link to="/pooja-sharma-business-care" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Our Founder</Link>
                   <Link to="/mission" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Mission & Vision</Link>
                   <Link to="/why-us" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Why Us</Link>
-                                <Link to="/tv-advertising-india" onClick={handleLinkClick} style={dropdownLinkStyle}>TV Advertising</Link>
-              <Link to="/dealer-network-india" onClick={handleLinkClick} style={dropdownLinkStyle}>Dealer Network</Link>
-              <Link to="/business-promotion-services" onClick={handleLinkClick} style={dropdownLinkStyle}>Business Promotion</Link>
-              <Link to="/advertise-on-aaj-tak" onClick={handleLinkClick} style={dropdownLinkStyle}>Advertise on Aaj Tak</Link>
+                                <Link to="/tv-advertising-india" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>TV Advertising</Link>
+              <Link to="/dealer-network-india" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Dealer Network</Link>
+              <Link to="/business-promotion-services" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Business Promotion</Link>
+              <Link to="/advertise-on-aaj-tak" onClick={handleLinkClick} style={{ ...dropdownLinkStyle, color:"#fff" }}>Advertise on Aaj Tak</Link>
                     
                 </div>
               )}
@@ -178,6 +166,7 @@ const Navbar = () => {
             <Link to="/service" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Service</Link>
             <Link to="/video" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Video</Link>
             <Link to="/gallery" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Gallery</Link>
+                        <Link to="/blog" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Blog</Link>
             <Link to="/contact" onClick={handleLinkClick} style={{ ...linkStyle, color:"#fff" }}>Contact</Link>
           </div>
         )}

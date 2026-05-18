@@ -1,55 +1,86 @@
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgb(202, 41, 41);
-  color: white;
-  padding: 10px 20px;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-}
-
-.navbar-container {
+/* ================= TOP INFO BAR ================= */
+.top-info-bar {
+  background: #111;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1200px;
+  padding: 6px 20px;
+  font-size: 14px;
 }
 
-/* Logo */
-.logo-box {
+.top-left h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.top-right {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.logo-box img {
-  height: 40px;
-  width: 50px;
+.social-icons {
+  display: flex;
+  gap: 15px;
 }
 
-.logo-box h3 {
-  font-size: 20px;
-  font-weight: bold;
+.social-icons a {
   color: #fff;
+  transition: 0.3s;
 }
 
-/* Navigation Links */
+.social-icons a:hover {
+  color: yellow;
+}
+
+.call-btn {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.call-btn:hover {
+  background: #fff;
+  color: #111;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  width: 100%;
+  background: #111;
+}
+
+/* container */
+nav > div {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* LOGO */
+nav img {
+  height: 32px;
+}
+
+/* ================= NAV LINKS ================= */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 45px;
+  margin-left: auto;
 }
 
 .nav-links a {
@@ -63,7 +94,30 @@
   color: yellow;
 }
 
-/* Hamburger */
+/* ================= DROPDOWN ================= */
+.nav-links div {
+  position: relative;
+}
+
+.nav-links div > div {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.nav-links div > div a {
+  padding: 10px 15px;
+}
+
+/* ================= HAMBURGER ================= */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -77,133 +131,79 @@
   background: #fff;
 }
 
-/* Mobile Menu */
+/* ================= MOBILE MENU ================= */
 .mobile-menu {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  background: black;
-  width: 100%;
-}
-
-/* Dropdown menu for desktop */
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: black;
   display: flex;
   flex-direction: column;
-  min-width: 180px;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  align-items: flex-start;
+  gap: 15px;
+  background: #111;
+  padding: 15px 20px;
 }
 
-.dropdown-menu a {
-  padding: 10px 15px;
-  text-align: left;
+.mobile-menu a {
   color: #fff;
+  text-decoration: none;
 }
 
-/* Responsive */
-
-/* =========================
-   Top Info Bar Responsive
-   ========================= */
-
-/* Tablet & below */
+/* ================= LAPTOP ================= */
 @media (max-width: 1024px) {
-  .top-info-bar {
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+}
+
+/* ================= TABLET ================= */
+/* Tablet & Mobile */
+@media (max-width: 900px) {
+
+  .nav-links {
     display: none !important;
   }
-}
 
-/* Tablet (≤1023px) */
-@media (max-width: 1023px) {
-  .logo-box img {
-    height: 35px;
-    width: 90px;
-  }
-  .logo-box h3 {
-    font-size: 18px;
-  }
-}
-
-/* Mobile Large (≤767px) */
-@media (max-width: 767px) {
   .hamburger {
-    display: flex;
+    display: flex !important;
   }
-  .nav-links {
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .top-left h2 {
+    font-size: 14px;
+  }
+
+  nav > div {
+    padding: 0 10px;
+  }
+}
+
+/* ================= 480px ================= */
+@media (max-width: 480px) {
+
+  .social-icons {
     display: none;
   }
-  .logo-box img {
-    height: 30px;
-    width: 80px;
+
+  .top-right a {
+    display: none; /* hide button */
   }
-  .logo-box h3 {
-    font-size: 16px;
+
+  .top-info-bar {
+    justify-content: center;
+    text-align: center;
   }
 }
 
-/* Mobile Small (≤480px) */
-@media (max-width: 480px) {
-  .logo-box img {
-    height: 25px;
-    width: 65px;
-  }
-  .logo-box h3 {
-    font-size: 12px;
-  }
-}
-
-/* Very Small Devices (≤360px) */
+/* ================= 360px ================= */
 @media (max-width: 360px) {
-  .logo-box h3 {
-    display: none; /* h3 hide on ≤360px */
+
+  .top-info-bar {
+    display: none;
   }
-  .hamburger {
-    display: flex;
-    background-color: black;
-  }
-  /* Hamburger */
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: #111;
-}
-
-/* Mobile Menu */
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  background: black;
-  width: 100%;
-}
-
-/* Dropdown menu for desktop */
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: black;
-  display: flex;
-  flex-direction: column;
-  min-width: 180px;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.dropdown-menu a {
-  padding: 10px 15px;
-  text-align: left;
-  color: #fff;
-}
-
 }

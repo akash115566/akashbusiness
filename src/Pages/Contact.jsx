@@ -2,6 +2,7 @@ import React from 'react'
 import axios from "axios"
 import "../Style/contact.css";
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 import { useState, useEffect} from 'react';
 
 
@@ -95,8 +96,37 @@ Website: ${formData.website || "Not Provided"}
 
   return (
     <>
+     <Helmet>
+  <title>Contact Business Care | Business Consulting India</title>
+
+  <meta
+    name="description"
+    content="Contact Business Care for business consulting, TV advertising and marketing services. Book your appointment today."
+  />
+
+  <link
+    rel="canonical"
+    href="https://businesscare.org.in/contact"
+  />
+
+  {/* ✅ LOCAL BUSINESS SCHEMA */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Business Care",
+      "url": "https://businesscare.org.in",
+      "telephone": "+91 8799746544",
+      "areaServed": "India",
+      "description": "Business consulting, TV advertising and MSME growth services across India."
+    }
+    `}
+  </script>
+</Helmet>
       {/* 🔹 Stylish Static Banner */}
     <section className="banner-section11">
+     
                 <div className="banner-content11">
                     <h1>Contact </h1>
                     <p>Together we can create something all inspirational you need to build.</p>

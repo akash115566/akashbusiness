@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import "../Style/Founder.css";
 
@@ -7,6 +7,76 @@ const Founder = () => {
 
     return (
         <>
+       
+
+
+<Helmet>
+  {/* ✅ BASIC SEO */}
+  <title>Founder of Business Care | Pooja Sharma & Ankur Bansal</title>
+
+  <meta
+    name="description"
+    content="Meet Pooja Sharma and Ankur Bansal, founders of Business Care TV Show. Discover their journey, achievements, and impact on MSME and business growth in India."
+  />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Business Care TV Show" />
+
+  {/* ✅ CANONICAL */}
+  <link rel="canonical" href="https://businesscare.org.in/founder" />
+
+  {/* ✅ OPEN GRAPH */}
+  <meta property="og:title" content="Founder of Business Care TV Show" />
+  <meta
+    property="og:description"
+    content="Learn about Pooja Sharma and Ankur Bansal – visionary leaders behind Business Care TV Show."
+  />
+  <meta property="og:url" content="https://businesscare.org.in/founder" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:image" content="https://businesscare.org.in/founder.jpg" />
+
+  {/* ✅ TWITTER */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Business Care Founders" />
+  <meta
+    name="twitter:description"
+    content="Meet the founders of Business Care TV Show."
+  />
+  <meta name="twitter:image" content="https://businesscare.org.in/founder.jpg" />
+
+  {/* ✅ COMBINED PERSON SCHEMA (BEST PRACTICE 🔥) */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          name: "Pooja Sharma",
+          jobTitle: "Founder, Business Care TV Show",
+          url: "https://businesscare.org.in/founder",
+          worksFor: {
+            "@type": "Organization",
+            name: "Business Care",
+            url: "https://businesscare.org.in",
+          },
+          image: "https://businesscare.org.in/f2.webp",
+        },
+        {
+          "@type": "Person",
+          name: "Ankur Bansal",
+          jobTitle: "Co-Founder, Business Care TV Show",
+          url: "https://businesscare.org.in/founder",
+          worksFor: {
+            "@type": "Organization",
+            name: "Business Care",
+            url: "https://businesscare.org.in",
+          },
+          image: "https://businesscare.org.in/f3.webp",
+        }
+      ]
+    })}
+  </script>
+</Helmet>
 
          <section className="mission-section11" >
         <div className="overlay11">
@@ -49,7 +119,9 @@ const Founder = () => {
 
                         {/* Founder Image */}
                         <div className="founder-image" >
-                            <img src="/f2.webp" alt="Founder"  />
+                            <img src="/f2.webp"   alt="Company Founder and Business Leader"
+  title="Founder"
+  loading="eager" />
                         </div>
                     </div>
 
@@ -86,7 +158,9 @@ const Founder = () => {
 
                           {/* Founder Image */}
                      <div className="founder-image" >
-  <img src="/f3.webp" alt="Founder"  style={{marginTop:"50px"}}/>
+  <img src="/f3.webp"   alt="Company Founder and Business Leader"
+  title="Founder"
+  loading="eager" />
 </div>
 
                     </div>

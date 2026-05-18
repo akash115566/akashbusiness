@@ -8,6 +8,7 @@ import Award from "./Pages/Award";
 import Service from "./Pages/Service";
 import Video from "./Pages/Video";
 import Gallery from "./Pages/Gallery";
+import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import Founder from "./Pages/Founder";
 import Mission from "./Pages/Mission";
@@ -22,6 +23,11 @@ import TvAdvertising from "./Pages/TvAdvertising";
 import DealerNetwork from "./Pages/DealerNetwork";
 import BusinessPromotion from "./Pages/BusinessPromotion";
 import AajTak from "./Pages/AajTak";
+import InternationalTrade from "./Pages/InternationalTrade";
+import Testimonials from "./Pages/Testimonials";
+import Purpose from "./Pages/Purpose";
+import Trade from "./Pages/Trade";
+import InvestorRegistration from "./Pages/InvestorRegistration";
 const App = () => {
   return (
     <BrowserRouter>
@@ -34,6 +40,7 @@ const App = () => {
              <Route path="/service" element={<Service />} />
              <Route path="/video" element={<Video />} />
                <Route path="/gallery" element={<Gallery />} />
+               <Route path="/blog" element={<Blog />} />
                <Route path="/contact" element={<Contact />} />
                  <Route path="/pooja-sharma-business-care" element={<Founder />} />
                  <Route path="/mission" element={<Mission />} />
@@ -47,7 +54,11 @@ const App = () => {
         <Route path="/dealer-network-india" element={<DealerNetwork />} />
         <Route path="/business-promotion-services" element={<BusinessPromotion />} />
         <Route path="/advertise-on-aaj-tak" element={<AajTak />} />
-              
+          <Route path="/business-care/international-operations-trade" element={<InternationalTrade />} />
+          <Route path="/businesscare-successstory-testimonials" element={<Testimonials />} />
+          <Route path="/purpose" element={<Purpose />} />
+           <Route path="/trade" element={<Trade />} />
+            <Route path="/investor-registration" element={<InvestorRegistration />} />
       </Routes>
       <Footer />
     </BrowserRouter>

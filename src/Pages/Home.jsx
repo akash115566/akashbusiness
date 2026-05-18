@@ -1,18 +1,13 @@
 import React,{ useRef, useEffect ,useState}  from 'react';
 import Slider from "react-slick";
+   import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa"; // react-icons का इस्तेमाल
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import {
-  FaRocket,
-  FaChartLine,
-  FaUsers,
-  FaShoppingCart,
-  FaBullhorn,
-  FaLayerGroup,
-} from "react-icons/fa";
-
+import Testimonials from './Testimonials';
+import Purpose from './Purpose';
+import { FaRocket, FaChartLine, FaUsers, FaShoppingCart, FaBullhorn, FaLayerGroup,} from "react-icons/fa";
 import "../Style/index.css"
 
 
@@ -73,6 +68,14 @@ const Count = ({ end, duration = 7500, label }) => {
   ];
 
 
+  const videos = [
+  "https://www.youtube.com/embed/9Hqvk_Cz9bY",
+  "https://www.youtube.com/embed/m8Pil2KpN-o",
+  "https://www.youtube.com/embed/Tmf0O1G3MKA",
+  "https://www.youtube.com/embed/ZB6Nzw9WP7k",
+  "https://www.youtube.com/embed/Xg0cenE-PW8",
+];
+
   //====================//
 const logosData = [
   { icon: FaRocket, text: "NEW STARTUPS MARKETING STRATEGY", button: "SEE MORE" },
@@ -117,20 +120,7 @@ const Home = () => {
   }, []);
 
 
-  const mediaPoints = [
-    "Media Placement Strategy",
-    "Television media promotion & advertising",
-    "TV commercial placements on national tv channels as per the product",
-    "TV ad films development as per the product",
-    "Concrete innovative ideas for tv commercial ads",
-    "Radio ads planning & placements",
-    "IPL specials promotions for exclusive products",
-    "OTT platforms promotions",
-    "Airports promotions pan india",
-    "Metro promotions pan india",
-    "PVR cinemas pan india",
-    "In films tv serials promotions & integrations",
-  ];
+
 
   const duplicatedImages = [
     "./slide/pur1.webp",
@@ -139,6 +129,7 @@ const Home = () => {
       "./slide/pur4.webp",
         "/slide/pur4.webp",
   ];
+  
 
     const carouselRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -172,6 +163,85 @@ const Home = () => {
   return (
     <>
  
+
+<Helmet>
+  <title>
+    Business Care TV Show | India’s #1 MSME Growth & Business Strategy Platform
+  </title>
+
+  <meta
+    name="description"
+    content="India's First B2B MSME Growth & Business Owners Growth TV Show Platform. Business Care is featured on top national channels like Aaj Tak, Zee News, CNBC Prime, Times Now & more."
+  />
+
+  <meta
+    name="keywords"
+    content="Business Care TV show, MSME growth platform India, business marketing strategy, TV advertising India, startup growth, business coaching India"
+  />
+
+  <meta name="author" content="Business Care" />
+
+  <meta name="robots" content="index, follow" />
+
+  {/* ✅ CANONICAL */}
+  <link rel="canonical" href="https://businesscare.org.in/" />
+
+  {/* ✅ OPEN GRAPH (SOCIAL SHARE) */}
+  <meta property="og:title" content="Business Care TV Show | MSME Growth Platform India" />
+  <meta
+    property="og:description"
+    content="Grow your business with India's leading TV show Business Care. Featured on top TV channels & global platforms."
+  />
+  <meta property="og:url" content="https://businesscare.org.in/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://businesscare.org.in/og-image.jpg" />
+
+  {/* ✅ TWITTER */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Business Care TV Show | MSME Growth Platform India" />
+  <meta
+    name="twitter:description"
+    content="India's #1 business growth TV show helping MSMEs & startups scale fast."
+  />
+  <meta name="twitter:image" content="https://businesscare.org.in/og-image.jpg" />
+
+  {/* ✅ ORGANIZATION SCHEMA */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Business Care",
+      "url": "https://businesscare.org.in",
+      "logo": "https://businesscare.org.in/logo.png",
+      "sameAs": [
+        "https://www.youtube.com/",
+        "https://www.facebook.com/",
+        "https://www.instagram.com/"
+      ]
+    }
+    `}
+  </script>
+
+  {/* ✅ TV SHOW SCHEMA */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "TVSeries",
+      "name": "Business Care TV Show",
+      "description": "India's First B2B MSME Growth & Business Owners Growth TV Show Platform.",
+      "url": "https://businesscare.org.in",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Business Care"
+      }
+    }
+    `}
+  </script>
+</Helmet>
+ 
  <section className="hero-section">
 
       <div className="hero-inner">
@@ -180,8 +250,10 @@ const Home = () => {
         <div className="hero-left">
           <img
             src="./mt1.webp"
-            alt="Business Care"
-            className="hero-image"
+             alt="Business Care Professional Corporate Services"
+  title="Business Care"
+  className="hero-image"
+  loading="eager"
           />
         </div>
 
@@ -214,13 +286,12 @@ const Home = () => {
        <section className="telecasting">
       <div className="container">
 
-        {/* Heading */}
         <h2 className="telecasting-heading">
           Business Care – Now Telecasting Across India & 
           Launching Soon in USA, UAE & Oman
         </h2>
 
-        {/* Sub Text */}
+       
         <p className="telecasting-subtext">
           The Iconic Business Television Show “Business Care” is proudly 
           telecasting on India’s leading national channels including 
@@ -228,51 +299,51 @@ const Home = () => {
           &TV, Anmol TV and streaming worldwide on ZEE5.
         </p>
 
-        {/* Channel Logos */}
+       
         <div className="channel-logos1">
-          <img src="/c31.jfif" alt="Aaj Tak" />
-          <img src="/c32.jfif" alt="CNBC Prime" />
-          <img src="/c1.webp" alt="Times Now" />
-          <img src="/c3.webp" alt="News18" />
-          <img src="/c5.jfif" alt="Zee News" />
-          <img src="/c7.png" alt="ZEE5" />
-           <img src="/c33.jfif" alt="News18" />
-             <img src="/c34.jfif" alt="News18" />
-          <img src="/c9.png" alt="Zee News" />
-          <img src="/c10.jfif" alt="ZEE5" />
-          <img src="/c37.jfif" alt="CNBC Prime" />
-          <img src="/c38.jfif" alt="Times Now" />
-          <img src="/c13.png" alt="News18" />
-          <img src="/c35.jfif" alt="Zee News" />
-          <img src="/c15.jfif" alt="ZEE5" />
-           <img src="/c36.jfif" alt="News18" />
-          <img src="/c17.png" alt="Zee News" />
-          <img src="/c18.jfif" alt="ZEE5" />
-           {/* <img src="/c19.png" alt="ZEE5" /> */}
+          <img src="/c31.jfif" alt="Aaj Tak"  loading="lazy"/>
+          <img src="/c32.jfif" alt="CNBC Prime" loading="lazy"/>
+          <img src="/c1.webp" alt="Times Now" loading="lazy"/>
+          <img src="/c40.jfif" alt="News18" loading="lazy"/>
+          <img src="/c5.jfif" alt="Zee News" loading="lazy"/>
+          <img src="/c7.png" alt="ZEE5" loading="lazy"/>
+           <img src="/c41.jfif" alt="News18" loading="lazy"/>
+             <img src="/c42.jfif" alt="News18" loading="lazy"/>
+          <img src="/c9.png" alt="Zee News" loading="lazy"/>
+          <img src="/c10.jfif" alt="ZEE5" loading="lazy"/>
+          <img src="/c37.jfif" alt="CNBC Prime" loading="lazy"/>
+          <img src="/c38.jfif" alt="Times Now" loading="lazy"/>
+          <img src="/c13.png" alt="News18" loading="lazy"/>
+          <img src="/c35.jfif" alt="Zee News" loading="lazy"/>
+          <img src="/c15.jfif" alt="ZEE5" loading="lazy"/>
+           <img src="/c36.jfif" alt="News18" loading="lazy"/>
+          <img src="/c17.png" alt="Zee News" loading="lazy"/>
+          <img src="/c18.jfif" alt="ZEE5" loading="lazy"/>
+          
         </div>
 
 
 
-          <h2 className="telecasting-heading2" >
+          {/* <h2 className="telecasting-heading2" >
          Coming soon 
         </h2>
       
 
-        {/* Sub Text */}
+      
         <p className="telecasting-subtext2">
          Times Now / Zee Business/ ET Now / TV Today / Colors / Zee5  and many more platform
  Business Care Program Launching soon in USA and Middle East on 
 Zee TV
         </p>
 
-        {/* Channel Logos */}
+      
         <div className="channel-logos2"  >
-          <img src="/c21.png" alt="Aaj Tak" />
-          <img src="/c22.jfif" alt="CNBC Prime" />
-          <img src="/c23.png" alt="Times Now" />
-          <img src="/c24.png" alt="News18" />
-          <img src="/c25.jfif" alt="Zee News" />
-          <img src="/c26.png" alt="ZEE5" />
+          <img src="/c21.png" alt="Aaj Tak" loading="lazy"/>
+          <img src="/c22.jfif" alt="CNBC Prime" loading="lazy"/>
+          <img src="/c23.png" alt="Times Now" loading="lazy"/>
+          <img src="/c24.png" alt="News18" loading="lazy"/>
+          <img src="/c25.jfif" alt="Zee News" loading="lazy"/>
+          <img src="/c26.png" alt="ZEE5" loading="lazy"/>
         </div>
  <p className="telecasting-subtext timing-section">
   <strong>Channel – Zee TV USA</strong><br />
@@ -285,13 +356,13 @@ Zee TV
 </p>
 
     
-        {/* Global Expansion Text */}
+        
         <p className="telecasting-footer">
           Expanding its global footprint, Business Care is all set to 
           launch soon in the United States, United Arab Emirates, and Oman, 
           taking India’s No.1 Business TV Show to an international audience 
           and strengthening its global business presence.
-        </p>
+        </p> */}
 
       </div>
     </section>
@@ -309,13 +380,60 @@ Zee TV
 
     </section>
 
+ <Testimonials />
+ {/* <section className="success-section">
+
+ 
+
+<h1 className="success-main-heading">
+  <Link to="/businesscare-successstory-testimonials" className="heading-link">
+    <span className="black-text">Top Successful</span>{" "}
+    <span className="orange-text">Story</span>
+  </Link>
+</h1>
+
+  <div className="success-container">
+
+  
+    <div className="success-text">
+      <h2>
+        90% <span>Successful Ratio</span>
+      </h2>
+
+     
+      <p className="testimonial">
+        I am extremely grateful and truly happy to be a part of Business Care. My experience with the Business Care TV Show has been incredibly beneficial, not just for me personally but also for my brand. Through their platform, I have been able to connect with reliable and well-established dealers and distributors, which has significantly contributed to my business growth.
+
+What impressed me the most is the consistent support and responsiveness of their team. Whenever I needed assistance or guidance, they were always available and proactive in helping me move forward.
+
+For the first time, Business Care has given me a platform where I can present my ideas, share my journey, and showcase my brand in front of a nationwide audience. This opportunity is truly invaluable, and I am excited about the new possibilities it brings.
+
+I sincerely thank the entire Business Care team for their dedication and support. I highly recommend their platform to anyone looking to grow their business and expand their reach.
+      </p>
+
+      <h3>Mr. Sanjeev Kumar Gupta</h3>
+      <p className="designation">Owner – Summercool</p>
+
+     
+      <p className="signature">Sanjeev Kumar Gupta</p>
+    </div>
+
+    <div className="success-image">
+      <img src="/h3.jfif" alt="Sanjeev Kumar Gupta" />
+    </div>
+
+  </div>
+</section> */}
+
        
 
 
 <section className="international-section">
   {/* Heading with border */}
   <div className="heading-box">
-    <h2>International Operations and Trade</h2>
+  <Link to="/business-care/international-operations-trade" style={{ textDecoration: "none", color: "#d1b123" }}>
+    <h2>International Operations And Trade</h2>
+  </Link>
   </div>
 
   {/* Videos */}
@@ -325,6 +443,7 @@ Zee TV
         src="https://www.youtube.com/embed/Xg0cenE-PW8"
         title="Video 1"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -335,6 +454,7 @@ Zee TV
         src="https://www.youtube.com/embed/nmGjvNz2Tgw"
         title="Video 2"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -345,6 +465,7 @@ Zee TV
         src="https://www.youtube.com/embed/KUAk1jqn6yw"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -356,6 +477,7 @@ Zee TV
         src="https://www.youtube.com/embed/qFwWAnjr7tQ"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -367,6 +489,7 @@ Zee TV
         src="https://www.youtube.com/embed/ImOiZUELJc0"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -376,6 +499,7 @@ Zee TV
       <iframe
         src= "https://www.youtube.com/embed/VCjA0d9OcG4"
         title="Video 3"
+        loading="lazy"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
@@ -389,6 +513,7 @@ Zee TV
         src= "https://www.youtube.com/embed/mmpu2_6cXmo"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -400,6 +525,7 @@ Zee TV
         src= "https://www.youtube.com/embed/yzfJ5HyicpY"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -410,6 +536,7 @@ Zee TV
         src= "https://www.youtube.com/embed/xZnS9AtGi8k"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -421,6 +548,7 @@ Zee TV
         src= "https://www.youtube.com/embed/qFwWAnjr7tQ"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -434,6 +562,7 @@ Zee TV
         src= "https://www.youtube.com/embed/7bEXxaRY1mI"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -446,6 +575,7 @@ Zee TV
         src= "https://www.youtube.com/embed/nmGjvNz2Tgw"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -456,6 +586,7 @@ Zee TV
         src= "https://www.youtube.com/embed/bJ2S3FR40WQ"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -467,6 +598,7 @@ Zee TV
         src= "https://www.youtube.com/embed/oDPARWKhGLo"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -479,6 +611,7 @@ Zee TV
         src= "https://www.youtube.com/embed/Fr4muE-65S4?start=2"
         title="Video 3"
         frameBorder="0"
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
@@ -490,6 +623,7 @@ Zee TV
 
             title="Video 3"
             frameBorder="0"
+            loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
@@ -503,6 +637,7 @@ Zee TV
 src="https://www.youtube.com/embed/G8ai54ObAaU"
     title="Video 3"
     frameBorder="0"
+    loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   ></iframe>
@@ -516,6 +651,7 @@ src="https://www.youtube.com/embed/G8ai54ObAaU"
 src="https://www.youtube.com/embed/pRixU0hN2Dg"
     title="Video 3"
     frameBorder="0"
+    loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   ></iframe>
@@ -528,6 +664,7 @@ src="https://www.youtube.com/embed/pRixU0hN2Dg"
 src="https://www.youtube.com/embed/J5PwSYZnRr4"
     title="Video 3"
     frameBorder="0"
+    loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   ></iframe>
@@ -541,6 +678,7 @@ src="https://www.youtube.com/embed/J5PwSYZnRr4"
 src="https://www.youtube.com/embed/vlb1fcsW7oY"
     title="Video 3"
     frameBorder="0"
+    loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   ></iframe>
@@ -552,6 +690,7 @@ src="https://www.youtube.com/embed/vlb1fcsW7oY"
 src="https://www.youtube.com/embed/cczqrx-KufI"
     title="Video 3"
     frameBorder="0"
+    loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   ></iframe>
@@ -564,6 +703,7 @@ src="https://www.youtube.com/embed/cczqrx-KufI"
 src="https://www.youtube.com/embed/ydHR_VXoXkI"
     title="Video 3"
     frameBorder="0"
+    loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   ></iframe>
@@ -575,6 +715,7 @@ src="https://www.youtube.com/embed/ydHR_VXoXkI"
 src="https://www.youtube.com/embed/U4kJTXQbBwQ"
     title="Video 3"
     frameBorder="0"
+    loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   ></iframe>
@@ -587,6 +728,7 @@ src="https://www.youtube.com/embed/U4kJTXQbBwQ"
     src="https://www.youtube.com/embed/bPz6amQzdqE"
     title="Video 3"
     frameBorder="0"
+    loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
   ></iframe>
@@ -596,14 +738,20 @@ src="https://www.youtube.com/embed/U4kJTXQbBwQ"
   </div>
 </section>
 
- <section className="bcw-section">
-      <h2 className="bcw-heading">Business Care Winners</h2>
+
+
+
+
+
+         <section className="bcw-section">
+     <Link to="/video"> <h2 className="bcw-heading">Business Care Winners</h2></Link>
 
       <div className="bcw-video-container">
         <iframe
           src="https://www.youtube.com/embed/w5YY9qyhlw4"
           title="Business Winner 1"
           frameBorder="0"
+          loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
@@ -612,10 +760,54 @@ src="https://www.youtube.com/embed/U4kJTXQbBwQ"
           src="https://www.youtube.com/embed/Xv1Pw7zMiEM"
           title="Business Winner 2"
           frameBorder="0"
+          loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
 
+
+  
+  <iframe
+src="https://www.youtube.com/embed/ydHR_VXoXkI"
+    title="Video 3"
+    frameBorder="0"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+
+
+
+
+  <iframe
+src="https://www.youtube.com/embed/U4kJTXQbBwQ"
+    title="Video 3"
+    frameBorder="0"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+
+
+    
+      <iframe
+src="https://www.youtube.com/embed/qk7v7xYwNCg"
+    title="Video 3"
+    frameBorder="0"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+
+
+    <iframe
+src="https://www.youtube.com/embed/owWD6ONLnCg"
+    title="Video 3"
+    frameBorder="0"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
 
 
 
@@ -623,8 +815,70 @@ src="https://www.youtube.com/embed/U4kJTXQbBwQ"
       </div>
     </section>
 
+      
+
+      
+   <section className="video-section4" 
+ 
+>
+  <div className="video-container4" 
+   
+  >
+
+    {/* TOP HEADING */}
+    <Link to="/service" style={{ textDecoration:"none",}}>  
+    <h2 
+      className="video-heading4" 
+      style={{ 
+        textAlign: "center", 
+        marginBottom: "20px",
+        fontWeight: "700",
+        padding:"10px",
+        border:"2px solid #fff",
+      
+  
+      }}
+    >
+  Happy Clients video <span>testimonials</span>
+    </h2></Link>
+
+    {/* VIDEO GRID */}
+    <div className="video-grid4">
+      {videos.map((src, i) => (
+        <div key={i} className="video-item4">
+
+          {/* Check YouTube / MP4 */}
+          {src.includes("youtube.com") || src.includes("youtu.be") ? (
+            <iframe
+              className="video-player4"
+              src={src}
+              title={`YouTube Video ${i + 1}`}
+              frameBorder="0"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ) : (
+            <video
+              className="video-player4"
+              controls
+              playsInline
+              preload="metadata"
+              src={src}
+            >
+              Your browser does not support the video tag.
+            </video>
+          )}
+
+        </div>
+      ))}
+    </div>
+    
+  </div>
+</section>
+
 <section className="services-section3">
-  <h2 className="services-heading3">Our Services</h2>
+ <Link to="/service"> <h2 className="services-heading3">Our Services</h2></Link>
 
   <ul className="services-list3">
     <li>Product Teleshopping Making</li>
@@ -633,72 +887,53 @@ src="https://www.youtube.com/embed/U4kJTXQbBwQ"
     <li>Dealership & Distributorship Making Plan</li>
   </ul>
 </section>
+ <section className="business-care-section">
+  <div className="business-care-container">
 
+    <h2 className="business-care-heading">
+      Why <span>Business Care?</span>
+    </h2>
 
+    <p className="business-care-text">
+     Because today businesses don’t just need promotion—they need the right direction,
+      visibility, and growth strategy. Business Care brings all of this on one powerful platform, 
+      combining media, branding, and business expansion.
+    </p>
 
+    <p className="business-care-text">
+   It helps brands gain national and global visibility, connect with investors, 
+   dealers, and partners, and build a strong market presence through TV and
+    strategic planning.
+    </p>
 
-<section
-  className="purpose-section"
- 
->
-  <div className="purpose-container">
-    <div className="purpose-content">
-      <h1 >
-        ज्यादातर बिजनेसमैन बिजनेस एक्सपेंशन के लिए{" "}
-        <span>पुरानी तकनीकों</span> का इस्तेमाल करते हैं
+    <p className="business-care-text">
+      In simple words, Business Care is not just a service—it’s a complete growth ecosystem for MSMEs, startups, and business owners.
+    </p>
 
-
-    
-        जिसके चलते बिजनेस <strong style={{color:"orange"}}>लॉस</strong> में चले जाते हैं।
-        व्यापार की छोटी सी रणनीति की गलतियाँ आपको <strong style={{color:"orange"}}>घाटे</strong> में ला सकती हैं।
-   
-            </h1>
-
-      {/* <p className="english-text" style={{ fontSize:"2rem"}}>
-Come To Us And We Will Show You How To Take Your Company To New Heights
-      </p> */}
-
-      <div className="media-container">
-        {/* Left Content */}
-        <div className="media-left">
-          <h2 style={{fontSize:"2rem"}}>Come To Us And We Will Show You How To Take Your Company To New Heights</h2>
-          <ul>
-            {mediaPoints.map((point, index) => (
-              <li key={index}>{point}</li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Right Slider */}
-      <div className="media-right">
-  <div className="carousel" ref={carouselRef}>
-    {images.map((img, i) => (
-      <div className="carousel-card" key={i}>
-        <img src={img} alt={`slide ${i}`} />
-      </div>
-    ))}
-  </div>
-</div>
-
-      </div>
+    <div className="business-care-quote">
+      “If you want to grow faster, reach wider, and build a powerful brand—Business Care is the platform.”
     </div>
+
   </div>
 </section>
 
 
+<Purpose />
 
 
 
 
 
 
-    <section  className="logos-wrapper">
-  <div className="logos-section">
+
+
+    <section  className="logos-wrapper1">
+  <div className="logos-section1">
     {logosData.map((item, index) => {
       const Icon = item.icon;
 
       return (
-        <div className="logo-card" key={index}>
+        <div className="logo-card1" key={index}>
           <Icon size={70} color="#EBB02D" />
           <h3>{item.text}</h3>
           <button>{item.button}</button>
@@ -711,10 +946,10 @@ Come To Us And We Will Show You How To Take Your Company To New Heights
 
         <div className="why-fail-section">
       <div className="section-image">
-        <img src="/slide/p1.webp" alt="Entrepreneurship" />
+        <img src="/slide/p1.webp" alt="Entrepreneurship" loading="lazy"/>
       </div>
       <div className="section-content">
-        <h2>Why Entrepreneurship Fail?</h2>
+       <Link to="/why-us"> <h2>Why Entrepreneurship Fail?</h2></Link>
         <p>
         Insufficient marketing, wrong platforms, a lacklustre business plan or even wrong legal structure can prevent your business from thriving. The reasons why many entrepreneurs fail early are endless, some being unique tothe business owner. So, don’t waste time meet us we will design a complete strategy to make you king in yourindustry, to grow your business sales, enhance your distribution network.
         </p>
@@ -757,7 +992,7 @@ Come To Us And We Will Show You How To Take Your Company To New Heights
 
         {/* RIGHT IMAGE */}
         <div className="business-right">
-          <img src="/slide/p2.webp" alt="Business Strategy" />
+          <img src="/slide/p2.webp" alt="Business Strategy" loading="lazy"/>
         </div>
 
       </div>
@@ -770,7 +1005,7 @@ Come To Us And We Will Show You How To Take Your Company To New Heights
 
         {/* LEFT IMAGE */}
         <div className="brand-left">
-          <img src="/slide/p3.webp" alt="Business Strategy" />
+          <img src="/slide/p3.webp" alt="Business Strategy" loading="lazy"/>
         </div>
 
         {/* RIGHT CONTENT */}
@@ -828,17 +1063,17 @@ Come To Us And We Will Show You How To Take Your Company To New Heights
 
         {/* RIGHT IMAGE */}
         <div className="media-right">
-          <img src="slide/p4.webp" alt="Media Strategy" className="media-image" />
+          <img src="slide/p4.webp" alt="Media Strategy" className="media-image" loading="lazy"/>
         </div>
 
       </div>
     </section>
      <section className="gallery-section1">
-      <h2 className="gallery-heading1">Gallery</h2>
+     <Link to="/gallery"> <h2 className="gallery-heading1">Gallery</h2></Link>
       <div className="gallery-container1">
         {images.map((img, index) => (
           <div key={index} className="gallery-item1">
-            <img src={img} alt={`Gallery ${index + 1}`} />
+            <img src={img} alt={`Gallery ${index + 1}`} loading="lazy"/>
           </div>
         ))}
       </div>
@@ -865,7 +1100,7 @@ Come To Us And We Will Show You How To Take Your Company To New Heights
 
         {/* RIGHT IMAGE */}
         <div className="media-platform-right">
-          <img src="/slide/p9.webp" alt="Media Platforms" className="media-platform-image" />
+          <img src="/slide/p9.webp" alt="Media Platforms" className="media-platform-image" loading="lazy"/>
         </div>
 
       </div>
@@ -887,7 +1122,7 @@ Come To Us And We Will Show You How To Take Your Company To New Heights
 
         {/* RIGHT IMAGE */}
         <div className="low-investment-right1">
-          <img src="/slide/p10.webp" alt="Low Investment Strategy" className="low-investment-image1" />
+          <img src="/slide/p10.webp" alt="Low Investment Strategy" className="low-investment-image1" loading="lazy"/>
         </div>
 
       </div>

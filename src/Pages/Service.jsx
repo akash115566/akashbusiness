@@ -1,6 +1,9 @@
 import React from "react";
 import { color, motion } from "framer-motion";
+ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+
+import Purpose from "./Purpose";
 
 
 import "../Style/service.css";
@@ -45,12 +48,53 @@ const Service = () => {
 
   return (
     <>
+   
+
+<Helmet>
+  <title>Business Care Services | Marketing Strategy & Business Growth Programs</title>
+
+  <meta
+    name="description"
+    content="Explore Business Care services including startup marketing strategy, business growth programs, audience targeting, and sales growth planning for MSMEs and entrepreneurs."
+  />
+
+  <meta
+    name="keywords"
+    content="Business Care services, startup marketing strategy, business growth India, MSME marketing, sales growth strategy, audience targeting"
+  />
+
+  <link
+    rel="canonical"
+    href="https://businesscare.org.in/service"
+  />
+
+  {/* ✅ SERVICES SCHEMA */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Business Marketing & Growth Strategy",
+      "provider": {
+        "@type": "Organization",
+        "name": "Business Care TV Show",
+        "url": "https://businesscare.org.in"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "description": "Business Care provides startup marketing strategies, old business revival programs, audience targeting, and sales growth consulting services."
+    }
+    `}
+  </script>
+</Helmet>
       {/* 🏆 Awards Section */}
       <section
-        className="awards-hero fixed-bg-section">
-        <div className="overlay">
-          <div className="text-content">
-            <h2>🏆 BusinessCare Awards & Recognition</h2>
+        className="awards-hero1 fixed-bg-section">
+        <div className="overlay1">
+          <div className="text-content1">
+            <h2>🏆 BusinessCare Service & Recognition</h2>
             <h3>
               Celebrating Excellence in <span>Business & Marketing</span>
             </h3>
@@ -83,7 +127,7 @@ const Service = () => {
 
         {/* RIGHT IMAGE */}
         <div className="low-investment-right11">
-          <img src="/about/s1.webp" alt="Low Investment Strategy" className="low-investment-image1" />
+          <img src="/about/s1.webp" alt="Low Investment Strategy" className="low-investment-image1" loading="lazy"/>
         </div>
 
       </div>
@@ -113,43 +157,12 @@ const Service = () => {
 
         {/* RIGHT IMAGE */}
         <div className="low-investment-right11">
-          <img src="/about/s2.webp" alt="Low Investment Strategy" className="low-investment-image1" />
+          <img src="/about/s2.webp" alt="Low Investment Strategy" className="low-investment-image1" loading="lazy" />
         </div>
 
       </div>
     </section>
-      {/* <section className="startup-section" style={{background:"#EBB02D"}}>
-        <div className="container">
 
-          <h2 className="main-heading">
-           OLD BUSINESS GROWTH PROGRAMMES STRATEGY
-          </h2>
-
-          <div className="content-wrapper">
-
-            <div className="left-content">
-              <h3>How to Revive an Old Business</h3>
-
-              <p>
-                Raising the buzz of the product from door to door, Make everyone need, 
-                make everyone rote again and again. Stand out from your competitors
-                 and make a name for yourself again.
-              </p>
-
-              <button className="call-btn">
-                <img src="./" alt="Call" />
-                CALL NOW
-              </button>
-            </div>
-
-      
-            <div className="right-image">
-              <img src="./about/s2.webp" alt="Startup Strategy" />
-            </div>
-
-          </div>
-        </div>
-      </section> */}
 
 
 
@@ -172,7 +185,8 @@ const Service = () => {
         <div className="low-investment-left11">
           <h2 className="low-investment-heading11" style={{textAlign:'start'}}>Find Your Real Buyer.</h2>
           <p className="low-investment-text11" style={{fontSize:"1.5rem"}}>
-           Grab real customers, end buyer's hassle, and<br/>
+          Grab real customers,<br />
+  end buyer's hassle,<br />
 start your sales<br/>
 For More Information<br/>
 Contact us: 8076151724</p>
@@ -181,47 +195,14 @@ Contact us: 8076151724</p>
 
         {/* RIGHT IMAGE */}
         <div className="low-investment-right11">
-          <img src="/about/s3.webp" alt="Low Investment Strategy" className="low-investment-image1" />
+          <img src="/about/s3.webp" alt="Low Investment Strategy" className="low-investment-image1" loading="lazy"/>
         </div>
 
       </div>
     </section>
 
 
-      {/* <section className="startup-section" style={{background:"#51073B"}}>
-        <div className="container">
-
-          <h2 className="main-heading">
-            HOW TO TARGET YOUR AUDIENCE
-          </h2>
-
-          <div className="content-wrapper">
-
    
-            <div className="left-content">
-              <h3>Find Your Real Buyer.</h3>
-
-              <p>
-                Grab real customers, end buyer's hassle, and
-                start your sales
-                For More Information
-                Contact us: 7042438293
-              </p>
-
-              <button className="call-btn">
-                <img src="./" alt="Call" />
-                CALL NOW
-              </button>
-            </div>
-
-            <div className="right-image">
-              <img src="./about/s3.webp" alt="Startup Strategy" />
-            </div>
-
-          </div>
-        </div>
-      </section> */}
-
 
 
 
@@ -250,46 +231,14 @@ Contact us: 8076151724
 
         {/* RIGHT IMAGE */}
         <div className="low-investment-right11">
-          <img src="/about/s4.webp" alt="Low Investment Strategy" className="low-investment-image1" />
+          <img src="/about/s4.webp" alt="Low Investment Strategy" className="low-investment-image1" loading="lazy"/>
         </div>
 
       </div>
     </section>
-{/* 
 
 
-      <section className="startup-section" style={{background:"#EBB02D"}}>
-        <div className="container">
-
-          <h2 className="main-heading">
-            HOW TO GROW YOUR SALES
-          </h2>
-
-          <div className="content-wrapper">
-
-        
-            <div className="left-content">
-              <h3>Find your real buyer.</h3>
-
-              <p>
-                When the need of the customer arises,
-                then your business will shine.
-                For More Understanding
-                Contact us: 7042438293
-              </p>
-
-              <button className="call-btn">
-                <img src="./" alt="Call" />
-                CALL NOW
-              </button>
-            </div>
-         <div className="right-image">
-              <img src="./about/s4.webp" alt="Startup Strategy" />
-            </div>
-
-          </div>
-        </div>
-      </section> */}
+      <Purpose />
 
 
 

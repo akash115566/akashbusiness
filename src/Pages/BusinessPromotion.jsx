@@ -4,13 +4,47 @@ import { Helmet } from "react-helmet";
 
 const BusinessPromotion = () => {
   return (
-    <div className="page">
-      <Helmet>
-        <title>Business Promotion Services in India</title>
-        <meta name="description" content="Grow your business with powerful promotion services including TV, radio, OTT and digital marketing." />
-        <meta name="keywords" content="Business Promotion India" />
-        <link rel="canonical" href="https://yourwebsite.com/business-promotion-services" />
+    <> 
+     <Helmet>
+        <title>Business Promotion Services in India | TV, OTT & Digital Marketing</title>
+
+        <meta 
+          name="description" 
+          content="Boost your business with Business Care promotion services including TV ads, OTT advertising, radio and digital marketing across India." 
+        />
+
+        <meta 
+          name="keywords" 
+          content="business promotion India, TV advertising India, OTT ads India, digital marketing services" 
+        />
+
+        {/* ✅ Correct Canonical */}
+        <link 
+          rel="canonical" 
+          href="https://businesscare.org.in/business-promotion-services" 
+        />
+
+        {/* ✅ SCHEMA MARKUP */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Business Promotion Services",
+            "provider": {
+              "@type": "Organization",
+              "name": "Business Care",
+              "url": "https://businesscare.org.in"
+            },
+            "areaServed": "India",
+            "description": "Business Care offers TV advertising, OTT ads, radio promotions and digital marketing services for business growth."
+          }
+          `}
+        </script>
       </Helmet>
+   
+    <div className="page">
+       
 
       <h1>Business Promotion Services</h1>
 
@@ -37,6 +71,7 @@ const BusinessPromotion = () => {
 
       <button>Promote Your Business</button>
     </div>
+     </>
   );
 };
 

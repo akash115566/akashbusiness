@@ -32,11 +32,12 @@ const Footer = () => {
               <li><Link to="/about">About</Link></li>
               <li><Link to="/award">Award</Link></li>
               <li><Link to="/mission">Mission & Vision</Link></li>
-              <li><Link to="/founder">Our Founders</Link></li>
+              <li><Link to="/pooja-sharma-business-care">Our Founders</Link></li>
               <li><Link to="/why-us">Why Business Care</Link></li>
                <li><Link to="/privacy">Privacy & Policy</Link></li>
                  <li><Link to="/terms">Terms and Conditions</Link></li>
                  <li><Link to="/associate">Business Care Associate Form</Link></li>
+                 <li><Link to="/investor-registration">Investor Registration</Link></li>
                        
             </ul>
           </div>
@@ -75,11 +76,11 @@ const Footer = () => {
     <FontAwesomeIcon icon={faInstagram} />
   </a>
 
-  <a href="https://www.linkedin.com/company/business-care-noida/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/pooja-movie-creations-india/" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon icon={faLinkedinIn} />
   </a>
 
-  <a href="https://x.com/businesscareup" target="_blank" rel="noopener noreferrer">
+  <a href="https://x.com/BusinesscareI" target="_blank" rel="noopener noreferrer">
     <FontAwesomeIcon icon={faTwitter} />
   </a>
 

@@ -1,9 +1,48 @@
 import React from "react";
+  import { Helmet } from "react-helmet";
 import "../Style/terms.css";
 
 const Terms = () => {
     return (
         <>
+      
+
+<Helmet>
+  <title>Terms & Conditions | Business Care TV Show</title>
+
+  <meta
+    name="description"
+    content="Read the Terms & Conditions of Business Care TV Show. Understand consultancy policies, payment terms, legal responsibilities, and business guidelines."
+  />
+
+  <meta
+    name="keywords"
+    content="Business Care terms, consultancy terms India, business consulting policy, MSME legal terms, Business Care conditions"
+  />
+
+  <link
+    rel="canonical"
+    href="https://businesscare.org.in/terms"
+  />
+
+  {/* ✅ TERMS PAGE SCHEMA */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Terms and Conditions - Business Care TV Show",
+      "url": "https://businesscare.org.in/terms",
+      "description": "Terms and conditions of Business Care TV Show explaining consultancy policies, payments, and legal responsibilities.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Business Care TV Show",
+        "url": "https://businesscare.org.in"
+      }
+    }
+    `}
+  </script>
+</Helmet>
             <section className="banner-section11">
                 <div className="banner-content11">
                     <h1>TERMS & CONDITIONS <br/>BUSINESS CARE</h1>

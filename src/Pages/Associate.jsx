@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import "../Style/associate.css";
 
 const AssociateForm = () => {
@@ -63,7 +64,40 @@ Bank Passbook: ${files.bank?.name || "Not Uploaded"}
   };
 
   return (
+    <>
+     <Helmet>
+  <title>Associate Registration | Business Care India</title>
+
+  <meta 
+    name="description" 
+    content="Register as an associate partner with Business Care. Submit your details and documents to grow your business with expert guidance." 
+  />
+
+  <link 
+    rel="canonical" 
+    href="https://businesscare.org.in/associate-registration" 
+  />
+
+  {/* ✅ SCHEMA MARKUP */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Associate Registration Service",
+      "provider": {
+        "@type": "Organization",
+        "name": "Business Care",
+        "url": "https://businesscare.org.in"
+      },
+      "areaServed": "India",
+      "description": "Register as an associate partner with Business Care to grow your business with expert consulting and marketing strategies."
+    }
+    `}
+  </script>
+</Helmet>
   <div className="form-container">
+  
   <h2>Associate Registration Form</h2>
 
   <form onSubmit={handleSubmit} className="form-grid">
@@ -166,6 +200,7 @@ Bank Passbook: ${files.bank?.name || "Not Uploaded"}
 
   </form>
 </div>
+</>
 
   );
 };

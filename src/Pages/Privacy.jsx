@@ -1,9 +1,48 @@
 import React from "react";
+ import { Helmet } from "react-helmet";
 import "../Style/privacy.css";
 
 const Privacy = () => {
   return (
     <>
+   
+
+<Helmet>
+  <title>Privacy Policy | Business Care TV Show</title>
+
+  <meta
+    name="description"
+    content="Read the Privacy Policy of Business Care TV Show. Learn how we protect business data, ensure confidentiality, and maintain legal compliance for all partners and users."
+  />
+
+  <meta
+    name="keywords"
+    content="Business Care privacy policy, data protection, MSME data safety, business confidentiality, TV show legal policy"
+  />
+
+  <link
+    rel="canonical"
+    href="https://businesscare.org.in/privacy"
+  />
+
+  {/* ✅ PRIVACY POLICY SCHEMA */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Privacy Policy - Business Care TV Show",
+      "url": "https://businesscare.org.in/privacy",
+      "description": "Privacy policy of Business Care TV Show explaining data protection, confidentiality, and legal terms for users and business partners.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Business Care TV Show",
+        "url": "https://businesscare.org.in"
+      }
+    }
+    `}
+  </script>
+</Helmet>
     <section className="banner-section">
   <div className="banner-content">
     <h1>Privacy</h1>

@@ -45,7 +45,7 @@
 }
 
 .footer-column ul li a {
-  color: black;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -104,7 +104,7 @@
   color: #aaa;
 }
 .footer-column h3,p ,strong{
-  color: #111;
+  color: #fff;
 }
 
 /* 📱 Responsive */
